@@ -1,0 +1,2338 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Shop Card</title>
+    <meta name="keywords" content>
+    <meta name="description" content>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="application-name" content>
+    <meta name="msapplication-TileImage" content="img/favicon/mstile-144x144.png">
+    <meta name="msapplication-TileColor" content="#FFCC01">
+    <meta name="msapplication-config" content="/browserconfig.xml" />
+    <link rel="manifest" href="/manifest.json">
+    <link type="image/png" href="files/favicon/favicon-32x32.png" rel="shortcut icon" sizes="32x32">
+    <link type="image/png" href="files/favicon/favicon-96x96.png" rel="shortcut icon" sizes="96x96">
+    <link type="image/x-icon" href="files/favicon/favicon.ico" rel="shortcut icon" sizes="16x16">
+    <link href="files/favicon/apple-touch-icon-57x57.png" rel="apple-touch-icon" sizes="57x57">
+    <link href="files/favicon/apple-touch-icon-60x60.png" rel="apple-touch-icon" sizes="60x60">
+    <link href="files/favicon/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+    <link href="files/favicon/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76">
+    <link href="files/favicon/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+    <link href="files/favicon/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120">
+    <link href="files/favicon/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144">
+    <link href="files/favicon/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152">
+    <link rel="stylesheet" media="all" href="css/market.css">
+  </head>
+  <body class="loading" itemscope="itemscope" itemtype="http://schema.org/WebPage">
+    <div id="beauty-market">
+      <div class="wrapper page-market">
+        <!-- begin mobile-nav -->
+        <div class="mobile-nav js-mobile-nav sm-only">
+          <div class="mobile-nav__header is-authorized">
+            <div class="header-user">
+              <a class="header-user__link" href="#">
+                <div class="header-user__img">
+                  <img src="files/examples/user/lima-avatar-1.jpg" alt="avatar">
+                </div>
+                <div class="header-user__inner">
+                  <div class="header-user__name">Adriana</div>
+                  <div class="header-user__desc">Victoria Sicrect's studio</div>
+                </div>
+              </a>
+              <a class="mobile-nav__link mobile-nav__link--enter button-link" data-fancybox-no-touch href="#auth-form"> Вход / Регистрация <svg class="icon icon-user--round mobile-nav__icon" role="img">
+                  <use xlink:href="files/sprite.svg#user--round"></use>
+                </svg>
+              </a>
+            </div>
+            <!-- begin user -->
+            <div class="user">
+              <div class="user__avatar">
+                <div class="user__img">
+                  <img src="files/examples/user/noavatar.jpg" alt="noavatar">
+                </div>
+              </div>
+              <button class="btn btn-outline-gray btn--flet user__login-btn" data-toggle="modal" data-target="#auth-form"> Вход </button>
+            </div><!-- end user -->
+            <button class="btn-icon js-mobile-nav--close">
+              <svg class="icon icon-arrow-long--left " role="img">
+                <use xlink:href="files/sprite.svg#arrow-long--left"></use>
+              </svg>
+            </button>
+          </div>
+          <nav>
+            <ul class="mobile-nav__list">
+              <li class="mobile-nav__item ">
+                <a class="mobile-nav__link" href="crm-dashboard.html">
+                  <svg class="icon icon-user--round mobile-nav__icon">
+                    <use xlink:href="files/sprite.svg#user--round"></use>
+                  </svg>
+                  <span class="mobile-nav__text">Личный кабинет</span>
+                </a>
+              </li>
+              <li class="mobile-nav__item ">
+                <a class="mobile-nav__link" href="crm-favorites.html">
+                  <svg class="icon icon-heart mobile-nav__icon">
+                    <use xlink:href="files/sprite.svg#heart"></use>
+                  </svg>
+                  <span class="mobile-nav__text">Избранное</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="mobile-nav__title">Категории услуг</div>
+          <div class="mobile-nav__category category-services">
+            <ul class="category-services__list js-viewer" data-view-block="6">
+              <li class="category-services__item">
+                <a class="category-services__link">Маникюр</a>
+              </li>
+              <li class="category-services__item">
+                <a class="category-services__link">Педикюр</a>
+              </li>
+              <li class="category-services__item">
+                <a class="category-services__link">Макияж</a>
+              </li>
+              <li class="category-services__item">
+                <a class="category-services__link">Коррекция</a>
+              </li>
+              <li class="category-services__item">
+                <a class="category-services__link">Ресницы</a>
+              </li>
+              <li class="category-services__item">
+                <a class="category-services__link">Прически</a>
+              </li>
+              <li class="category-services__item">
+                <a class="category-services__link">Эпиляция</a>
+              </li>
+              <li class="category-services__item">
+                <a class="category-services__link">Продукция</a>
+              </li>
+              <li class="category-services__item  js-viewer-btn">
+                <button class="category-services__btn-view">Посмотреть все</button>
+              </li>
+            </ul>
+          </div>
+          <a class="mobile-nav__link mobile-nav__link--last" href="javascript:void(0);">
+            <svg class="icon icon-logout mobile-nav__icon" role="img">
+              <use xlink:href="files/sprite.svg#logout"></use>
+            </svg>
+            <span>Выйти</span>
+          </a>
+        </div>
+        <!-- end mobile-nav -->
+        <!-- BEGIN mobile-search -->
+        <div class="mobile-search js-mobile-search">
+          <form class="search js-search">
+            <div class="search__group js-input-box">
+              <div class="mobile-search__header">
+                <div class="mobile-search__input">
+                  <input class="search__input js-input js-search-input" type="text" placeholder="Поиск по сайту" autocomplete="off">
+                  <svg class="icon icon-search bb-input__icon" role="img">
+                    <use xlink:href="files/sprite.svg#search"></use>
+                  </svg>
+                  <svg class="icon icon-close--bold bb-input__icon js-input--clear" role="img">
+                    <use xlink:href="files/sprite.svg#close--bold"></use>
+                  </svg>
+                </div>
+                <button class="mobile-search__close button-link js-mobile-search-btn">Закрыть</button>
+              </div>
+              <div class="search__hint" style="display: none;">
+                <div class="search-hint">
+                  <ul class="search-hint__list">
+                    <li class="search-hint__item">
+                      <a href="#" class="search-hint__link">
+                        <span class="search-hint__bade search-hint__bade--category">категория</span>
+                        <span class="search-hint__text"><strong>Маникюр</strong></span>
+                      </a>
+                    </li>
+                    <li class="search-hint__item">
+                      <a href="#" class="search-hint__link">
+                        <span class="search-hint__bade search-hint__bade--service">услуга</span>
+                        <span class="search-hint__text">Классический <strong>маникюр</strong></span>
+                      </a>
+                    </li>
+                    <li class="search-hint__item">
+                      <a href="#" class="search-hint__link">
+                        <span class="search-hint__bade search-hint__bade--salon">салон</span>
+                        <span class="search-hint__text">Салон <strong>маникюра</strong></span>
+                      </a>
+                    </li>
+                    <li class="search-hint__item">
+                      <a href="#" class="search-hint__link">
+                        <span class="search-hint__bade search-hint__bade--master">мастер</span>
+                        <span class="search-hint__text">Эвелина Николаевна</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- END mobile-search -->
+        <div class="wrapper__inner">
+          <!-- BEGIN header -->
+          <header class="header bg--dark " itemscope itemtype="http://schema.org/WPHeader">
+            <!-- BEGIN header__top -->
+            <div class="header__top">
+              <div class="container">
+                <!-- BEGIN header__inner -->
+                <div class="header__inner">
+                  <!-- BEGIN toggle-menu -->
+                  <!-- partials/_toggle-menu.html -->
+                  <div class="js-main-nav-btn toggle-menu">
+                    <div class="toggle-menu__inner">
+                      <span class="toggle-menu__icon"></span>
+                      <span class="toggle-menu__icon"></span>
+                      <span class="toggle-menu__icon"></span>
+                      <span class="toggle-menu__icon"></span>
+                    </div>
+                  </div>
+                  <!-- END toggle-menu -->
+                  <!-- BEGIN logo -->
+                  <div class="logo market__logo" itemscope itemtype="http://schema.org/Organization">
+                    <a itemprop="url" href="market-home.html" class="logo__link">
+                      <img class="logo__img" itemprop="logo" src="files/assets/logo-bmarket--white.svg" alt="beauty box" />
+                    </a>
+                  </div>
+                  <!-- END logo -->
+                  <!-- BEGIN header__change-city -->
+                  <div class="header__city-select">
+                    <!-- BEGIN city-select -->
+                    <div class="city-select js-city-select bb-dropdown bb-dropdown--another js-bb-dropdown">
+                      <div class="city-select__title">
+                        <svg class="icon icon-navigation city-select__icon" role="img">
+                          <use xlink:href="files/sprite.svg#navigation"></use>
+                        </svg>
+                        <span>Саратов</span>
+                      </div>
+                      <ul class="city-select__list bb-dropdown__list">
+                        <div class="city-select__search">
+                          <input type="search" placeholder="Введите название города" autocomplete="off">
+                        </div>
+                        <li class="city-select__item">Москва</li>
+                        <li class="city-select__item">Санкт-Петербург</li>
+                        <li class="city-select__item">Саратов</li>
+                        <li class="city-select__item">Балаково</li>
+                        <li class="city-select__item">Самара</li>
+                      </ul>
+                    </div>
+                    <!-- END city-select -->
+                  </div>
+                  <!-- END header__change-city -->
+                  <!-- BEGIN header__search -->
+                  <div class="header__search">
+                    <!-- BEGIN search -->
+                    <div class="search search--sm js-search js-input-box">
+                      <input type="text" class="search__input js-search-input" placeholder="Я хочу купить..." autocomplete="off">
+                      <svg class="icon icon-search--bold search__ico">
+                        <use xlink:href="files/sprite.svg#search--bold"></use>
+                      </svg>
+                      <div class="search__hint search-hint" style="display: none;">
+                        <ul class="search-hint__list">
+                          <li class="search-hint__item">
+                            <a href="#" class="search-hint__link">
+                              <span class="search-hint__bade search-hint__bade--category">категория</span>
+                              <span class="search-hint__text"><strong>Маникюр</strong></span>
+                            </a>
+                          </li>
+                          <li class="search-hint__item">
+                            <a href="#" class="search-hint__link">
+                              <span class="search-hint__bade search-hint__bade--service">услуга</span>
+                              <span class="search-hint__text">Классический <strong>маникюр</strong></span>
+                            </a>
+                          </li>
+                          <li class="search-hint__item">
+                            <a href="#" class="search-hint__link">
+                              <span class="search-hint__bade search-hint__bade--salon">салон</span>
+                              <span class="search-hint__text">Салон <strong>маникюра</strong></span>
+                            </a>
+                          </li>
+                          <li class="search-hint__item">
+                            <a href="#" class="search-hint__link">
+                              <span class="search-hint__bade search-hint__bade--master">мастер</span>
+                              <span class="search-hint__text">Эвелина Николаевна</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- END search -->
+                  </div>
+                  <!-- END header__search -->
+                  <div class="header-action">
+                    <div class="header-action__search sm-only--flex">
+                      <button class="btn-icon js-mobile-search-btn" title="Поиск">
+                        <svg class="icon icon-search " role="img">
+                          <use xlink:href="files/sprite.svg#search"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <a class="header-action__link" href="market-profile.html" title="Избранное">
+                      <svg class="icon icon-ifavorite header__icon" role="img">
+                        <use xlink:href="files/sprite.svg#ifavorite"></use>
+                      </svg>
+                    </a>
+                    <a class="header-action__link" href="market-cart.html" title="Корзина">
+                      <svg class="icon icon-cart header__icon" role="img">
+                        <use xlink:href="files/sprite.svg#cart"></use>
+                      </svg>
+                      <span class="badge">23</span>
+                    </a>
+                    <a class="header-action__link" data-toggle="modal" href="#auth-form" title="Вход / Регистрация" style="display: none;">
+                      <svg class="icon icon-user--round " role="img">
+                        <use xlink:href="files/sprite.svg#user--round"></use>
+                      </svg>
+                    </a>
+                    <!-- begin header-user -->
+                    <div class="header-user header-user--expanded bb-dropdown js-bb-dropdown bb-dropdown--another" data-dropdown-transform data-dropdown-position="right">
+                      <!-- <span class="header-user__name">Березка</span> -->
+                      <div class="header-user__img">
+                        <img src="files/examples/studio/logo.jpeg" alt="avatar" />
+                      </div>
+                      <div class="header-user__dropdown bb-dropdown__list">
+                        <div class="user user--small xs-hide">
+                          <div class="user__avatar">
+                            <div class="user__img">
+                              <img src="files/examples/user/noavatar.jpg" alt="noavatar">
+                            </div>
+                          </div>
+                          <div class="user__info-block">
+                            <span class="user__name">Александр Марабидис</span>
+                            <a href="#" class="btn-link user__link">Перейти на сайт</a>
+                          </div>
+                        </div>
+                        <ul>
+                          <li class="xs-only"><a href="#">Перейти на сайт</a></li>
+                          <li>
+                            <a href="#">
+                              <svg class="icon icon-user--round xs-hide" role="img">
+                                <use xlink:href="files/sprite.svg#user--round"></use>
+                              </svg>
+                              <span>Личный кабинет</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <svg class="icon icon-heart xs-hide" role="img">
+                                <use xlink:href="files/sprite.svg#heart"></use>
+                              </svg>
+                              <span>Избранное</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <svg class="icon icon-cog xs-hide" role="img">
+                                <use xlink:href="files/sprite.svg#cog"></use>
+                              </svg>
+                              <span>Настройки</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <svg class="icon icon-logout xs-hide" role="img">
+                                <use xlink:href="files/sprite.svg#logout"></use>
+                              </svg>
+                              <span>Выйти</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- end header-user -->
+                    <a class="phone header-action__link header-action__link--phone sm-hide" href="tel:88005516998"> 8 800 551-69-98 <span class="phone__text">звонок по России бесплатный</span>
+                    </a>
+                  </div>
+                </div>
+                <!-- END header__inner -->
+              </div>
+            </div>
+            <!-- END header__top -->
+            <!-- BEGIN header__bottom -->
+            <div class="header__bottom">
+              <div class="container">
+                <!-- begin nav -->
+                <nav class="nav js-main-nav">
+                  <ul class="nav__list">
+                    <li class="nav__item">
+                      <a href="#" class="nav__link">Наращивание ресниц</a>
+                      <div class="nav-dropdown nav-dropdown--left">
+                        <ul class="nav-dropdown__list">
+                          <li class="nav-dropdown__item"><a href="#" class="nav-dropdown__link">Some text</a></li>
+                          <li class="nav-dropdown__item"><a href="#" class="nav-dropdown__link">Some text</a></li>
+                          <li class="nav-dropdown__item"><a href="#" class="nav-dropdown__link">Some text</a></li>
+                          <li class="nav-dropdown__item"><a href="#" class="nav-dropdown__link">Some text</a></li>
+                          <li class="nav-dropdown__item"><a href="#" class="nav-dropdown__link">Some text</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="nav__item">
+                      <a href="#" class="nav__link">Оформление бровей</a>
+                      <div class="nav-dropdown nav-dropdown--left">
+                        <ul class="nav-dropdown__list">
+                          <li class="nav-dropdown__item"><a href="#" class="nav-dropdown__link">Some text</a></li>
+                          <li class="nav-dropdown__item"><a href="#" class="nav-dropdown__link">Some text</a></li>
+                          <li class="nav-dropdown__item"><a href="#" class="nav-dropdown__link">Some text</a></li>
+                          <li class="nav-dropdown__item"><a href="#" class="nav-dropdown__link">Some text</a></li>
+                          <li class="nav-dropdown__item"><a href="#" class="nav-dropdown__link">Some text</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="nav__item">
+                      <a href="#" class="nav__link">Распродажа</a>
+                      <div class="nav-dropdown nav-dropdown--right">
+                        <ul class="nav-dropdown__list">
+                          <li class="nav-dropdown__item"><a href="#" class="nav-dropdown__link">Some text</a></li>
+                          <li class="nav-dropdown__item"><a href="#" class="nav-dropdown__link">Some text</a></li>
+                          <li class="nav-dropdown__item"><a href="#" class="nav-dropdown__link">Some text</a></li>
+                          <li class="nav-dropdown__item"><a href="#" class="nav-dropdown__link">Some text</a></li>
+                          <li class="nav-dropdown__item"><a href="#" class="nav-dropdown__link">Some text</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="nav__item">
+                      <a href="#" class="nav__link">Новинки</a>
+                      <div class="nav-dropdown nav-dropdown--right">
+                        <ul class="nav-dropdown__list">
+                          <li class="nav-dropdown__item"><a href="#" class="nav-dropdown__link">Some text</a></li>
+                          <li class="nav-dropdown__item"><a href="#" class="nav-dropdown__link">Some text</a></li>
+                          <li class="nav-dropdown__item"><a href="#" class="nav-dropdown__link">Some text</a></li>
+                          <li class="nav-dropdown__item"><a href="#" class="nav-dropdown__link">Some text</a></li>
+                          <li class="nav-dropdown__item"><a href="#" class="nav-dropdown__link">Some text</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </nav>
+                <!-- end nav -->
+              </div>
+            </div>
+            <!-- END header__bottom -->
+          </header>
+          <!-- END header -->
+          <!-- begin main shop -->
+          <main class="main market">
+            <div class="container">
+              <!-- BEGIN breadcrumbs -->
+              <div class="breadcrumbs" itemscope itemtype="http://www.data-vocabulary.org/Breadcrumb">
+                <ul class="breadcrumbs__list _loading">
+                  <li class="breadcrumbs__item">
+                    <a href="#" class="breadcrumbs__link" itemprop="url">
+                      <span class="breadcrumbs__title" itemprop="title">Главная</span>
+                    </a>
+                  </li>
+                  <li class="breadcrumbs__item">
+                    <span class="breadcrumbs__title" itemprop="title">Москва</span>
+                  </li>
+                </ul>
+              </div>
+              <!-- END breadcrumbs -->
+            </div>
+            <section class="section pt-0">
+              <div class="container">
+                <div class="product-card-item">
+                  <div class="product-card-item__inner">
+                    <div class="product-card-item__img">
+                      <!-- BEGIN product-card-item__image--alone -->
+                      <!-- <div class="product-card-item__image">
+	<img
+		class="lazyload"
+		src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
+		data-src="files/img/market/products/1/1@md.jpg"
+		alt="Краска для бровей и ресниц">
+</div> -->
+                      <!-- END product-card-item__image--alone -->
+                      <!-- BEGIN product-card-item__image -->
+                      <div class="product-card-item__image bb-slider bb-slider--card js-slider--preview" data-arrow="true">
+                        <div class="bb-slider__slides _loading">
+                          <div class="bb-slider__slide">
+                            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" data-lazy="files/img/market/products/1/1@md.jpg" alt="Краска для бровей и ресниц">
+                          </div>
+                          <div class="bb-slider__slide">
+                            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" data-lazy="files/img/market/products/1/1@md.jpg" alt="Краска для бровей и ресниц">
+                          </div>
+                        </div>
+                        <div class="bb-slider__preview _loading">
+                          <div>
+                            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" data-lazy="files/img/market/products/1/1@xs.jpg" alt="Краска для бровей и ресниц">
+                          </div>
+                          <div>
+                            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" data-lazy="files/img/market/products/1/1@xs.jpg" alt="Краска для бровей и ресниц">
+                          </div>
+                        </div>
+                      </div><!-- END product-card-item__image -->
+                    </div>
+                    <div class="product-card-item__prop">
+                      <div class="product-card-item">
+                        <div class="product-card-item__header _loading">
+                          <div class="product-card-item__name">Краска для бровей и ресниц</div>
+                          <ul class="list list--inline product-card-item__badge-box">
+                            <li class="list__item">
+                              <span class="badge badge--medium">sale</span>
+                            </li>
+                            <li class="list__item">
+                              <span class="badge badge--medium bg--info">new</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div>
+                          <span class="product-card-item__cost _loading">50 руб/шт.</span>
+                          <div class="product-card-item__quantity">
+                            <!-- BEGIN changer -->
+                            <div class="changer product-card-item__changer _loading">
+                              <span class="changer__title">Изгиб</span>
+                              <div class="bb-checkbox__row">
+                                <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                                  <input type="radio" name="bend">
+                                  <span class="bb-checkbox__box"></span>
+                                  <span class="bb-checkbox__title">CC</span>
+                                </label>
+                                <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                                  <input type="radio" name="bend">
+                                  <span class="bb-checkbox__box"></span>
+                                  <span class="bb-checkbox__title">CC</span>
+                                </label>
+                                <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                                  <input type="radio" name="bend">
+                                  <span class="bb-checkbox__box"></span>
+                                  <span class="bb-checkbox__title">CC</span>
+                                </label>
+                                <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                                  <input type="radio" name="bend">
+                                  <span class="bb-checkbox__box"></span>
+                                  <span class="bb-checkbox__title">CC</span>
+                                </label>
+                                <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                                  <input type="radio" name="bend">
+                                  <span class="bb-checkbox__box"></span>
+                                  <span class="bb-checkbox__title">CC</span>
+                                </label>
+                                <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                                  <input type="radio" name="bend">
+                                  <span class="bb-checkbox__box"></span>
+                                  <span class="bb-checkbox__title">CC</span>
+                                </label>
+                                <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                                  <input type="radio" name="bend">
+                                  <span class="bb-checkbox__box"></span>
+                                  <span class="bb-checkbox__title">CC</span>
+                                </label>
+                              </div>
+                            </div>
+                            <!-- END changer -->
+                            <!-- BEGIN changer -->
+                            <div class="changer product-card-item__changer _loading">
+                              <span class="changer__title">Толщина</span>
+                              <ul class="bb-checkbox__row">
+                                <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                                  <input type="radio" name="thickness">
+                                  <span class="bb-checkbox__box"></span>
+                                  <span class="bb-checkbox__title">0,10</span>
+                                </label>
+                                <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                                  <input type="radio" name="thickness">
+                                  <span class="bb-checkbox__box"></span>
+                                  <span class="bb-checkbox__title">0,10</span>
+                                </label>
+                                <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                                  <input type="radio" name="thickness">
+                                  <span class="bb-checkbox__box"></span>
+                                  <span class="bb-checkbox__title">0,10</span>
+                                </label>
+                                <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                                  <input type="radio" name="thickness">
+                                  <span class="bb-checkbox__box"></span>
+                                  <span class="bb-checkbox__title">0,10</span>
+                                </label>
+                                <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                                  <input type="radio" name="thickness">
+                                  <span class="bb-checkbox__box"></span>
+                                  <span class="bb-checkbox__title">0,10</span>
+                                </label>
+                                <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                                  <input type="radio" name="thickness">
+                                  <span class="bb-checkbox__box"></span>
+                                  <span class="bb-checkbox__title">0,10</span>
+                                </label>
+                                <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                                  <input type="radio" name="thickness">
+                                  <span class="bb-checkbox__box"></span>
+                                  <span class="bb-checkbox__title">0,10</span>
+                                </label>
+                              </ul>
+                            </div>
+                            <!-- END changer -->
+                            <div class="product-card-item__box select-box">
+                              <div class="select-box__item _loading">
+                                <span class="bb-input__title">Цвет</span>
+                                <div class="bb-input-custom js-bb-input-custom">
+                                  <div class="bb-input-custom__value">
+                                    <span class="bb-input-custom__color" data-color-input="#005C2B"></span>
+                                    <span class="bb-input-custom__title">Черный</span>
+                                    <span class="bb-input-custom__arrow">
+                                      <svg class="icon icon-angle arrow-select" role="img">
+                                        <use xlink:href="files/sprite.svg#angle"></use>
+                                      </svg>
+                                    </span>
+                                  </div>
+                                  <ul class="bb-input-custom__list">
+                                    <li class="bb-input-custom__item in-available">
+                                      <span class="bb-input-custom__color" data-color-input="#005C2B" style="background-color:#005C2B"></span>
+                                      <div class="bb-input-custom__item-inner">
+                                        <span class="bb-input-custom__title">Темно-зеленый</span>
+                                        <span class="bb-input-custom__stock">Есть в наличии</span>
+                                      </div>
+                                    </li>
+                                    <li class="bb-input-custom__item not-available">
+                                      <span class="bb-input-custom__color" data-color-input="#FFEE3A" style="background-color:#FFEE3A"></span>
+                                      <div class="bb-input-custom__item-inner">
+                                        <span class="bb-input-custom__title">Лайм</span>
+                                        <span class="bb-input-custom__stock">Нет в наличии</span>
+                                      </div>
+                                    </li>
+                                    <li class="bb-input-custom__item is-ending">
+                                      <span class="bb-input-custom__color" data-color-input="#C3ACFF" style="background-color:#C3ACFF"></span>
+                                      <div class="bb-input-custom__item-inner">
+                                        <span class="bb-input-custom__title">Фиолетовый</span>
+                                        <span class="bb-input-custom__stock">Заканчивается</span>
+                                      </div>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="select-box__item _loading">
+                                <span class="bb-input__title">Колличество</span>
+                                <div class="bb-input-custom js-bb-input-custom _loading">
+                                  <div class="bb-input-custom__value bb-input-custom__value--input">
+                                    <button class="bb-input-custom__btn-control bb-input-custom__minus">
+                                      <svg class="icon icon-minus btn-control" role="img">
+                                        <use xlink:href="files/sprite.svg#minus"></use>
+                                      </svg>
+                                    </button>
+                                    <input type="text" name="quantity" class="bb-input-custom__input" placeholder="выбрать">
+                                    <button class="bb-input-custom__btn-control bb-input-custom__plus">
+                                      <svg class="icon icon-plus--bold btn-control" role="img">
+                                        <use xlink:href="files/sprite.svg#plus--bold"></use>
+                                      </svg>
+                                    </button>
+                                  </div>
+                                  <ul class="bb-input-custom__list">
+                                    <li class="bb-input-custom__item">
+                                      <span class="bb-input-custom__from">От</span>
+                                      <span class="bb-input-custom__offer">200</span>
+                                      <span class="bb-input-custom__currency">шт</span>
+                                      <sup class="bb-input-custom__discount">-25%</sup>
+                                      <span class="bb-input-custom__cost">425</span>
+                                      <span class="bb-input-custom__curs">руб/шт</span>
+                                    </li>
+                                    <li class="bb-input-custom__item">
+                                      <span class="bb-input-custom__from">От</span>
+                                      <span class="bb-input-custom__offer">200</span>
+                                      <span class="bb-input-custom__currency">шт</span>
+                                      <sup class="bb-input-custom__discount">-25%</sup>
+                                      <span class="bb-input-custom__cost">425</span>
+                                      <span class="bb-input-custom__curs">руб/шт</span>
+                                    </li>
+                                    <li class="bb-input-custom__item">
+                                      <span class="bb-input-custom__from">От</span>
+                                      <span class="bb-input-custom__offer">200</span>
+                                      <span class="bb-input-custom__currency">шт</span>
+                                      <sup class="bb-input-custom__discount">-25%</sup>
+                                      <span class="bb-input-custom__cost">425</span>
+                                      <span class="bb-input-custom__curs">руб/шт</span>
+                                    </li>
+                                    <li class="bb-input-custom__item">
+                                      <span class="bb-input-custom__from">От</span>
+                                      <span class="bb-input-custom__offer">200</span>
+                                      <span class="bb-input-custom__currency">шт</span>
+                                      <sup class="bb-input-custom__discount">-25%</sup>
+                                      <span class="bb-input-custom__cost">425</span>
+                                      <span class="bb-input-custom__curs">руб/шт</span>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            <span class="devider mb-30"></span>
+                          </div>
+                        </div>
+                        <div class="product-card-item__btns mb-5 _loading">
+                          <div class="btn-box btn-box--column btn-box--center">
+                            <button class="btn btn-default product-card-item__btn"> Добавить в корзину <span class="product-card-item__btn-icon" title="Удалить из корзины">
+                                <svg class="icon icon-cart in-cart" role="img">
+                                  <use xlink:href="files/sprite.svg#cart"></use>
+                                </svg>
+                                <svg class="icon icon-trash delete-from-cart" role="img">
+                                  <use xlink:href="files/sprite.svg#trash"></use>
+                                </svg>
+                              </span>
+                            </button>
+                            <span class="btn-box__info">Добавлено <span>5 </span><span>шт</span> на сумму 2000 руб.</span>
+                          </div>
+                          <button class="btn-icon btn-icon--fav btn-icon--stroke btn-icon--medium js-btn-fav" title="Добавить в збранное">
+                            <svg class="icon icon-favorite" role="img">
+                              <use xlink:href="files/sprite.svg#favorite"></use>
+                            </svg>
+                            <svg class="icon icon-favorite--filled" role="img">
+                              <use xlink:href="files/sprite.svg#favorite--filled"></use>
+                            </svg>
+                          </button>
+                        </div>
+                        <div class="button-box button-box--column">
+                          <span class="button-box__title"> Нет в наличии </span>
+                          <button data-toggle="modal" href="#product_subscription" class="btn btn-success btn--icon btn--flat product-card-item__btn">
+                            <svg class="icon icon-bell " role="img">
+                              <use xlink:href="files/sprite.svg#bell"></use>
+                            </svg> Узнать о поступлении </button>
+                          <button class="btn btn-outline-success btn--icon btn--flat product-card-item__btn  ">
+                            <svg class="icon icon-bell " role="img">
+                              <use xlink:href="files/sprite.svg#bell"></use>
+                            </svg> Мы сообщим о поступлении </button>
+                        </div>
+                        <div class="box box--offset box--grey mt-20">
+                          <div class="box__item no-offset">
+                            <svg class="icon icon-location " role="img">
+                              <use xlink:href="files/sprite.svg#location"></use>
+                            </svg>
+                            <div class="bb-title">
+                              <div class="bb-title__title"> Доставка в Балаково, Саратовская область </div>
+                              <a class="bb-title__sub btn-link btn-link-info"> Изменить </a>
+                            </div>
+                            <div class="bb-input   is-hidden">
+                              <input class="bb-input__input " type="text" placeholder="Введите адрес">
+                              <div class="bb-input-tip js-bb-input-tip">
+                                <i class="bb-input-tip__arrow-up"></i>
+                                <p class="bb-input-tip__text">*Сообщение с подсказкой</p>
+                                <svg class="icon icon-close--bold" role="img">
+                                  <use xlink:href="files/sprite.svg#close--bold"></use>
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="box__item no-offset box__item--border-top">
+                            <svg class="icon icon-stock " role="img">
+                              <use xlink:href="files/sprite.svg#stock"></use>
+                            </svg>
+                            <div class="bb-title">
+                              <div class="bb-title__title"> Самовывоз, 300 ₽ </div>
+                              <div class="bb-title__sub"> 14-15 сентября </div>
+                            </div>
+                          </div>
+                          <div class="box__item no-offset">
+                            <svg class="icon icon-delivery-truck " role="img">
+                              <use xlink:href="files/sprite.svg#delivery-truck"></use>
+                            </svg>
+                            <div class="bb-title">
+                              <div class="bb-title__title"> Доставка курьером, 595 ₽ </div>
+                              <div class="bb-title__sub"> до 16 сентября </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div data-accordeon data-accordeon-class="no-border">
+                      <div class="product-card-item__desc _loading" data-accordeon-item="open">
+                        <h5 class="product-card-item__subtitle" data-accordeon-title>Описание</h5>
+                        <div class="product-card-item__text" data-accordeon-content>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo porro libero vel molestias mollitia aut ad natus. Suscipit, voluptatem officia.</p>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo porro libero vel molestias mollitia aut ad natus. Suscipit, voluptatem officia.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </section>
+            <section class="section pt-0">
+              <div class="container">
+                <h3 class="section__title section__title--left _loading">Возможно вым будут полезны</h3>
+                <div class="row">
+                  <div class="col-6 col-xs-6 col-md-3">
+                    <!-- begin market-product-item -->
+                    <div class="market-product-item market-product-item--show market-product-item--hover-effect js-move-block--show" data-move-block-target="product-info" href="market-card.html" itemscope itemtype="http://schema.org/market-Product">
+                      <!-- begin market-product-item__img -->
+                      <div class="market-product-item__img _loading">
+                        <img class="market-product-item__image lazyload" data-src="files/img/market/products/1/1@sm.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" alt="Краска для бровей и ресниц" itemprop="image">
+                        <!-- begin market-product-slider -->
+                        <div class="market-product-slider">
+                          <ul class="market-product-slider__list">
+                            <li class="market-product-slider__item">
+                              <div class="market-product-slider__image lazyload" style="background-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==');" data-bg="url(files/img/market/products/1/1@sm.jpg)"></div>
+                            </li>
+                            <li class="market-product-slider__item">
+                              <div class="market-product-slider__image lazyload" style="background-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==');" data-bg="url(files/img/market/products/2/1@sm.jpg)"></div>
+                            </li>
+                          </ul>
+                        </div><!-- end market-product-slider -->
+                        <ul class="list list--inline market-product-item__badge-box">
+                          <li class="list__item">
+                            <span class="badge badge--medium">sale</span>
+                          </li>
+                          <li class="list__item">
+                            <span class="badge badge--medium bg--info">new</span>
+                          </li>
+                        </ul>
+                        <button class="btn-icon btn-icon--fav catalog-item__fav js-btn-fav" title="Добавить в збранное">
+                          <svg class="icon icon-favorite" role="img">
+                            <use xlink:href="files/sprite.svg#favorite"></use>
+                          </svg>
+                          <svg class="icon icon-favorite--filled" role="img">
+                            <use xlink:href="files/sprite.svg#favorite--filled"></use>
+                          </svg>
+                        </button>
+                      </div><!-- end market-product-item__img -->
+                      <!-- begin market-product-item__desc -->
+                      <div class="market-product-item__desc _loading">
+                        <div class="market-product-item__box">
+                          <h5 class="market-product-item__title" itemprop="name">Краска для бровей и ресниц</h5>
+                        </div>
+                        <span class="market-product-item__price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                          <meta itemprop="price" content="300.00">
+                          <meta itemprop="priceCurrency" content="RUB">
+                          <i>от </i>500 <span class="currency ">₽</span>
+                        </span>
+                        <div class="market-product-item__more">
+                          <!-- BEGIN changer -->
+                          <div class="changer changer--outline changer--small-offset changer-bg--dark product-card-item__changer _loading">
+                            <span class="changer__title">Изгиб</span>
+                            <ul class="changer__list js-changer is-hidden">
+                              <li class="changer__item">
+                                <button class="changer__link">СС</button>
+                              </li>
+                              <li class="changer__item">
+                                <button class="changer__link">СС</button>
+                              </li>
+                              <li class="changer__item">
+                                <button class="changer__link">СС</button>
+                              </li>
+                              <li class="changer__item">
+                                <button class="changer__link">СС</button>
+                              </li>
+                              <li class="changer__item">
+                                <button class="changer__link">СС</button>
+                              </li>
+                              <li class="changer__item">
+                                <button class="changer__link">СС</button>
+                              </li>
+                              <li class="changer__item">
+                                <button class="changer__link">СС</button>
+                              </li>
+                            </ul>
+                            <div class="bb-checkbox__row">
+                              <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                                <input type="radio" name="bend">
+                                <span class="bb-checkbox__box"></span>
+                                <span class="bb-checkbox__title">CC</span>
+                              </label>
+                              <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                                <input type="radio" name="bend">
+                                <span class="bb-checkbox__box"></span>
+                                <span class="bb-checkbox__title">CC</span>
+                              </label>
+                              <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                                <input type="radio" name="bend">
+                                <span class="bb-checkbox__box"></span>
+                                <span class="bb-checkbox__title">CC</span>
+                              </label>
+                              <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                                <input type="radio" name="bend">
+                                <span class="bb-checkbox__box"></span>
+                                <span class="bb-checkbox__title">CC</span>
+                              </label>
+                              <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                                <input type="radio" name="bend">
+                                <span class="bb-checkbox__box"></span>
+                                <span class="bb-checkbox__title">CC</span>
+                              </label>
+                              <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                                <input type="radio" name="bend">
+                                <span class="bb-checkbox__box"></span>
+                                <span class="bb-checkbox__title">CC</span>
+                              </label>
+                              <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                                <input type="radio" name="bend">
+                                <span class="bb-checkbox__box"></span>
+                                <span class="bb-checkbox__title">CC</span>
+                              </label>
+                            </div>
+                          </div>
+                          <!-- END changer -->
+                          <!-- BEGIN changer -->
+                          <div class="changer changer--outline changer-bg--dark product-card-item__changer _loading">
+                            <span class="changer__title">Толщина</span>
+                            <ul class="changer__list js-changer is-hidden">
+                              <li class="changer__item">
+                                <button class="changer__link">0,10</button>
+                              </li>
+                              <li class="changer__item">
+                                <button class="changer__link">0,10</button>
+                              </li>
+                              <li class="changer__item">
+                                <button class="changer__link">0,10</button>
+                              </li>
+                              <li class="changer__item">
+                                <button class="changer__link">0,10</button>
+                              </li>
+                              <li class="changer__item">
+                                <button class="changer__link">0,10</button>
+                              </li>
+                              <li class="changer__item">
+                                <button class="changer__link">0,10</button>
+                              </li>
+                              <li class="changer__item">
+                                <button class="changer__link">0,10</button>
+                              </li>
+                            </ul>
+                            <ul class="bb-checkbox__row">
+                              <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                                <input type="radio" name="thickness">
+                                <span class="bb-checkbox__box"></span>
+                                <span class="bb-checkbox__title">0,10</span>
+                              </label>
+                              <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                                <input type="radio" name="thickness">
+                                <span class="bb-checkbox__box"></span>
+                                <span class="bb-checkbox__title">0,10</span>
+                              </label>
+                              <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                                <input type="radio" name="thickness">
+                                <span class="bb-checkbox__box"></span>
+                                <span class="bb-checkbox__title">0,10</span>
+                              </label>
+                              <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                                <input type="radio" name="thickness">
+                                <span class="bb-checkbox__box"></span>
+                                <span class="bb-checkbox__title">0,10</span>
+                              </label>
+                              <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                                <input type="radio" name="thickness">
+                                <span class="bb-checkbox__box"></span>
+                                <span class="bb-checkbox__title">0,10</span>
+                              </label>
+                              <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                                <input type="radio" name="thickness">
+                                <span class="bb-checkbox__box"></span>
+                                <span class="bb-checkbox__title">0,10</span>
+                              </label>
+                              <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                                <input type="radio" name="thickness">
+                                <span class="bb-checkbox__box"></span>
+                                <span class="bb-checkbox__title">0,10</span>
+                              </label>
+                            </ul>
+                          </div>
+                          <!-- END changer -->
+                          <div class="market-product-item__box mb-30 _loading">
+                            <span class="bb-input__title">Колличество</span>
+                            <div class="bb-input-custom js-bb-input-custom _loading">
+                              <div class="bb-input-custom__value bb-input-custom__value--input">
+                                <button class="bb-input-custom__btn-control bb-input-custom__minus">
+                                  <svg class="icon icon-minus btn-control" role="img">
+                                    <use xlink:href="files/sprite.svg#minus"></use>
+                                  </svg>
+                                </button>
+                                <input type="text" name="quantity" class="bb-input-custom__input" placeholder="выбрать">
+                                <button class="bb-input-custom__btn-control bb-input-custom__plus">
+                                  <svg class="icon icon-plus--bold btn-control" role="img">
+                                    <use xlink:href="files/sprite.svg#plus--bold"></use>
+                                  </svg>
+                                </button>
+                              </div>
+                              <ul class="bb-input-custom__list">
+                                <li class="bb-input-custom__item">
+                                  <span class="bb-input-custom__from">От</span>
+                                  <span class="bb-input-custom__offer">200</span>
+                                  <span class="bb-input-custom__currency">шт</span>
+                                  <sup class="bb-input-custom__discount">-25%</sup>
+                                  <span class="bb-input-custom__cost">425</span>
+                                  <span class="bb-input-custom__curs">руб/шт</span>
+                                </li>
+                                <li class="bb-input-custom__item">
+                                  <span class="bb-input-custom__from">От</span>
+                                  <span class="bb-input-custom__offer">200</span>
+                                  <span class="bb-input-custom__currency">шт</span>
+                                  <sup class="bb-input-custom__discount">-25%</sup>
+                                  <span class="bb-input-custom__cost">425</span>
+                                  <span class="bb-input-custom__curs">руб/шт</span>
+                                </li>
+                                <li class="bb-input-custom__item">
+                                  <span class="bb-input-custom__from">От</span>
+                                  <span class="bb-input-custom__offer">200</span>
+                                  <span class="bb-input-custom__currency">шт</span>
+                                  <sup class="bb-input-custom__discount">-25%</sup>
+                                  <span class="bb-input-custom__cost">425</span>
+                                  <span class="bb-input-custom__curs">руб/шт</span>
+                                </li>
+                                <li class="bb-input-custom__item">
+                                  <span class="bb-input-custom__from">От</span>
+                                  <span class="bb-input-custom__offer">200</span>
+                                  <span class="bb-input-custom__currency">шт</span>
+                                  <sup class="bb-input-custom__discount">-25%</sup>
+                                  <span class="bb-input-custom__cost">425</span>
+                                  <span class="bb-input-custom__curs">руб/шт</span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="button-box button-box--column">
+                            <!-- <buttom class="btn btn--flat btn-default btn--small market-product-item__btn">Добавить в корзину</buttom>
+				<buttom class="btn btn--flat btn-secondary btn--small market-product-item__btn">Подробнее</buttom> -->
+                            <button class="btn btn-default btn--flat product-card-item__btn"> Добавить в корзину <span class="product-card-item__btn-icon" title="Удалить из корзины">
+                                <svg class="icon icon-cart in-cart" role="img">
+                                  <use xlink:href="files/sprite.svg#cart"></use>
+                                </svg>
+                                <svg class="icon icon-trash delete-from-cart" role="img">
+                                  <use xlink:href="files/sprite.svg#trash"></use>
+                                </svg>
+                              </span>
+                            </button>
+                            <a class="btn btn-secondary btn--flat btn--icon btn--lg" href="market-card.html"> Подробнее <svg class="icon icon-eye " role="img">
+                                <use xlink:href="files/sprite.svg#eye"></use>
+                              </svg>
+                            </a>
+                            <span class="button-box__title">Нет в наличии</span>
+                            <button data-toggle="modal" data-target="#product-subscription" class="btn btn-success btn--icon btn--flat product-card-item__btn">
+                              <svg class="icon icon-bell " role="img">
+                                <use xlink:href="files/sprite.svg#bell"></use>
+                              </svg> Узнать о поступлении </button>
+                            <button class="btn btn-outline-success btn--icon btn--flat product-card-item__btn">
+                              <svg class="icon icon-bell " role="img">
+                                <use xlink:href="files/sprite.svg#bell"></use>
+                              </svg> Мы сообщим о поступлении </button>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- end market-product-item__desc -->
+                    </div>
+                    <!-- end market-product-item -->
+                  </div>
+                  <div class="col-6 col-xs-6 col-md-3">
+                    <!-- begin market-product-item -->
+                    <div class="market-product-item market-product-item--show market-product-item--hover-effect js-move-block--show" data-move-block-target="product-info" href="market-card.html" itemscope itemtype="http://schema.org/market-Product">
+                      <!-- begin market-product-item__img -->
+                      <div class="market-product-item__img _loading">
+                        <img class="market-product-item__image lazyload" data-src="files/img/market/products/1/1@sm.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" alt="Краска для бровей и ресниц" itemprop="image">
+                        <!-- begin market-product-slider -->
+                        <div class="market-product-slider">
+                          <ul class="market-product-slider__list">
+                            <li class="market-product-slider__item">
+                              <div class="market-product-slider__image lazyload" style="background-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==');" data-bg="url(files/img/market/products/1/1@sm.jpg)"></div>
+                            </li>
+                            <li class="market-product-slider__item">
+                              <div class="market-product-slider__image lazyload" style="background-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==');" data-bg="url(files/img/market/products/2/1@sm.jpg)"></div>
+                            </li>
+                          </ul>
+                        </div><!-- end market-product-slider -->
+                        <ul class="list list--inline market-product-item__badge-box">
+                          <li class="list__item">
+                            <span class="badge badge--medium">sale</span>
+                          </li>
+                          <li class="list__item">
+                            <span class="badge badge--medium bg--info">new</span>
+                          </li>
+                        </ul>
+                        <button class="btn-icon btn-icon--fav catalog-item__fav js-btn-fav" title="Добавить в збранное">
+                          <svg class="icon icon-favorite" role="img">
+                            <use xlink:href="files/sprite.svg#favorite"></use>
+                          </svg>
+                          <svg class="icon icon-favorite--filled" role="img">
+                            <use xlink:href="files/sprite.svg#favorite--filled"></use>
+                          </svg>
+                        </button>
+                      </div><!-- end market-product-item__img -->
+                      <!-- begin market-product-item__desc -->
+                      <div class="market-product-item__desc _loading">
+                        <div class="market-product-item__box">
+                          <h5 class="market-product-item__title" itemprop="name">Краска для бровей и ресниц</h5>
+                        </div>
+                        <span class="market-product-item__price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                          <meta itemprop="price" content="300.00">
+                          <meta itemprop="priceCurrency" content="RUB">
+                          <i>от </i>500 <span class="currency ">₽</span>
+                        </span>
+                        <div class="market-product-item__more">
+                          <!-- BEGIN changer -->
+                          <div class="changer changer--outline changer--small-offset changer-bg--dark product-card-item__changer _loading">
+                            <span class="changer__title">Изгиб</span>
+                            <ul class="changer__list js-changer is-hidden">
+                              <li class="changer__item">
+                                <button class="changer__link">СС</button>
+                              </li>
+                              <li class="changer__item">
+                                <button class="changer__link">СС</button>
+                              </li>
+                              <li class="changer__item">
+                                <button class="changer__link">СС</button>
+                              </li>
+                              <li class="changer__item">
+                                <button class="changer__link">СС</button>
+                              </li>
+                              <li class="changer__item">
+                                <button class="changer__link">СС</button>
+                              </li>
+                              <li class="changer__item">
+                                <button class="changer__link">СС</button>
+                              </li>
+                              <li class="changer__item">
+                                <button class="changer__link">СС</button>
+                              </li>
+                            </ul>
+                            <div class="bb-checkbox__row">
+                              <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                                <input type="radio" name="bend">
+                                <span class="bb-checkbox__box"></span>
+                                <span class="bb-checkbox__title">CC</span>
+                              </label>
+                              <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                                <input type="radio" name="bend">
+                                <span class="bb-checkbox__box"></span>
+                                <span class="bb-checkbox__title">CC</span>
+                              </label>
+                              <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                                <input type="radio" name="bend">
+                                <span class="bb-checkbox__box"></span>
+                                <span class="bb-checkbox__title">CC</span>
+                              </label>
+                              <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                                <input type="radio" name="bend">
+                                <span class="bb-checkbox__box"></span>
+                                <span class="bb-checkbox__title">CC</span>
+                              </label>
+                              <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                                <input type="radio" name="bend">
+                                <span class="bb-checkbox__box"></span>
+                                <span class="bb-checkbox__title">CC</span>
+                              </label>
+                              <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                                <input type="radio" name="bend">
+                                <span class="bb-checkbox__box"></span>
+                                <span class="bb-checkbox__title">CC</span>
+                              </label>
+                              <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                                <input type="radio" name="bend">
+                                <span class="bb-checkbox__box"></span>
+                                <span class="bb-checkbox__title">CC</span>
+                              </label>
+                            </div>
+                          </div>
+                          <!-- END changer -->
+                          <!-- BEGIN changer -->
+                          <div class="changer changer--outline changer-bg--dark product-card-item__changer _loading">
+                            <span class="changer__title">Толщина</span>
+                            <ul class="changer__list js-changer is-hidden">
+                              <li class="changer__item">
+                                <button class="changer__link">0,10</button>
+                              </li>
+                              <li class="changer__item">
+                                <button class="changer__link">0,10</button>
+                              </li>
+                              <li class="changer__item">
+                                <button class="changer__link">0,10</button>
+                              </li>
+                              <li class="changer__item">
+                                <button class="changer__link">0,10</button>
+                              </li>
+                              <li class="changer__item">
+                                <button class="changer__link">0,10</button>
+                              </li>
+                              <li class="changer__item">
+                                <button class="changer__link">0,10</button>
+                              </li>
+                              <li class="changer__item">
+                                <button class="changer__link">0,10</button>
+                              </li>
+                            </ul>
+                            <ul class="bb-checkbox__row">
+                              <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                                <input type="radio" name="thickness">
+                                <span class="bb-checkbox__box"></span>
+                                <span class="bb-checkbox__title">0,10</span>
+                              </label>
+                              <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                                <input type="radio" name="thickness">
+                                <span class="bb-checkbox__box"></span>
+                                <span class="bb-checkbox__title">0,10</span>
+                              </label>
+                              <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                                <input type="radio" name="thickness">
+                                <span class="bb-checkbox__box"></span>
+                                <span class="bb-checkbox__title">0,10</span>
+                              </label>
+                              <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                                <input type="radio" name="thickness">
+                                <span class="bb-checkbox__box"></span>
+                                <span class="bb-checkbox__title">0,10</span>
+                              </label>
+                              <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                                <input type="radio" name="thickness">
+                                <span class="bb-checkbox__box"></span>
+                                <span class="bb-checkbox__title">0,10</span>
+                              </label>
+                              <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                                <input type="radio" name="thickness">
+                                <span class="bb-checkbox__box"></span>
+                                <span class="bb-checkbox__title">0,10</span>
+                              </label>
+                              <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                                <input type="radio" name="thickness">
+                                <span class="bb-checkbox__box"></span>
+                                <span class="bb-checkbox__title">0,10</span>
+                              </label>
+                            </ul>
+                          </div>
+                          <!-- END changer -->
+                          <div class="market-product-item__box mb-30 _loading">
+                            <span class="bb-input__title">Колличество</span>
+                            <div class="bb-input-custom js-bb-input-custom _loading">
+                              <div class="bb-input-custom__value bb-input-custom__value--input">
+                                <button class="bb-input-custom__btn-control bb-input-custom__minus">
+                                  <svg class="icon icon-minus btn-control" role="img">
+                                    <use xlink:href="files/sprite.svg#minus"></use>
+                                  </svg>
+                                </button>
+                                <input type="text" name="quantity" class="bb-input-custom__input" placeholder="выбрать">
+                                <button class="bb-input-custom__btn-control bb-input-custom__plus">
+                                  <svg class="icon icon-plus--bold btn-control" role="img">
+                                    <use xlink:href="files/sprite.svg#plus--bold"></use>
+                                  </svg>
+                                </button>
+                              </div>
+                              <ul class="bb-input-custom__list">
+                                <li class="bb-input-custom__item">
+                                  <span class="bb-input-custom__from">От</span>
+                                  <span class="bb-input-custom__offer">200</span>
+                                  <span class="bb-input-custom__currency">шт</span>
+                                  <sup class="bb-input-custom__discount">-25%</sup>
+                                  <span class="bb-input-custom__cost">425</span>
+                                  <span class="bb-input-custom__curs">руб/шт</span>
+                                </li>
+                                <li class="bb-input-custom__item">
+                                  <span class="bb-input-custom__from">От</span>
+                                  <span class="bb-input-custom__offer">200</span>
+                                  <span class="bb-input-custom__currency">шт</span>
+                                  <sup class="bb-input-custom__discount">-25%</sup>
+                                  <span class="bb-input-custom__cost">425</span>
+                                  <span class="bb-input-custom__curs">руб/шт</span>
+                                </li>
+                                <li class="bb-input-custom__item">
+                                  <span class="bb-input-custom__from">От</span>
+                                  <span class="bb-input-custom__offer">200</span>
+                                  <span class="bb-input-custom__currency">шт</span>
+                                  <sup class="bb-input-custom__discount">-25%</sup>
+                                  <span class="bb-input-custom__cost">425</span>
+                                  <span class="bb-input-custom__curs">руб/шт</span>
+                                </li>
+                                <li class="bb-input-custom__item">
+                                  <span class="bb-input-custom__from">От</span>
+                                  <span class="bb-input-custom__offer">200</span>
+                                  <span class="bb-input-custom__currency">шт</span>
+                                  <sup class="bb-input-custom__discount">-25%</sup>
+                                  <span class="bb-input-custom__cost">425</span>
+                                  <span class="bb-input-custom__curs">руб/шт</span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="button-box button-box--column">
+                            <!-- <buttom class="btn btn--flat btn-default btn--small market-product-item__btn">Добавить в корзину</buttom>
+				<buttom class="btn btn--flat btn-secondary btn--small market-product-item__btn">Подробнее</buttom> -->
+                            <button class="btn btn-default btn--flat product-card-item__btn"> Добавить в корзину <span class="product-card-item__btn-icon" title="Удалить из корзины">
+                                <svg class="icon icon-cart in-cart" role="img">
+                                  <use xlink:href="files/sprite.svg#cart"></use>
+                                </svg>
+                                <svg class="icon icon-trash delete-from-cart" role="img">
+                                  <use xlink:href="files/sprite.svg#trash"></use>
+                                </svg>
+                              </span>
+                            </button>
+                            <a class="btn btn-secondary btn--flat btn--icon btn--lg" href="market-card.html"> Подробнее <svg class="icon icon-eye " role="img">
+                                <use xlink:href="files/sprite.svg#eye"></use>
+                              </svg>
+                            </a>
+                            <span class="button-box__title">Нет в наличии</span>
+                            <button data-toggle="modal" data-target="#product-subscription" class="btn btn-success btn--icon btn--flat product-card-item__btn">
+                              <svg class="icon icon-bell " role="img">
+                                <use xlink:href="files/sprite.svg#bell"></use>
+                              </svg> Узнать о поступлении </button>
+                            <button class="btn btn-outline-success btn--icon btn--flat product-card-item__btn">
+                              <svg class="icon icon-bell " role="img">
+                                <use xlink:href="files/sprite.svg#bell"></use>
+                              </svg> Мы сообщим о поступлении </button>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- end market-product-item__desc -->
+                    </div>
+                    <!-- end market-product-item -->
+                  </div>
+                  <div class="col-6 col-xs-6 col-md-3">
+                    <!-- begin market-product-item -->
+                    <div class="market-product-item market-product-item--show market-product-item--hover-effect js-move-block--show" data-move-block-target="product-info" href="market-card.html" itemscope itemtype="http://schema.org/market-Product">
+                      <!-- begin market-product-item__img -->
+                      <div class="market-product-item__img _loading">
+                        <img class="market-product-item__image lazyload" data-src="files/img/market/products/1/1@sm.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" alt="Краска для бровей и ресниц" itemprop="image">
+                        <!-- begin market-product-slider -->
+                        <div class="market-product-slider">
+                          <ul class="market-product-slider__list">
+                            <li class="market-product-slider__item">
+                              <div class="market-product-slider__image lazyload" style="background-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==');" data-bg="url(files/img/market/products/1/1@sm.jpg)"></div>
+                            </li>
+                            <li class="market-product-slider__item">
+                              <div class="market-product-slider__image lazyload" style="background-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==');" data-bg="url(files/img/market/products/2/1@sm.jpg)"></div>
+                            </li>
+                          </ul>
+                        </div><!-- end market-product-slider -->
+                        <ul class="list list--inline market-product-item__badge-box">
+                          <li class="list__item">
+                            <span class="badge badge--medium">sale</span>
+                          </li>
+                          <li class="list__item">
+                            <span class="badge badge--medium bg--info">new</span>
+                          </li>
+                        </ul>
+                        <button class="btn-icon btn-icon--fav catalog-item__fav js-btn-fav" title="Добавить в збранное">
+                          <svg class="icon icon-favorite" role="img">
+                            <use xlink:href="files/sprite.svg#favorite"></use>
+                          </svg>
+                          <svg class="icon icon-favorite--filled" role="img">
+                            <use xlink:href="files/sprite.svg#favorite--filled"></use>
+                          </svg>
+                        </button>
+                      </div><!-- end market-product-item__img -->
+                      <!-- begin market-product-item__desc -->
+                      <div class="market-product-item__desc _loading">
+                        <div class="market-product-item__box">
+                          <h5 class="market-product-item__title" itemprop="name">Краска для бровей и ресниц</h5>
+                        </div>
+                        <span class="market-product-item__price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                          <meta itemprop="price" content="300.00">
+                          <meta itemprop="priceCurrency" content="RUB">
+                          <i>от </i>500 <span class="currency ">₽</span>
+                        </span>
+                        <div class="market-product-item__more">
+                          <!-- BEGIN changer -->
+                          <div class="changer changer--outline changer--small-offset changer-bg--dark product-card-item__changer _loading">
+                            <span class="changer__title">Изгиб</span>
+                            <ul class="changer__list js-changer is-hidden">
+                              <li class="changer__item">
+                                <button class="changer__link">СС</button>
+                              </li>
+                              <li class="changer__item">
+                                <button class="changer__link">СС</button>
+                              </li>
+                              <li class="changer__item">
+                                <button class="changer__link">СС</button>
+                              </li>
+                              <li class="changer__item">
+                                <button class="changer__link">СС</button>
+                              </li>
+                              <li class="changer__item">
+                                <button class="changer__link">СС</button>
+                              </li>
+                              <li class="changer__item">
+                                <button class="changer__link">СС</button>
+                              </li>
+                              <li class="changer__item">
+                                <button class="changer__link">СС</button>
+                              </li>
+                            </ul>
+                            <div class="bb-checkbox__row">
+                              <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                                <input type="radio" name="bend">
+                                <span class="bb-checkbox__box"></span>
+                                <span class="bb-checkbox__title">CC</span>
+                              </label>
+                              <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                                <input type="radio" name="bend">
+                                <span class="bb-checkbox__box"></span>
+                                <span class="bb-checkbox__title">CC</span>
+                              </label>
+                              <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                                <input type="radio" name="bend">
+                                <span class="bb-checkbox__box"></span>
+                                <span class="bb-checkbox__title">CC</span>
+                              </label>
+                              <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                                <input type="radio" name="bend">
+                                <span class="bb-checkbox__box"></span>
+                                <span class="bb-checkbox__title">CC</span>
+                              </label>
+                              <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                                <input type="radio" name="bend">
+                                <span class="bb-checkbox__box"></span>
+                                <span class="bb-checkbox__title">CC</span>
+                              </label>
+                              <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                                <input type="radio" name="bend">
+                                <span class="bb-checkbox__box"></span>
+                                <span class="bb-checkbox__title">CC</span>
+                              </label>
+                              <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                                <input type="radio" name="bend">
+                                <span class="bb-checkbox__box"></span>
+                                <span class="bb-checkbox__title">CC</span>
+                              </label>
+                            </div>
+                          </div>
+                          <!-- END changer -->
+                          <!-- BEGIN changer -->
+                          <div class="changer changer--outline changer-bg--dark product-card-item__changer _loading">
+                            <span class="changer__title">Толщина</span>
+                            <ul class="changer__list js-changer is-hidden">
+                              <li class="changer__item">
+                                <button class="changer__link">0,10</button>
+                              </li>
+                              <li class="changer__item">
+                                <button class="changer__link">0,10</button>
+                              </li>
+                              <li class="changer__item">
+                                <button class="changer__link">0,10</button>
+                              </li>
+                              <li class="changer__item">
+                                <button class="changer__link">0,10</button>
+                              </li>
+                              <li class="changer__item">
+                                <button class="changer__link">0,10</button>
+                              </li>
+                              <li class="changer__item">
+                                <button class="changer__link">0,10</button>
+                              </li>
+                              <li class="changer__item">
+                                <button class="changer__link">0,10</button>
+                              </li>
+                            </ul>
+                            <ul class="bb-checkbox__row">
+                              <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                                <input type="radio" name="thickness">
+                                <span class="bb-checkbox__box"></span>
+                                <span class="bb-checkbox__title">0,10</span>
+                              </label>
+                              <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                                <input type="radio" name="thickness">
+                                <span class="bb-checkbox__box"></span>
+                                <span class="bb-checkbox__title">0,10</span>
+                              </label>
+                              <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                                <input type="radio" name="thickness">
+                                <span class="bb-checkbox__box"></span>
+                                <span class="bb-checkbox__title">0,10</span>
+                              </label>
+                              <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                                <input type="radio" name="thickness">
+                                <span class="bb-checkbox__box"></span>
+                                <span class="bb-checkbox__title">0,10</span>
+                              </label>
+                              <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                                <input type="radio" name="thickness">
+                                <span class="bb-checkbox__box"></span>
+                                <span class="bb-checkbox__title">0,10</span>
+                              </label>
+                              <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                                <input type="radio" name="thickness">
+                                <span class="bb-checkbox__box"></span>
+                                <span class="bb-checkbox__title">0,10</span>
+                              </label>
+                              <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                                <input type="radio" name="thickness">
+                                <span class="bb-checkbox__box"></span>
+                                <span class="bb-checkbox__title">0,10</span>
+                              </label>
+                            </ul>
+                          </div>
+                          <!-- END changer -->
+                          <div class="market-product-item__box mb-30 _loading">
+                            <span class="bb-input__title">Колличество</span>
+                            <div class="bb-input-custom js-bb-input-custom _loading">
+                              <div class="bb-input-custom__value bb-input-custom__value--input">
+                                <button class="bb-input-custom__btn-control bb-input-custom__minus">
+                                  <svg class="icon icon-minus btn-control" role="img">
+                                    <use xlink:href="files/sprite.svg#minus"></use>
+                                  </svg>
+                                </button>
+                                <input type="text" name="quantity" class="bb-input-custom__input" placeholder="выбрать">
+                                <button class="bb-input-custom__btn-control bb-input-custom__plus">
+                                  <svg class="icon icon-plus--bold btn-control" role="img">
+                                    <use xlink:href="files/sprite.svg#plus--bold"></use>
+                                  </svg>
+                                </button>
+                              </div>
+                              <ul class="bb-input-custom__list">
+                                <li class="bb-input-custom__item">
+                                  <span class="bb-input-custom__from">От</span>
+                                  <span class="bb-input-custom__offer">200</span>
+                                  <span class="bb-input-custom__currency">шт</span>
+                                  <sup class="bb-input-custom__discount">-25%</sup>
+                                  <span class="bb-input-custom__cost">425</span>
+                                  <span class="bb-input-custom__curs">руб/шт</span>
+                                </li>
+                                <li class="bb-input-custom__item">
+                                  <span class="bb-input-custom__from">От</span>
+                                  <span class="bb-input-custom__offer">200</span>
+                                  <span class="bb-input-custom__currency">шт</span>
+                                  <sup class="bb-input-custom__discount">-25%</sup>
+                                  <span class="bb-input-custom__cost">425</span>
+                                  <span class="bb-input-custom__curs">руб/шт</span>
+                                </li>
+                                <li class="bb-input-custom__item">
+                                  <span class="bb-input-custom__from">От</span>
+                                  <span class="bb-input-custom__offer">200</span>
+                                  <span class="bb-input-custom__currency">шт</span>
+                                  <sup class="bb-input-custom__discount">-25%</sup>
+                                  <span class="bb-input-custom__cost">425</span>
+                                  <span class="bb-input-custom__curs">руб/шт</span>
+                                </li>
+                                <li class="bb-input-custom__item">
+                                  <span class="bb-input-custom__from">От</span>
+                                  <span class="bb-input-custom__offer">200</span>
+                                  <span class="bb-input-custom__currency">шт</span>
+                                  <sup class="bb-input-custom__discount">-25%</sup>
+                                  <span class="bb-input-custom__cost">425</span>
+                                  <span class="bb-input-custom__curs">руб/шт</span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="button-box button-box--column">
+                            <!-- <buttom class="btn btn--flat btn-default btn--small market-product-item__btn">Добавить в корзину</buttom>
+				<buttom class="btn btn--flat btn-secondary btn--small market-product-item__btn">Подробнее</buttom> -->
+                            <button class="btn btn-default btn--flat product-card-item__btn"> Добавить в корзину <span class="product-card-item__btn-icon" title="Удалить из корзины">
+                                <svg class="icon icon-cart in-cart" role="img">
+                                  <use xlink:href="files/sprite.svg#cart"></use>
+                                </svg>
+                                <svg class="icon icon-trash delete-from-cart" role="img">
+                                  <use xlink:href="files/sprite.svg#trash"></use>
+                                </svg>
+                              </span>
+                            </button>
+                            <a class="btn btn-secondary btn--flat btn--icon btn--lg" href="market-card.html"> Подробнее <svg class="icon icon-eye " role="img">
+                                <use xlink:href="files/sprite.svg#eye"></use>
+                              </svg>
+                            </a>
+                            <span class="button-box__title">Нет в наличии</span>
+                            <button data-toggle="modal" data-target="#product-subscription" class="btn btn-success btn--icon btn--flat product-card-item__btn">
+                              <svg class="icon icon-bell " role="img">
+                                <use xlink:href="files/sprite.svg#bell"></use>
+                              </svg> Узнать о поступлении </button>
+                            <button class="btn btn-outline-success btn--icon btn--flat product-card-item__btn">
+                              <svg class="icon icon-bell " role="img">
+                                <use xlink:href="files/sprite.svg#bell"></use>
+                              </svg> Мы сообщим о поступлении </button>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- end market-product-item__desc -->
+                    </div>
+                    <!-- end market-product-item -->
+                  </div>
+                  <div class="col-6 col-xs-6 col-md-3">
+                    <!-- begin market-product-item -->
+                    <div class="market-product-item market-product-item--show market-product-item--hover-effect js-move-block--show" data-move-block-target="product-info" href="market-card.html" itemscope itemtype="http://schema.org/market-Product">
+                      <!-- begin market-product-item__img -->
+                      <div class="market-product-item__img _loading">
+                        <img class="market-product-item__image lazyload" data-src="files/img/market/products/1/1@sm.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" alt="Краска для бровей и ресниц" itemprop="image">
+                        <!-- begin market-product-slider -->
+                        <div class="market-product-slider">
+                          <ul class="market-product-slider__list">
+                            <li class="market-product-slider__item">
+                              <div class="market-product-slider__image lazyload" style="background-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==');" data-bg="url(files/img/market/products/1/1@sm.jpg)"></div>
+                            </li>
+                            <li class="market-product-slider__item">
+                              <div class="market-product-slider__image lazyload" style="background-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==');" data-bg="url(files/img/market/products/2/1@sm.jpg)"></div>
+                            </li>
+                          </ul>
+                        </div><!-- end market-product-slider -->
+                        <ul class="list list--inline market-product-item__badge-box">
+                          <li class="list__item">
+                            <span class="badge badge--medium">sale</span>
+                          </li>
+                          <li class="list__item">
+                            <span class="badge badge--medium bg--info">new</span>
+                          </li>
+                        </ul>
+                        <button class="btn-icon btn-icon--fav catalog-item__fav js-btn-fav" title="Добавить в збранное">
+                          <svg class="icon icon-favorite" role="img">
+                            <use xlink:href="files/sprite.svg#favorite"></use>
+                          </svg>
+                          <svg class="icon icon-favorite--filled" role="img">
+                            <use xlink:href="files/sprite.svg#favorite--filled"></use>
+                          </svg>
+                        </button>
+                      </div><!-- end market-product-item__img -->
+                      <!-- begin market-product-item__desc -->
+                      <div class="market-product-item__desc _loading">
+                        <div class="market-product-item__box">
+                          <h5 class="market-product-item__title" itemprop="name">Краска для бровей и ресниц</h5>
+                        </div>
+                        <span class="market-product-item__price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                          <meta itemprop="price" content="300.00">
+                          <meta itemprop="priceCurrency" content="RUB">
+                          <i>от </i>500 <span class="currency ">₽</span>
+                        </span>
+                        <div class="market-product-item__more">
+                          <!-- BEGIN changer -->
+                          <div class="changer changer--outline changer--small-offset changer-bg--dark product-card-item__changer _loading">
+                            <span class="changer__title">Изгиб</span>
+                            <ul class="changer__list js-changer is-hidden">
+                              <li class="changer__item">
+                                <button class="changer__link">СС</button>
+                              </li>
+                              <li class="changer__item">
+                                <button class="changer__link">СС</button>
+                              </li>
+                              <li class="changer__item">
+                                <button class="changer__link">СС</button>
+                              </li>
+                              <li class="changer__item">
+                                <button class="changer__link">СС</button>
+                              </li>
+                              <li class="changer__item">
+                                <button class="changer__link">СС</button>
+                              </li>
+                              <li class="changer__item">
+                                <button class="changer__link">СС</button>
+                              </li>
+                              <li class="changer__item">
+                                <button class="changer__link">СС</button>
+                              </li>
+                            </ul>
+                            <div class="bb-checkbox__row">
+                              <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                                <input type="radio" name="bend">
+                                <span class="bb-checkbox__box"></span>
+                                <span class="bb-checkbox__title">CC</span>
+                              </label>
+                              <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                                <input type="radio" name="bend">
+                                <span class="bb-checkbox__box"></span>
+                                <span class="bb-checkbox__title">CC</span>
+                              </label>
+                              <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                                <input type="radio" name="bend">
+                                <span class="bb-checkbox__box"></span>
+                                <span class="bb-checkbox__title">CC</span>
+                              </label>
+                              <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                                <input type="radio" name="bend">
+                                <span class="bb-checkbox__box"></span>
+                                <span class="bb-checkbox__title">CC</span>
+                              </label>
+                              <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                                <input type="radio" name="bend">
+                                <span class="bb-checkbox__box"></span>
+                                <span class="bb-checkbox__title">CC</span>
+                              </label>
+                              <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                                <input type="radio" name="bend">
+                                <span class="bb-checkbox__box"></span>
+                                <span class="bb-checkbox__title">CC</span>
+                              </label>
+                              <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                                <input type="radio" name="bend">
+                                <span class="bb-checkbox__box"></span>
+                                <span class="bb-checkbox__title">CC</span>
+                              </label>
+                            </div>
+                          </div>
+                          <!-- END changer -->
+                          <!-- BEGIN changer -->
+                          <div class="changer changer--outline changer-bg--dark product-card-item__changer _loading">
+                            <span class="changer__title">Толщина</span>
+                            <ul class="changer__list js-changer is-hidden">
+                              <li class="changer__item">
+                                <button class="changer__link">0,10</button>
+                              </li>
+                              <li class="changer__item">
+                                <button class="changer__link">0,10</button>
+                              </li>
+                              <li class="changer__item">
+                                <button class="changer__link">0,10</button>
+                              </li>
+                              <li class="changer__item">
+                                <button class="changer__link">0,10</button>
+                              </li>
+                              <li class="changer__item">
+                                <button class="changer__link">0,10</button>
+                              </li>
+                              <li class="changer__item">
+                                <button class="changer__link">0,10</button>
+                              </li>
+                              <li class="changer__item">
+                                <button class="changer__link">0,10</button>
+                              </li>
+                            </ul>
+                            <ul class="bb-checkbox__row">
+                              <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                                <input type="radio" name="thickness">
+                                <span class="bb-checkbox__box"></span>
+                                <span class="bb-checkbox__title">0,10</span>
+                              </label>
+                              <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                                <input type="radio" name="thickness">
+                                <span class="bb-checkbox__box"></span>
+                                <span class="bb-checkbox__title">0,10</span>
+                              </label>
+                              <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                                <input type="radio" name="thickness">
+                                <span class="bb-checkbox__box"></span>
+                                <span class="bb-checkbox__title">0,10</span>
+                              </label>
+                              <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                                <input type="radio" name="thickness">
+                                <span class="bb-checkbox__box"></span>
+                                <span class="bb-checkbox__title">0,10</span>
+                              </label>
+                              <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                                <input type="radio" name="thickness">
+                                <span class="bb-checkbox__box"></span>
+                                <span class="bb-checkbox__title">0,10</span>
+                              </label>
+                              <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                                <input type="radio" name="thickness">
+                                <span class="bb-checkbox__box"></span>
+                                <span class="bb-checkbox__title">0,10</span>
+                              </label>
+                              <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                                <input type="radio" name="thickness">
+                                <span class="bb-checkbox__box"></span>
+                                <span class="bb-checkbox__title">0,10</span>
+                              </label>
+                            </ul>
+                          </div>
+                          <!-- END changer -->
+                          <div class="market-product-item__box mb-30 _loading">
+                            <span class="bb-input__title">Колличество</span>
+                            <div class="bb-input-custom js-bb-input-custom _loading">
+                              <div class="bb-input-custom__value bb-input-custom__value--input">
+                                <button class="bb-input-custom__btn-control bb-input-custom__minus">
+                                  <svg class="icon icon-minus btn-control" role="img">
+                                    <use xlink:href="files/sprite.svg#minus"></use>
+                                  </svg>
+                                </button>
+                                <input type="text" name="quantity" class="bb-input-custom__input" placeholder="выбрать">
+                                <button class="bb-input-custom__btn-control bb-input-custom__plus">
+                                  <svg class="icon icon-plus--bold btn-control" role="img">
+                                    <use xlink:href="files/sprite.svg#plus--bold"></use>
+                                  </svg>
+                                </button>
+                              </div>
+                              <ul class="bb-input-custom__list">
+                                <li class="bb-input-custom__item">
+                                  <span class="bb-input-custom__from">От</span>
+                                  <span class="bb-input-custom__offer">200</span>
+                                  <span class="bb-input-custom__currency">шт</span>
+                                  <sup class="bb-input-custom__discount">-25%</sup>
+                                  <span class="bb-input-custom__cost">425</span>
+                                  <span class="bb-input-custom__curs">руб/шт</span>
+                                </li>
+                                <li class="bb-input-custom__item">
+                                  <span class="bb-input-custom__from">От</span>
+                                  <span class="bb-input-custom__offer">200</span>
+                                  <span class="bb-input-custom__currency">шт</span>
+                                  <sup class="bb-input-custom__discount">-25%</sup>
+                                  <span class="bb-input-custom__cost">425</span>
+                                  <span class="bb-input-custom__curs">руб/шт</span>
+                                </li>
+                                <li class="bb-input-custom__item">
+                                  <span class="bb-input-custom__from">От</span>
+                                  <span class="bb-input-custom__offer">200</span>
+                                  <span class="bb-input-custom__currency">шт</span>
+                                  <sup class="bb-input-custom__discount">-25%</sup>
+                                  <span class="bb-input-custom__cost">425</span>
+                                  <span class="bb-input-custom__curs">руб/шт</span>
+                                </li>
+                                <li class="bb-input-custom__item">
+                                  <span class="bb-input-custom__from">От</span>
+                                  <span class="bb-input-custom__offer">200</span>
+                                  <span class="bb-input-custom__currency">шт</span>
+                                  <sup class="bb-input-custom__discount">-25%</sup>
+                                  <span class="bb-input-custom__cost">425</span>
+                                  <span class="bb-input-custom__curs">руб/шт</span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="button-box button-box--column">
+                            <!-- <buttom class="btn btn--flat btn-default btn--small market-product-item__btn">Добавить в корзину</buttom>
+				<buttom class="btn btn--flat btn-secondary btn--small market-product-item__btn">Подробнее</buttom> -->
+                            <button class="btn btn-default btn--flat product-card-item__btn"> Добавить в корзину <span class="product-card-item__btn-icon" title="Удалить из корзины">
+                                <svg class="icon icon-cart in-cart" role="img">
+                                  <use xlink:href="files/sprite.svg#cart"></use>
+                                </svg>
+                                <svg class="icon icon-trash delete-from-cart" role="img">
+                                  <use xlink:href="files/sprite.svg#trash"></use>
+                                </svg>
+                              </span>
+                            </button>
+                            <a class="btn btn-secondary btn--flat btn--icon btn--lg" href="market-card.html"> Подробнее <svg class="icon icon-eye " role="img">
+                                <use xlink:href="files/sprite.svg#eye"></use>
+                              </svg>
+                            </a>
+                            <span class="button-box__title">Нет в наличии</span>
+                            <button data-toggle="modal" data-target="#product-subscription" class="btn btn-success btn--icon btn--flat product-card-item__btn">
+                              <svg class="icon icon-bell " role="img">
+                                <use xlink:href="files/sprite.svg#bell"></use>
+                              </svg> Узнать о поступлении </button>
+                            <button class="btn btn-outline-success btn--icon btn--flat product-card-item__btn">
+                              <svg class="icon icon-bell " role="img">
+                                <use xlink:href="files/sprite.svg#bell"></use>
+                              </svg> Мы сообщим о поступлении </button>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- end market-product-item__desc -->
+                    </div>
+                    <!-- end market-product-item -->
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- begin seoblock -->
+            <section class="container mb-50">
+              <section class="seoblock">
+                <h2>Поиск мастеров красоты в Балаково – удобный сервис !</h2>
+                <p>Найти хороший салон красоты в Балаково достаточно сложно. В городе наблюдается большая конкуренция в данной сфере бизнеса и каждая организация борется за клиентов. Не всегда получается записаться на приём и приходится искать другую организацию. Поэтому мы предлагаем воспользоваться нашим сервисом – вы сможете найти мастера красоты или салон!</p>
+                <p>Секрет популярности сайта для поиска специалиста Представляем вниманию современного человека специальный сайт, который позволит вам подобрать мастера по маникюру, макияжу и причёске в течение пяти минут.</p>
+                <h4>Основные достоинства сервиса:</h4>
+                <ul>
+                  <li>Быстрый поиск. В левой части ресурса расположены критерии для подбора профессионала или организации.</li>
+                  <li>Низкие цены. Мы подобрали для вас самые выгодные предложения.</li>
+                  <li>Фото работ. Чтобы удостовериться в профессионализме специалиста или организации, вы можете посмотреть примеры выполненных заказов.</li>
+                </ul>
+                <p>Сервис очень удобный – он характеризуется приятным дизайном и простым интерфейсом. Вы можете почитать отзывы о мастерах и салонах, чтобы оценить уровень репутации.</p>
+              </section>
+            </section><!-- end seoblock -->
+          </main><!-- end main shop -->
+          <footer class="footer js-footer" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
+            <div class="footer__top">
+              <div class="container">
+                <div class="footer__in" data-accordeon data-accordeon-class="bb-accordeon--custom">
+                  <div class="footer-item" data-accordeon-item>
+                    <h4 class="h4 footer-item__title" data-accordeon-title>Категории товаров</h4>
+                    <div class="footer-item__content" data-accordeon-content>
+                      <ul class="footer-item__list">
+                        <li class="footer-item__el">
+                          <a href="#" class="footer-item__link">Наращивание ресниц</a>
+                        </li>
+                        <li class="footer-item__el">
+                          <a href="#" class="footer-item__link">Оформление бровей</a>
+                        </li>
+                        <li class="footer-item__el">
+                          <a href="#" class="footer-item__link">Маникюр и педикюр</a>
+                        </li>
+                        <li class="footer-item__el">
+                          <a href="#" class="footer-item__link">Перманентный макияж</a>
+                        </li>
+                        <li class="footer-item__el">
+                          <a href="#" class="footer-item__link">Перманентный макияж</a>
+                        </li>
+                        <li class="footer-item__el">
+                          <a href="#" class="footer-item__link">Волосы</a>
+                        </li>
+                        <li class="footer-item__el">
+                          <a href="#" class="footer-item__link">Новинки</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="footer-item" data-accordeon-item="open">
+                    <h4 class="h4 footer-item__title" data-accordeon-title>Сервис</h4>
+                    <div class="footer-item__content" data-accordeon-content>
+                      <ul class="footer-item__list">
+                        <li class="footer-item__el">
+                          <a href="market-contacts.html" class="footer-item__link">Контакты</a>
+                        </li>
+                        <li class="footer-item__el">
+                          <a href="#" class="footer-item__link">Оплата и доставка</a>
+                        </li>
+                        <li class="footer-item__el">
+                          <a href="#" class="footer-item__link">Возврат и гарантия</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="footer-item" data-accordeon-item>
+                    <h4 class="h4 footer-item__title" data-accordeon-title>Юридическая информация</h4>
+                    <div class="footer-item__content" data-accordeon-content>
+                      <ul class="footer-item__list">
+                        <li class="footer-item__el">
+                          <a href="#" class="footer-item__link">Пользовательское соглашение</a>
+                        </li>
+                        <li class="footer-item__el">
+                          <a href="#" class="footer-item__link">Политика конфиденциальности</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="footer-item" data-accordeon-item="open">
+                    <h4 class="h4 footer-item__title" data-accordeon-title>Контакты</h4>
+                    <div class="footer-item__content" data-accordeon-content>
+                      <ul class="footer-item__list">
+                        <li class="footer-item__el">
+                          <a href="tel:88001232113" class="footer-item__link">8 (800) 551-69-98</a>
+                        </li>
+                        <li class="footer-item__el">
+                          <a class="footer-item__link">info@beautybox.ru</a>
+                        </li>
+                        <li class="footer-item__el">
+                          <div class="footer__social">
+                            <ul class="icon-list icon-list--white">
+                              <a href="#" class="icon-list__link" title="Мы в VK">
+                                <svg class="icon icon-vk--outline footer__social-icon" role="img">
+                                  <use xlink:href="files/sprite.svg#vk--outline"></use>
+                                </svg>
+                              </a>
+                              <a href="#" class="icon-list__link" title="Напишите нам в whatsapp">
+                                <svg class="icon icon-insta--outline footer__social-icon" role="img">
+                                  <use xlink:href="files/sprite.svg#insta--outline"></use>
+                                </svg>
+                              </a>
+                              <a href="#" class="icon-list__link" title="Мы в Instagram">
+                                <svg class="icon icon-whatsapp--outline footer__social-icon" role="img">
+                                  <use xlink:href="files/sprite.svg#whatsapp--outline"></use>
+                                </svg>
+                              </a>
+                            </ul>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer__bottom">
+              <div class="container">
+                <div class="footer__inner">
+                  <p class="footer__info">Beautymarket, 2019 г.</p>
+                </div>
+              </div>
+            </div>
+          </footer><!-- end footer -->
+        </div>
+      </div>
+      <div class="overlay js-overlay"></div>
+      <!-- BEGIN popups -->
+      <div class="popups">
+        <!-- begin dell -->
+        <div class="modal modal--xs modal--mobile modal--center modal--mobile zoom fade" id="dell">
+          <div class="modal-dialog modal-dialog--sm modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-body">
+                <div class="modal-title">Удалить выбранный елемент из списка?</div>
+                <p class="modal-text">Вы уверены, что хотит удалить или отключить выбранный вами елемент?</p>
+              </div>
+              <div class="modal-footer">
+                <button data-dismiss="modal"> Отменить </button>
+                <button class="text-color--red" data-dismiss="modal" data-push data-push-message-success="Товар удален из корзины"> Удалить </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end dell -->
+        <!-- partials/popups/_add-avatar.html -->
+        <!-- begin add-avatar-->
+        <div class="modal modal--xs modal--fluid fade add-avatar has-photo" id="add-avatar">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header modal-header--center">
+                <h5 class="modal-title">Загрузка новой фотографии</h5>
+                <button class="modal-close" data-dismiss="modal" aria-label="Close">
+                  <svg class="icon icon-close " role="img">
+                    <use xlink:href="files/sprite.svg#close"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="empty">
+                  <label class="add-avatar__btn mb-10">
+                    <svg class="icon icon-camera empty__icon empty__icon--medium" role="img">
+                      <use xlink:href="files/sprite.svg#camera"></use>
+                    </svg>
+                    <input name="file" type="file" />
+                  </label>
+                  <p class="empty__text mb-20">Загрузите фотографию в формате JPG/JPEG, или PNG.</p>
+                  <label class="btn-link add-avatar__btn"> Выбрать файл <input name="file" type="file" />
+                  </label>
+                </div>
+                <div class="add-avatar__inner">
+                  <div class="add-avatar__img">
+                    <img class="js-cropper" src="files/examples/user/avatar-crop.jpg" alt="crop-avatar" />
+                  </div>
+                  <div class="add-avatar__img-rotate">
+                    <button class="add-avatar__btn-rotate" title="Повернуть влево">
+                      <svg class="icon icon-rotate-to-left " role="img">
+                        <use xlink:href="files/sprite.svg#rotate-to-left"></use>
+                      </svg>
+                    </button>
+                    <button class="add-avatar__btn-rotate" title="Повернуть вправо">
+                      <svg class="icon icon-rotate-to-right " role="img">
+                        <use xlink:href="files/sprite.svg#rotate-to-right"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer add-avatar__footer">
+                <button class="btn btn-outline-muted  "> Отмена </button>
+                <button class="btn btn-gray  "> Сохранить </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end add-avatar-->
+        <!-- partials\popups\_auth-form.html -->
+        <!-- BEGIN auth-form -->
+        <div class="modal modal--xs modal--fluid fade" id="auth-form">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body modal-body--flex no-padding">
+                <div class="form modal__form">
+                  <button class="modal-close" data-dismiss="modal" aria-label="Close">
+                    <svg class="icon icon-close " role="img">
+                      <use xlink:href="files/sprite.svg#close"></use>
+                    </svg>
+                  </button>
+                  <div class="form__header">
+                    <div class="form__title js-form-title is-active" data-title="Войти">Вход</div>
+                    <div class="form__title js-form-title" data-title="Зарегистрироваться">Регистрация</div>
+                    <div class="form__subtitle is-hidden">Войдите в личный кабинет, чтобы записаться на услугу</div>
+                  </div>
+                  <div class="form__inner">
+                    <form class="auth-form">
+                      <div class="bb-input   ">
+                        <input class="bb-input__input js-phone-mask" type="tel" placeholder="Ваш телефон">
+                        <div class="bb-input-tip js-bb-input-tip">
+                          <i class="bb-input-tip__arrow-up"></i>
+                          <p class="bb-input-tip__text">*Сообщение с подсказкой</p>
+                          <svg class="icon icon-close--bold" role="img">
+                            <use xlink:href="files/sprite.svg#close--bold"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="bb-input    bb-input--icon">
+                        <input class="bb-input__input " type="password" placeholder="Ваш пароль">
+                        <span class="bb-input__icon js-bb-input-password--show">
+                          <svg class="icon icon-eye" role="img">
+                            <use xlink:href="files/sprite.svg#eye"></use>
+                          </svg>
+                        </span>
+                        <span class="bb-input__icon fal js-bb-input-password--hide" style="display: none;">
+                          <svg class="icon icon-eye--blocked" role="img">
+                            <use xlink:href="files/sprite.svg#eye--blocked"></use>
+                          </svg>
+                        </span>
+                        <div class="bb-input-tip js-bb-input-tip">
+                          <i class="bb-input-tip__arrow-up"></i>
+                          <p class="bb-input-tip__text">*Сообщение с подсказкой</p>
+                          <svg class="icon icon-close--bold" role="img">
+                            <use xlink:href="files/sprite.svg#close--bold"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="form__box">
+                        <label class="bb-checkbox  auth-form__rememberme">
+                          <input type="checkbox">
+                          <span class="bb-checkbox__box"></span>
+                          <span class="bb-checkbox__title">Запомнить меня</span>
+                        </label>
+                        <a class="form__link form__link--recover" href="recover-password.html">Забыли пароль?</a>
+                      </div>
+                      <div class="form__buttons">
+                        <button class="btn btn-animate is-ready btn-gray form__btn" onclick="BB.Utils.toggleSuccess.call(this, '.form', 'is-confirm');">
+                          <span class="btn__title">Войти</span>
+                        </button>
+                      </div>
+                      <div class="bb-title bb-title--devider form__devider">или войдите через</div>
+                      <div class="form__social">
+                        <a class="btn btn-social btn-social--vk btn-social--outline" href="#"></a>
+                        <a class="btn btn-social btn-social--instagram btn-social--outline" href="#"></a>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="form-success form-success--master">
+                    <div class="form-success__inner">
+                      <div class="form-success__header">
+                        <h3 class="form-success__title">Спасибо что присоединились к <span class="color-primary">beautybox</span>.</h3>
+                        <div class="form-success__subtitle">Теперь вы можете развивать бизнес, с помощью нашего сервиса а именно:</div>
+                      </div>
+                      <ul class="form-success__list">
+                        <li>Пополнять собственное портфолио;</li>
+                        <li>Добавлять и редактировать информацию о услугах и ценах;</li>
+                        <li>Получать заявки в режимы онлайн;</li>
+                        <li>Вести статистику;</li>
+                        <li>Создавать свои акции и предложения.</li>
+                      </ul>
+                      <a class="button-animate js-btn-animate form-success__btn" href="#"> Перейти в профиль <span class="button-animate__hover"></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="form-success form-success--role">
+                    <div class="form-success__header">
+                      <h3 class="form-success__title">Выберите аккаунт</h3>
+                      <button class="form-success__close js-success-close">
+                        <svg class="icon icon-close--bold form-success__icon-close" role="img">
+                          <use xlink:href="files/sprite.svg#close--bold"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="form-success__body no-padding">
+                      <label class="bb-checkbox bb-checkbox--radio bb-checkbox--master">
+                        <div class="user user--small">
+                          <div class="user__inner">
+                            <div class="user__avatar">
+                              <div class="user__img">
+                                <img src="files/examples/user/cara-avatar.jpg" alt="Ольга Оченьдлиннаяфамилия">
+                              </div>
+                            </div>
+                            <div class="user__info">
+                              <span class="user__name">Ольга Оченьдлиннаяфамилия</span>
+                              <span class="user__status">Студия красоты "Березка"</span>
+                            </div>
+                          </div>
+                        </div>
+                        <input name="master" type="radio">
+                        <span class="bb-checkbox__box"></span>
+                      </label>
+                      <label class="bb-checkbox bb-checkbox--radio bb-checkbox--master">
+                        <div class="user user--small">
+                          <div class="user__inner">
+                            <div class="user__avatar">
+                              <div class="user__img">
+                                <img src="files/examples/user/lima-avatar.jpg" alt="Наташа Шилова">
+                              </div>
+                            </div>
+                            <div class="user__info">
+                              <span class="user__name">Наташа Шилова</span>
+                              <span class="user__status">Студия красоты "Березка"</span>
+                            </div>
+                          </div>
+                        </div>
+                        <input name="master" type="radio">
+                        <span class="bb-checkbox__box"></span>
+                      </label>
+                      <label class="bb-checkbox bb-checkbox--radio bb-checkbox--master">
+                        <div class="user user--small">
+                          <div class="user__inner">
+                            <div class="user__avatar">
+                              <div class="user__img">
+                                <img src="files/examples/user/daniela-avatar.jpg" alt="Ангелина Левинникова">
+                              </div>
+                            </div>
+                            <div class="user__info">
+                              <span class="user__name">Ангелина Левинникова</span>
+                              <span class="user__status">Студия красоты "Березка"</span>
+                            </div>
+                          </div>
+                        </div>
+                        <input name="master" type="radio">
+                        <span class="bb-checkbox__box"></span>
+                      </label>
+                      <label class="bb-checkbox bb-checkbox--radio bb-checkbox--master">
+                        <div class="user user--small">
+                          <div class="user__inner">
+                            <div class="user__avatar">
+                              <div class="user__img">
+                                <img src="files/examples/user/noavatar.jpg" alt="Карина Мелина">
+                              </div>
+                            </div>
+                            <div class="user__info">
+                              <span class="user__name">Карина Мелина</span>
+                              <span class="user__status">Студия красоты "Березка"</span>
+                            </div>
+                          </div>
+                        </div>
+                        <input name="master" type="radio">
+                        <span class="bb-checkbox__box"></span>
+                      </label>
+                      <label class="bb-checkbox bb-checkbox--radio bb-checkbox--master">
+                        <div class="user user--small">
+                          <div class="user__inner">
+                            <div class="user__avatar">
+                              <div class="user__img">
+                                <img src="files/examples/user/avatar.jpg" alt="Дядя Вася">
+                              </div>
+                            </div>
+                            <div class="user__info">
+                              <span class="user__name">Дядя Вася</span>
+                              <span class="user__status">Студия красоты "Березка"</span>
+                            </div>
+                          </div>
+                        </div>
+                        <input name="master" type="radio">
+                        <span class="bb-checkbox__box"></span>
+                      </label>
+                    </div>
+                    <div class="form-success__footer">
+                      <button class="btn btn-animate is-ready btn-gray form__btn" onclick="BB.Utils.toggleSuccess.call(this, '.form', 'is-success');">
+                        <span class="btn__title">Продолжить</span>
+                      </button>
+                    </div>
+                    <div class="form-success__verify">
+                      <button class="form-success__error-close js-error-close">
+                        <svg class="icon icon-close--bold form-success__icon-close" role="img">
+                          <use xlink:href="files/sprite.svg#close--bold"></use>
+                        </svg>
+                      </button>
+                      <div class="form-success__error">Введен неверный пароль для этой роли</div>
+                      <div class="bb-input    bb-input--icon">
+                        <input class="bb-input__input " type="password" placeholder="Введите пароль">
+                        <span class="bb-input__icon js-bb-input-password--show">
+                          <svg class="icon icon-eye" role="img">
+                            <use xlink:href="files/sprite.svg#eye"></use>
+                          </svg>
+                        </span>
+                        <span class="bb-input__icon fal js-bb-input-password--hide" style="display: none;">
+                          <svg class="icon icon-eye--blocked" role="img">
+                            <use xlink:href="files/sprite.svg#eye--blocked"></use>
+                          </svg>
+                        </span>
+                        <div class="bb-input-tip js-bb-input-tip">
+                          <i class="bb-input-tip__arrow-up"></i>
+                          <p class="bb-input-tip__text">*Сообщение с подсказкой</p>
+                          <svg class="icon icon-close--bold" role="img">
+                            <use xlink:href="files/sprite.svg#close--bold"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <button class="btn form__btn btn-default  "> Продолжить </button>
+                      <a href="user-password-recovery.html" class="form__link form__link--recover form__link--verify">Забыли пароль?</a>
+                    </div>
+                  </div>
+                  <!-- BEGIN form-confirm -->
+                  <div class="form-success form-success--confirm">
+                    <div class="form-success__inner form-success__inner--center">
+                      <div class="form-success__header">
+                        <div class="form-success__title">Введите код из SMS</div>
+                        <div class="form-success__subtitle"> Код отправлен на <strong>+7 (927) 107-11-39</strong>
+                          <button class="btn-icon btn-icon--arrow-long--left btn-icon--big form-success__back" onclick="BB.Utils.toggleSuccess.call(this, '.form', 'is-confirm', 0);">
+                            <svg class="icon icon-arrow-long--left " role="img">
+                              <use xlink:href="files/sprite.svg#arrow-long--left"></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="form-success__body">
+                        <form onsubmit="BB.Utils.toggleSuccess.call(this, '.form', 'is-success');">
+                          <div class="c-input-code js-c-input-code mb-30">
+                            <div class="c-input-code__box">
+                              <input type="tel" class="c-input-code__field js-input-focus" autocomplete="off" maxlength="1">
+                            </div>
+                            <div class="c-input-code__box">
+                              <input type="tel" class="c-input-code__field js-input-focus" autocomplete="off" maxlength="1">
+                            </div>
+                            <div class="c-input-code__box">
+                              <input type="tel" class="c-input-code__field js-input-focus" autocomplete="off" maxlength="1">
+                            </div>
+                            <div class="c-input-code__box">
+                              <input type="tel" class="c-input-code__field js-input-focus" autocomplete="off" maxlength="1">
+                            </div>
+                          </div>
+                          <div class="form-success__subtitle">
+                            <div> Введен неправильный код. </br> Осталось попыток: <span>3</span>
+                            </div>
+                          </div>
+                          <div class="form-success__subtitle js-timer">
+                            <div class="js-timer-text"> Получить новый код можно <br> через <span data-timer-time="15"></span>&nbsp;сек. </div>
+                            <a class="js-timer-bnt--repeat" href="#" style="display: none;">Получить новый код</a>
+                          </div>
+                          <div class="form-success__subtitle" style="display: none">
+                            <div>Вы исчерпали допустимое <br> количество попыток </div>
+                          </div>
+                          <div class="form-success__subtitle" style="display: none">
+                            <div>Для восстановления доступа в <br> личный кабинет <a href="#">свяжитесь с менеджером</a></div>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="form-success__footer">
+                        <button class="btn btn-animate is-ready btn-gray form__btn" onclick="BB.Utils.toggleSuccess.call(this, '.form', 'is-success');">
+                          <span class="btn__title">Подтвердить</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- END form-confirm -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END auth-form -->
+      </div><!-- END popups -->
+      <!-- src/templates/partials/popups/_product-subscription.html -->
+      <!-- BEGIN product-subscription -->
+      <div class="modal modal--xs modal--center modal--mobile zoom fade" id="product-subscription">
+        <div class="modal-dialog modal-dialog--sm modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body modal-body--big-offset">
+              <img class="product-img" src="files/img/market/products/1/2@sm.jpg" alt="Краска для бровей и ресниц">
+              <div class="modal-title">Подписка на товар</div>
+              <div class="modal-text">Краска для бровей и ресниц</div>
+              <div class="bb-input   w100 mt-20">
+                <input class="bb-input__input " type="email" placeholder="Укажите ваш email">
+                <div class="bb-input-tip js-bb-input-tip">
+                  <i class="bb-input-tip__arrow-up"></i>
+                  <p class="bb-input-tip__text">*Сообщение с подсказкой</p>
+                  <svg class="icon icon-close--bold" role="img">
+                    <use xlink:href="files/sprite.svg#close--bold"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="text-light" data-dismiss="modal"> Закрыть </button>
+              <button class="text-color--success" data-dismiss="modal" data-toggle="modal" data-target="#product-subscription-success"> Подписаться </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END product-subscription -->
+      <!-- BEGIN product-subscription--success -->
+      <div class="modal modal--xs modal--center modal--mobile zoom fade" id="product-subscription-success">
+        <div class="modal-dialog modal-dialog--sm modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body modal-body--big-offset">
+              <img class="product-img" src="files/img/market/products/1/2@sm.jpg" alt="Краска для бровей и ресниц">
+              <div class="modal-title">Подписка оформлена</div>
+              <div class="modal-text">Краска для бровей и ресниц</div>
+              <div class="modal-text modal-text--small">Мы сообщим вам о поступлении товара</div>
+            </div>
+            <div class="modal-footer">
+              <button class="text-light" data-dismiss="modal"> Закрыть </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END product-subscription--success -->
+    </div>
+    <!-- begin scripts -->
+    <script>
+      (async () =>
+      {
+        if ('loading' in HTMLImageElement.prototype)
+        {
+          const images = document.querySelectorAll("img.lazyload");
+          images.forEach(img =>
+          {
+            img.src = img.dataset.src;
+          });
+          console.log('--- 1');
+        }
+        else
+        {
+          // Динамически импортируем библиотеку LazySizes
+          const lazySizesLib = await import('/js/_lib/lazysizes.min.js');
+          // Инициализируем LazySizes (читаем data-src & class=lazyload)
+          lazySizes.init(); // lazySizes применяется при обработке изображений, находящихся на странице.
+          console.log('--- 2');
+        }
+      })();
+
+    </script>
+    <script type="text/javascript" src="js/vendors.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="js/market.js"></script>
+    <script type="text/javascript" src="js/_frontend.js"></script>
+    <!-- end scripts -->
+  </body>
+</html>

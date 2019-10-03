@@ -1,0 +1,769 @@
+<!-- ajax/crm/market/orders.html -->
+<div class="btn-select btn-select--fixed js-btn-select xs-only">
+  <div class="btn-select__header">
+    <svg class="icon icon-plus--filled btn-select__icon" role="img">
+      <use xlink:href="files/sprite.svg#plus--filled"></use>
+    </svg>
+    <span class="btn-select__title">Добавить заказ</span>
+  </div>
+</div>
+<!-- begin top-line -->
+<div class="top-line top-line--offset">
+  <div class="top-line__sorting">
+    <div class="top-line__search top-line__search--left pos-xs-1 _loading">
+      <!-- BEGIN search -->
+      <div class="bb-input js-input-box js-search ">
+        <input class="search__input js-input" type="text" placeholder="Введите номер заказа" autocomplete="off">
+        <svg class="icon icon-search bb-input__icon bb-input__icon-search">
+          <use xlink:href="files/sprite.svg#search"></use>
+        </svg>
+        <button class="search__clear js-input--clear" type="button" style="display: none;">
+          <span>
+            <svg class="icon icon-close--bold bb-input__icon">
+              <use xlink:href="files/sprite.svg#close--bold"></use>
+            </svg>
+          </span>
+        </button>
+      </div>
+      <!-- END search -->
+    </div>
+  </div>
+  <div class="button-box top-line__button-box xs-hide _loading">
+    <button class="btn btn-outline-muted btn-icon--reverse btn-icon--small _loading js-slide-block--open " data-slide-block-target="filter">
+      <svg class="icon icon-controls">
+        <use xlink:href="files/sprite.svg#controls"></use>
+      </svg> Фильтр </button>
+    <button class="btn btn-gray  "> Перейти в магазин </button>
+  </div>
+</div>
+<!-- begin top-line -->
+<div class="order-item-wrap">
+  <div class="order-item" data-container>
+    <div class="order-item__header" onclick="BB.Utils.slideToggle.call(this)">
+      <div class="order-item__header-box">
+        <div class="order-item__title">№000015</div>
+        <div class="order-item__date">22.03.2019</div>
+      </div>
+      <div class="order-item__header-box">
+        <div class="order-item__status">
+          <span class="status">
+            <i class="status__color status__color--green"></i>
+            <span class="status__text">Отправлен</span>
+          </span>
+        </div>
+        <!-- <div class="order-item__status">
+<span class="status">
+	<i class="status__color status__color--yellow"></i>
+	<span class="status__text">В обработке</span>
+</span>
+</div>
+                <div class="order-item__status">
+<span class="status">
+	<i class="status__color status__color--red"></i>
+	<span class="status__text">Откланен</span>
+</span>
+</div> -->
+        <div class="order-item__cost"> 4 000 <span class="currency ">₽</span>
+        </div>
+      </div>
+    </div>
+    <div class="order-item__content" data-content style="display:none">
+      <!-- begin market-product-item -->
+      <div href="market-card.html" class="market-product-item market-product-item--horizon">
+        <!-- begin market-product-item__img -->
+        <div class="market-product-item__img">
+          <img class="market-product-item__image" src="files/examples/market/product/250x250/7.jpg" alt="" />
+        </div>
+        <!-- end market-product-item__img -->
+        <!-- begin market-product-item__desc -->
+        <div class="market-product-item__desc">
+          <a href="market-card.html" target="_blank" class="market-product-item__box market-product-item__box--column">
+            <h5 class="market-product-item__title"> Ресницы черные </h5>
+          </a>
+          <span class="market-product-item__articul">Артикул: 421254</span>
+        </div>
+        <!-- end market-product-item__desc -->
+        <div class="market-product-item__options">
+          <div class="market-product-item__box  ">
+            <div class="market-product-item__price"> 100 <span class="currency ">₽</span> &#215 10 </div>
+          </div>
+          <div class="market-product-item__box">
+            <span class="market-product-item__cost"> 1000 <span class="currency ">₽</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <!-- end market-product-item -->
+      <!-- begin market-product-item -->
+      <div href="market-card.html" class="market-product-item market-product-item--horizon">
+        <!-- begin market-product-item__img -->
+        <div class="market-product-item__img">
+          <img class="market-product-item__image" src="files/examples/market/product/250x250/7.jpg" alt="" />
+        </div>
+        <!-- end market-product-item__img -->
+        <!-- begin market-product-item__desc -->
+        <div class="market-product-item__desc">
+          <a href="market-card.html" target="_blank" class="market-product-item__box market-product-item__box--column">
+            <h5 class="market-product-item__title"> Ресницы черные </h5>
+          </a>
+          <span class="market-product-item__articul">Артикул: 421254</span>
+        </div>
+        <!-- end market-product-item__desc -->
+        <div class="market-product-item__options">
+          <div class="market-product-item__box  ">
+            <div class="market-product-item__price"> 100 <span class="currency ">₽</span> &#215 10 </div>
+          </div>
+          <div class="market-product-item__box">
+            <span class="market-product-item__cost"> 1000 <span class="currency ">₽</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <!-- end market-product-item -->
+      <!-- begin market-product-item -->
+      <div href="market-card.html" class="market-product-item market-product-item--horizon">
+        <!-- begin market-product-item__img -->
+        <div class="market-product-item__img">
+          <img class="market-product-item__image" src="files/examples/market/product/250x250/7.jpg" alt="" />
+        </div>
+        <!-- end market-product-item__img -->
+        <!-- begin market-product-item__desc -->
+        <div class="market-product-item__desc">
+          <a href="market-card.html" target="_blank" class="market-product-item__box market-product-item__box--column">
+            <h5 class="market-product-item__title"> Ресницы черные </h5>
+          </a>
+          <span class="market-product-item__articul">Артикул: 421254</span>
+        </div>
+        <!-- end market-product-item__desc -->
+        <div class="market-product-item__options">
+          <div class="market-product-item__box  ">
+            <div class="market-product-item__price"> 100 <span class="currency ">₽</span> &#215 10 </div>
+          </div>
+          <div class="market-product-item__box">
+            <span class="market-product-item__cost"> 1000 <span class="currency ">₽</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <!-- end market-product-item -->
+      <!-- begin market-product-item -->
+      <div href="market-card.html" class="market-product-item market-product-item--horizon">
+        <!-- begin market-product-item__img -->
+        <div class="market-product-item__img">
+          <img class="market-product-item__image" src="files/examples/market/product/250x250/7.jpg" alt="" />
+        </div>
+        <!-- end market-product-item__img -->
+        <!-- begin market-product-item__desc -->
+        <div class="market-product-item__desc">
+          <a href="market-card.html" target="_blank" class="market-product-item__box market-product-item__box--column">
+            <h5 class="market-product-item__title"> Ресницы черные </h5>
+          </a>
+          <span class="market-product-item__articul">Артикул: 421254</span>
+        </div>
+        <!-- end market-product-item__desc -->
+        <div class="market-product-item__options">
+          <div class="market-product-item__box  ">
+            <div class="market-product-item__price"> 100 <span class="currency ">₽</span> &#215 10 </div>
+          </div>
+          <div class="market-product-item__box">
+            <span class="market-product-item__cost"> 1000 <span class="currency ">₽</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <!-- end market-product-item -->
+      <div class="order-item__footer">
+        <div class="button-box">
+          <button class="btn btn-secondary btn--flat"> Отменить заказ </button>
+          <button class="btn btn-gray btn--flat"> Повторить заказ </button>
+        </div>
+        <span class="order-item__cost"> Итого: 3 000 <span class="currency ">₽</span>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="order-item" data-container>
+    <div class="order-item__header" onclick="BB.Utils.slideToggle.call(this)">
+      <div class="order-item__header-box">
+        <div class="order-item__title">№000015</div>
+        <div class="order-item__date">22.03.2019</div>
+      </div>
+      <div class="order-item__header-box">
+        <div class="order-item__status">
+          <span class="status">
+            <i class="status__color status__color--green"></i>
+            <span class="status__text">Отправлен</span>
+          </span>
+        </div>
+        <!-- <div class="order-item__status">
+<span class="status">
+	<i class="status__color status__color--yellow"></i>
+	<span class="status__text">В обработке</span>
+</span>
+</div>
+                <div class="order-item__status">
+<span class="status">
+	<i class="status__color status__color--red"></i>
+	<span class="status__text">Откланен</span>
+</span>
+</div> -->
+        <div class="order-item__cost"> 4 000 <span class="currency ">₽</span>
+        </div>
+      </div>
+    </div>
+    <div class="order-item__content" data-content style="display:none">
+      <!-- begin market-product-item -->
+      <div href="market-card.html" class="market-product-item market-product-item--horizon">
+        <!-- begin market-product-item__img -->
+        <div class="market-product-item__img">
+          <img class="market-product-item__image" src="files/examples/market/product/250x250/7.jpg" alt="" />
+        </div>
+        <!-- end market-product-item__img -->
+        <!-- begin market-product-item__desc -->
+        <div class="market-product-item__desc">
+          <a href="market-card.html" target="_blank" class="market-product-item__box market-product-item__box--column">
+            <h5 class="market-product-item__title"> Ресницы черные </h5>
+          </a>
+          <span class="market-product-item__articul">Артикул: 421254</span>
+        </div>
+        <!-- end market-product-item__desc -->
+        <div class="market-product-item__options">
+          <div class="market-product-item__box  ">
+            <div class="market-product-item__price"> 100 <span class="currency ">₽</span> &#215 10 </div>
+          </div>
+          <div class="market-product-item__box">
+            <span class="market-product-item__cost"> 1000 <span class="currency ">₽</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <!-- end market-product-item -->
+      <!-- begin market-product-item -->
+      <div href="market-card.html" class="market-product-item market-product-item--horizon">
+        <!-- begin market-product-item__img -->
+        <div class="market-product-item__img">
+          <img class="market-product-item__image" src="files/examples/market/product/250x250/7.jpg" alt="" />
+        </div>
+        <!-- end market-product-item__img -->
+        <!-- begin market-product-item__desc -->
+        <div class="market-product-item__desc">
+          <a href="market-card.html" target="_blank" class="market-product-item__box market-product-item__box--column">
+            <h5 class="market-product-item__title"> Ресницы черные </h5>
+          </a>
+          <span class="market-product-item__articul">Артикул: 421254</span>
+        </div>
+        <!-- end market-product-item__desc -->
+        <div class="market-product-item__options">
+          <div class="market-product-item__box  ">
+            <div class="market-product-item__price"> 100 <span class="currency ">₽</span> &#215 10 </div>
+          </div>
+          <div class="market-product-item__box">
+            <span class="market-product-item__cost"> 1000 <span class="currency ">₽</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <!-- end market-product-item -->
+      <!-- begin market-product-item -->
+      <div href="market-card.html" class="market-product-item market-product-item--horizon">
+        <!-- begin market-product-item__img -->
+        <div class="market-product-item__img">
+          <img class="market-product-item__image" src="files/examples/market/product/250x250/7.jpg" alt="" />
+        </div>
+        <!-- end market-product-item__img -->
+        <!-- begin market-product-item__desc -->
+        <div class="market-product-item__desc">
+          <a href="market-card.html" target="_blank" class="market-product-item__box market-product-item__box--column">
+            <h5 class="market-product-item__title"> Ресницы черные </h5>
+          </a>
+          <span class="market-product-item__articul">Артикул: 421254</span>
+        </div>
+        <!-- end market-product-item__desc -->
+        <div class="market-product-item__options">
+          <div class="market-product-item__box  ">
+            <div class="market-product-item__price"> 100 <span class="currency ">₽</span> &#215 10 </div>
+          </div>
+          <div class="market-product-item__box">
+            <span class="market-product-item__cost"> 1000 <span class="currency ">₽</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <!-- end market-product-item -->
+      <!-- begin market-product-item -->
+      <div href="market-card.html" class="market-product-item market-product-item--horizon">
+        <!-- begin market-product-item__img -->
+        <div class="market-product-item__img">
+          <img class="market-product-item__image" src="files/examples/market/product/250x250/7.jpg" alt="" />
+        </div>
+        <!-- end market-product-item__img -->
+        <!-- begin market-product-item__desc -->
+        <div class="market-product-item__desc">
+          <a href="market-card.html" target="_blank" class="market-product-item__box market-product-item__box--column">
+            <h5 class="market-product-item__title"> Ресницы черные </h5>
+          </a>
+          <span class="market-product-item__articul">Артикул: 421254</span>
+        </div>
+        <!-- end market-product-item__desc -->
+        <div class="market-product-item__options">
+          <div class="market-product-item__box  ">
+            <div class="market-product-item__price"> 100 <span class="currency ">₽</span> &#215 10 </div>
+          </div>
+          <div class="market-product-item__box">
+            <span class="market-product-item__cost"> 1000 <span class="currency ">₽</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <!-- end market-product-item -->
+      <div class="order-item__footer">
+        <div class="button-box">
+          <button class="btn btn-secondary btn--flat"> Отменить заказ </button>
+          <button class="btn btn-gray btn--flat"> Повторить заказ </button>
+        </div>
+        <span class="order-item__cost"> Итого: 3 000 <span class="currency ">₽</span>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="order-item" data-container>
+    <div class="order-item__header" onclick="BB.Utils.slideToggle.call(this)">
+      <div class="order-item__header-box">
+        <div class="order-item__title">№000015</div>
+        <div class="order-item__date">22.03.2019</div>
+      </div>
+      <div class="order-item__header-box">
+        <div class="order-item__status">
+          <span class="status">
+            <i class="status__color status__color--green"></i>
+            <span class="status__text">Отправлен</span>
+          </span>
+        </div>
+        <!-- <div class="order-item__status">
+<span class="status">
+	<i class="status__color status__color--yellow"></i>
+	<span class="status__text">В обработке</span>
+</span>
+</div>
+                <div class="order-item__status">
+<span class="status">
+	<i class="status__color status__color--red"></i>
+	<span class="status__text">Откланен</span>
+</span>
+</div> -->
+        <div class="order-item__cost"> 4 000 <span class="currency ">₽</span>
+        </div>
+      </div>
+    </div>
+    <div class="order-item__content" data-content style="display:none">
+      <!-- begin market-product-item -->
+      <div href="market-card.html" class="market-product-item market-product-item--horizon">
+        <!-- begin market-product-item__img -->
+        <div class="market-product-item__img">
+          <img class="market-product-item__image" src="files/examples/market/product/250x250/7.jpg" alt="" />
+        </div>
+        <!-- end market-product-item__img -->
+        <!-- begin market-product-item__desc -->
+        <div class="market-product-item__desc">
+          <a href="market-card.html" target="_blank" class="market-product-item__box market-product-item__box--column">
+            <h5 class="market-product-item__title"> Ресницы черные </h5>
+          </a>
+          <span class="market-product-item__articul">Артикул: 421254</span>
+        </div>
+        <!-- end market-product-item__desc -->
+        <div class="market-product-item__options">
+          <div class="market-product-item__box  ">
+            <div class="market-product-item__price"> 100 <span class="currency ">₽</span> &#215 10 </div>
+          </div>
+          <div class="market-product-item__box">
+            <span class="market-product-item__cost"> 1000 <span class="currency ">₽</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <!-- end market-product-item -->
+      <!-- begin market-product-item -->
+      <div href="market-card.html" class="market-product-item market-product-item--horizon">
+        <!-- begin market-product-item__img -->
+        <div class="market-product-item__img">
+          <img class="market-product-item__image" src="files/examples/market/product/250x250/7.jpg" alt="" />
+        </div>
+        <!-- end market-product-item__img -->
+        <!-- begin market-product-item__desc -->
+        <div class="market-product-item__desc">
+          <a href="market-card.html" target="_blank" class="market-product-item__box market-product-item__box--column">
+            <h5 class="market-product-item__title"> Ресницы черные </h5>
+          </a>
+          <span class="market-product-item__articul">Артикул: 421254</span>
+        </div>
+        <!-- end market-product-item__desc -->
+        <div class="market-product-item__options">
+          <div class="market-product-item__box  ">
+            <div class="market-product-item__price"> 100 <span class="currency ">₽</span> &#215 10 </div>
+          </div>
+          <div class="market-product-item__box">
+            <span class="market-product-item__cost"> 1000 <span class="currency ">₽</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <!-- end market-product-item -->
+      <!-- begin market-product-item -->
+      <div href="market-card.html" class="market-product-item market-product-item--horizon">
+        <!-- begin market-product-item__img -->
+        <div class="market-product-item__img">
+          <img class="market-product-item__image" src="files/examples/market/product/250x250/7.jpg" alt="" />
+        </div>
+        <!-- end market-product-item__img -->
+        <!-- begin market-product-item__desc -->
+        <div class="market-product-item__desc">
+          <a href="market-card.html" target="_blank" class="market-product-item__box market-product-item__box--column">
+            <h5 class="market-product-item__title"> Ресницы черные </h5>
+          </a>
+          <span class="market-product-item__articul">Артикул: 421254</span>
+        </div>
+        <!-- end market-product-item__desc -->
+        <div class="market-product-item__options">
+          <div class="market-product-item__box  ">
+            <div class="market-product-item__price"> 100 <span class="currency ">₽</span> &#215 10 </div>
+          </div>
+          <div class="market-product-item__box">
+            <span class="market-product-item__cost"> 1000 <span class="currency ">₽</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <!-- end market-product-item -->
+      <!-- begin market-product-item -->
+      <div href="market-card.html" class="market-product-item market-product-item--horizon">
+        <!-- begin market-product-item__img -->
+        <div class="market-product-item__img">
+          <img class="market-product-item__image" src="files/examples/market/product/250x250/7.jpg" alt="" />
+        </div>
+        <!-- end market-product-item__img -->
+        <!-- begin market-product-item__desc -->
+        <div class="market-product-item__desc">
+          <a href="market-card.html" target="_blank" class="market-product-item__box market-product-item__box--column">
+            <h5 class="market-product-item__title"> Ресницы черные </h5>
+          </a>
+          <span class="market-product-item__articul">Артикул: 421254</span>
+        </div>
+        <!-- end market-product-item__desc -->
+        <div class="market-product-item__options">
+          <div class="market-product-item__box  ">
+            <div class="market-product-item__price"> 100 <span class="currency ">₽</span> &#215 10 </div>
+          </div>
+          <div class="market-product-item__box">
+            <span class="market-product-item__cost"> 1000 <span class="currency ">₽</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <!-- end market-product-item -->
+      <div class="order-item__footer">
+        <div class="button-box">
+          <button class="btn btn-secondary btn--flat"> Отменить заказ </button>
+          <button class="btn btn-gray btn--flat"> Повторить заказ </button>
+        </div>
+        <span class="order-item__cost"> Итого: 3 000 <span class="currency ">₽</span>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="order-item" data-container>
+    <div class="order-item__header" onclick="BB.Utils.slideToggle.call(this)">
+      <div class="order-item__header-box">
+        <div class="order-item__title">№000015</div>
+        <div class="order-item__date">22.03.2019</div>
+      </div>
+      <div class="order-item__header-box">
+        <div class="order-item__status">
+          <span class="status">
+            <i class="status__color status__color--green"></i>
+            <span class="status__text">Отправлен</span>
+          </span>
+        </div>
+        <!-- <div class="order-item__status">
+<span class="status">
+	<i class="status__color status__color--yellow"></i>
+	<span class="status__text">В обработке</span>
+</span>
+</div>
+                <div class="order-item__status">
+<span class="status">
+	<i class="status__color status__color--red"></i>
+	<span class="status__text">Откланен</span>
+</span>
+</div> -->
+        <div class="order-item__cost"> 4 000 <span class="currency ">₽</span>
+        </div>
+      </div>
+    </div>
+    <div class="order-item__content" data-content style="display:none">
+      <!-- begin market-product-item -->
+      <div href="market-card.html" class="market-product-item market-product-item--horizon">
+        <!-- begin market-product-item__img -->
+        <div class="market-product-item__img">
+          <img class="market-product-item__image" src="files/examples/market/product/250x250/7.jpg" alt="" />
+        </div>
+        <!-- end market-product-item__img -->
+        <!-- begin market-product-item__desc -->
+        <div class="market-product-item__desc">
+          <a href="market-card.html" target="_blank" class="market-product-item__box market-product-item__box--column">
+            <h5 class="market-product-item__title"> Ресницы черные </h5>
+          </a>
+          <span class="market-product-item__articul">Артикул: 421254</span>
+        </div>
+        <!-- end market-product-item__desc -->
+        <div class="market-product-item__options">
+          <div class="market-product-item__box  ">
+            <div class="market-product-item__price"> 100 <span class="currency ">₽</span> &#215 10 </div>
+          </div>
+          <div class="market-product-item__box">
+            <span class="market-product-item__cost"> 1000 <span class="currency ">₽</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <!-- end market-product-item -->
+      <!-- begin market-product-item -->
+      <div href="market-card.html" class="market-product-item market-product-item--horizon">
+        <!-- begin market-product-item__img -->
+        <div class="market-product-item__img">
+          <img class="market-product-item__image" src="files/examples/market/product/250x250/7.jpg" alt="" />
+        </div>
+        <!-- end market-product-item__img -->
+        <!-- begin market-product-item__desc -->
+        <div class="market-product-item__desc">
+          <a href="market-card.html" target="_blank" class="market-product-item__box market-product-item__box--column">
+            <h5 class="market-product-item__title"> Ресницы черные </h5>
+          </a>
+          <span class="market-product-item__articul">Артикул: 421254</span>
+        </div>
+        <!-- end market-product-item__desc -->
+        <div class="market-product-item__options">
+          <div class="market-product-item__box  ">
+            <div class="market-product-item__price"> 100 <span class="currency ">₽</span> &#215 10 </div>
+          </div>
+          <div class="market-product-item__box">
+            <span class="market-product-item__cost"> 1000 <span class="currency ">₽</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <!-- end market-product-item -->
+      <!-- begin market-product-item -->
+      <div href="market-card.html" class="market-product-item market-product-item--horizon">
+        <!-- begin market-product-item__img -->
+        <div class="market-product-item__img">
+          <img class="market-product-item__image" src="files/examples/market/product/250x250/7.jpg" alt="" />
+        </div>
+        <!-- end market-product-item__img -->
+        <!-- begin market-product-item__desc -->
+        <div class="market-product-item__desc">
+          <a href="market-card.html" target="_blank" class="market-product-item__box market-product-item__box--column">
+            <h5 class="market-product-item__title"> Ресницы черные </h5>
+          </a>
+          <span class="market-product-item__articul">Артикул: 421254</span>
+        </div>
+        <!-- end market-product-item__desc -->
+        <div class="market-product-item__options">
+          <div class="market-product-item__box  ">
+            <div class="market-product-item__price"> 100 <span class="currency ">₽</span> &#215 10 </div>
+          </div>
+          <div class="market-product-item__box">
+            <span class="market-product-item__cost"> 1000 <span class="currency ">₽</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <!-- end market-product-item -->
+      <!-- begin market-product-item -->
+      <div href="market-card.html" class="market-product-item market-product-item--horizon">
+        <!-- begin market-product-item__img -->
+        <div class="market-product-item__img">
+          <img class="market-product-item__image" src="files/examples/market/product/250x250/7.jpg" alt="" />
+        </div>
+        <!-- end market-product-item__img -->
+        <!-- begin market-product-item__desc -->
+        <div class="market-product-item__desc">
+          <a href="market-card.html" target="_blank" class="market-product-item__box market-product-item__box--column">
+            <h5 class="market-product-item__title"> Ресницы черные </h5>
+          </a>
+          <span class="market-product-item__articul">Артикул: 421254</span>
+        </div>
+        <!-- end market-product-item__desc -->
+        <div class="market-product-item__options">
+          <div class="market-product-item__box  ">
+            <div class="market-product-item__price"> 100 <span class="currency ">₽</span> &#215 10 </div>
+          </div>
+          <div class="market-product-item__box">
+            <span class="market-product-item__cost"> 1000 <span class="currency ">₽</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <!-- end market-product-item -->
+      <div class="order-item__footer">
+        <div class="button-box">
+          <button class="btn btn-secondary btn--flat"> Отменить заказ </button>
+          <button class="btn btn-gray btn--flat"> Повторить заказ </button>
+        </div>
+        <span class="order-item__cost"> Итого: 3 000 <span class="currency ">₽</span>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="order-item" data-container>
+    <div class="order-item__header" onclick="BB.Utils.slideToggle.call(this)">
+      <div class="order-item__header-box">
+        <div class="order-item__title">№000015</div>
+        <div class="order-item__date">22.03.2019</div>
+      </div>
+      <div class="order-item__header-box">
+        <div class="order-item__status">
+          <span class="status">
+            <i class="status__color status__color--green"></i>
+            <span class="status__text">Отправлен</span>
+          </span>
+        </div>
+        <!-- <div class="order-item__status">
+<span class="status">
+	<i class="status__color status__color--yellow"></i>
+	<span class="status__text">В обработке</span>
+</span>
+</div>
+                <div class="order-item__status">
+<span class="status">
+	<i class="status__color status__color--red"></i>
+	<span class="status__text">Откланен</span>
+</span>
+</div> -->
+        <div class="order-item__cost"> 4 000 <span class="currency ">₽</span>
+        </div>
+      </div>
+    </div>
+    <div class="order-item__content" data-content style="display:none">
+      <!-- begin market-product-item -->
+      <div href="market-card.html" class="market-product-item market-product-item--horizon">
+        <!-- begin market-product-item__img -->
+        <div class="market-product-item__img">
+          <img class="market-product-item__image" src="files/examples/market/product/250x250/7.jpg" alt="" />
+        </div>
+        <!-- end market-product-item__img -->
+        <!-- begin market-product-item__desc -->
+        <div class="market-product-item__desc">
+          <a href="market-card.html" target="_blank" class="market-product-item__box market-product-item__box--column">
+            <h5 class="market-product-item__title"> Ресницы черные </h5>
+          </a>
+          <span class="market-product-item__articul">Артикул: 421254</span>
+        </div>
+        <!-- end market-product-item__desc -->
+        <div class="market-product-item__options">
+          <div class="market-product-item__box  ">
+            <div class="market-product-item__price"> 100 <span class="currency ">₽</span> &#215 10 </div>
+          </div>
+          <div class="market-product-item__box">
+            <span class="market-product-item__cost"> 1000 <span class="currency ">₽</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <!-- end market-product-item -->
+      <!-- begin market-product-item -->
+      <div href="market-card.html" class="market-product-item market-product-item--horizon">
+        <!-- begin market-product-item__img -->
+        <div class="market-product-item__img">
+          <img class="market-product-item__image" src="files/examples/market/product/250x250/7.jpg" alt="" />
+        </div>
+        <!-- end market-product-item__img -->
+        <!-- begin market-product-item__desc -->
+        <div class="market-product-item__desc">
+          <a href="market-card.html" target="_blank" class="market-product-item__box market-product-item__box--column">
+            <h5 class="market-product-item__title"> Ресницы черные </h5>
+          </a>
+          <span class="market-product-item__articul">Артикул: 421254</span>
+        </div>
+        <!-- end market-product-item__desc -->
+        <div class="market-product-item__options">
+          <div class="market-product-item__box  ">
+            <div class="market-product-item__price"> 100 <span class="currency ">₽</span> &#215 10 </div>
+          </div>
+          <div class="market-product-item__box">
+            <span class="market-product-item__cost"> 1000 <span class="currency ">₽</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <!-- end market-product-item -->
+      <!-- begin market-product-item -->
+      <div href="market-card.html" class="market-product-item market-product-item--horizon">
+        <!-- begin market-product-item__img -->
+        <div class="market-product-item__img">
+          <img class="market-product-item__image" src="files/examples/market/product/250x250/7.jpg" alt="" />
+        </div>
+        <!-- end market-product-item__img -->
+        <!-- begin market-product-item__desc -->
+        <div class="market-product-item__desc">
+          <a href="market-card.html" target="_blank" class="market-product-item__box market-product-item__box--column">
+            <h5 class="market-product-item__title"> Ресницы черные </h5>
+          </a>
+          <span class="market-product-item__articul">Артикул: 421254</span>
+        </div>
+        <!-- end market-product-item__desc -->
+        <div class="market-product-item__options">
+          <div class="market-product-item__box  ">
+            <div class="market-product-item__price"> 100 <span class="currency ">₽</span> &#215 10 </div>
+          </div>
+          <div class="market-product-item__box">
+            <span class="market-product-item__cost"> 1000 <span class="currency ">₽</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <!-- end market-product-item -->
+      <!-- begin market-product-item -->
+      <div href="market-card.html" class="market-product-item market-product-item--horizon">
+        <!-- begin market-product-item__img -->
+        <div class="market-product-item__img">
+          <img class="market-product-item__image" src="files/examples/market/product/250x250/7.jpg" alt="" />
+        </div>
+        <!-- end market-product-item__img -->
+        <!-- begin market-product-item__desc -->
+        <div class="market-product-item__desc">
+          <a href="market-card.html" target="_blank" class="market-product-item__box market-product-item__box--column">
+            <h5 class="market-product-item__title"> Ресницы черные </h5>
+          </a>
+          <span class="market-product-item__articul">Артикул: 421254</span>
+        </div>
+        <!-- end market-product-item__desc -->
+        <div class="market-product-item__options">
+          <div class="market-product-item__box  ">
+            <div class="market-product-item__price"> 100 <span class="currency ">₽</span> &#215 10 </div>
+          </div>
+          <div class="market-product-item__box">
+            <span class="market-product-item__cost"> 1000 <span class="currency ">₽</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <!-- end market-product-item -->
+      <div class="order-item__footer">
+        <div class="button-box">
+          <button class="btn btn-secondary btn--flat"> Отменить заказ </button>
+          <button class="btn btn-gray btn--flat"> Повторить заказ </button>
+        </div>
+        <span class="order-item__cost"> Итого: 3 000 <span class="currency ">₽</span>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="empty is-hidden">
+    <svg class="icon icon-info empty__icon" role="img">
+      <use xlink:href="files/sprite.svg#info"></use>
+    </svg>
+    <h4 class="empty__title">Нет заказов</h4>
+    <p class="empty__text">У вас пока нет заказов, но все еще впереди</p>
+    <p class="empty__text">Мы желаем вам успехов в продажах</p>
+  </div>
+</div>

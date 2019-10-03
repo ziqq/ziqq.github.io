@@ -1,0 +1,895 @@
+<!-- ajax/crm/market/products.html -->
+<!-- begin btn-select -->
+<div class="btn-select btn-select--fixed js-btn-select xs-only">
+  <div class="btn-select__header">
+    <svg class="icon icon-plus--filled btn-select__icon" role="img">
+      <use xlink:href="files/sprite.svg#plus--filled"></use>
+    </svg>
+    <span class="btn-select__title">Действия</span>
+  </div>
+  <ul class="btn-select__list">
+    <li class="btn-select__item">
+      <svg class="icon icon-plus " role="img">
+        <use xlink:href="files/sprite.svg#plus"></use>
+      </svg>
+      <span>Добавить товар</span>
+    </li>
+    <li class="btn-select__item">
+      <svg class="icon icon-pancil " role="img">
+        <use xlink:href="files/sprite.svg#pancil"></use>
+      </svg>
+      <span>Назначить категорию</span>
+    </li>
+    <li class="btn-select__item" data-toggle="modal" data-target="#dell">
+      <svg class="icon icon-trash " role="img">
+        <use xlink:href="files/sprite.svg#trash"></use>
+      </svg>
+      <a class="text-color--red"> Удалить </a>
+    </li>
+  </ul>
+  <div class="btn-select__overlay"></div>
+</div>
+<!-- end btn-select -->
+<!-- begin top-line -->
+<div class="top-line top-line--offset">
+  <div class="top-line__sorting">
+    <div class="top-line__search top-line__search--left pos-xs-1 _loading">
+      <!-- BEGIN search -->
+      <div class="bb-input js-input-box js-search ">
+        <input class="search__input js-input" type="text" placeholder="По названию" autocomplete="off">
+        <svg class="icon icon-search bb-input__icon bb-input__icon-search">
+          <use xlink:href="files/sprite.svg#search"></use>
+        </svg>
+        <button class="search__clear js-input--clear" type="button" style="display: none;">
+          <span>
+            <svg class="icon icon-close--bold bb-input__icon">
+              <use xlink:href="files/sprite.svg#close--bold"></use>
+            </svg>
+          </span>
+        </button>
+      </div>
+      <!-- END search -->
+    </div>
+  </div>
+  <div class="button-box top-line__button-box xs-hide _loading">
+    <button class="btn btn-outline-muted btn-icon--reverse btn-icon--small _loading js-slide-block--open " data-slide-block-target="filter">
+      <svg class="icon icon-controls">
+        <use xlink:href="files/sprite.svg#controls"></use>
+      </svg> Фильтр </button>
+    <div class="btn btn-gray bb-dropdown bb-dropdown--transform bb-dropdown--btn js-bb-dropdown _loading"> Действия <div class="bb-dropdown__list">
+        <ul class="info-block__list no-dash">
+          <li class="info-block__item">
+            <button class="info-block__link">Добавить товар</button>
+          </li>
+          <li class="info-block__item">
+            <button class="info-block__link">Назначить категорию</button>
+          </li>
+          <li class="info-block__item">
+            <a class="info-block__link text-color--red" data-toggle="modal" href="#dell"> Удалить </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- begin top-line -->
+<div class="order-item-wrap">
+  <div class="order-item no-offset" data-container>
+    <div class="order-item__header" onclick="BB.Utils.slideToggle.call(this)">
+      <label class="bb-checkbox js-bb-checkbox order-item__check">
+        <input name="" type="checkbox" class="bb-checkbox__input">
+        <span class="bb-checkbox__box"></span>
+        <span class="bb-checkbox__title">&nbsp;</span>
+      </label>
+      <div class="order-item__header-box">
+        <div class="order-item__title">Ресницы черные</div>
+      </div>
+      <div class="order-item__header-box">
+        <div class="order-item__category"> Категория: не выбрана </div>
+        <!-- <div class="order-item__status">
+<span class="status">
+	<i class="status__color status__color--yellow"></i>
+	<span class="status__text">В обработке</span>
+</span>
+</div>
+				<div class="order-item__status">
+<span class="status">
+	<i class="status__color status__color--red"></i>
+	<span class="status__text">Откланен</span>
+</span>
+</div> -->
+      </div>
+      <div class="order-item__header-box">
+        <div class="button-box">
+          <button class="btn-link btn-link btn-link--invite  "> Редактировать </button>
+          <button class="btn-link btn-link btn-link--invite  "> Добавить товар </button>
+        </div>
+      </div>
+    </div>
+    <div class="order-item__content" data-content style="display:none">
+      <div class="cabinet-product">
+        <ul class="cabinet-product__list js-sort-list">
+          <li class="cabinet-product__item cabinet-product__item--header xs-hide">
+            <span class="table-name">Название</span>
+            <span class="table-name md-hide">Артикул</span>
+            <span class="table-name">Цена</span>
+            <span class="table-name">Статус</span>
+          </li>
+          <li class="cabinet-product__item">
+            <div class="cabinet-product__sort js-sort-elem">
+              <svg class="icon icon-hamburger " role="img">
+                <use xlink:href="files/sprite.svg#hamburger"></use>
+              </svg>
+            </div>
+            <!-- begin market-product-item -->
+            <div class="market-product-item market-product-item--horizon">
+              <!-- begin market-product-item__img -->
+              <div class="market-product-item__img">
+                <img class="market-product-item__image" src="files/examples/market/product/250x250/7.jpg" alt="Ресницы черные">
+              </div><!-- end market-product-item__img -->
+              <div class="market-product-item__desc">
+                <div class="market-product-item__box">
+                  <h5 class="market-product-item__title">Ресницы черные</h5>
+                </div>
+                <div class="market-product-item__box">
+                  <span class="market-product-item__articul xs-only">Артикул: </span>
+                  <span class="market-product-item__articul">0020002200</span>
+                </div>
+                <div class="market-product-item__options">
+                  <div class="market-product-item__box">
+                    <span class="market-product-item__cost"> 2000 руб/шт </span>
+                  </div>
+                  <div class="market-product-item__box">
+                    <label class="bb-checkbox bb-checkbox--slide js-bb-checkbox js-no-all-check">
+                      <input type="checkbox">
+                      <span class="bb-checkbox__box"></span>
+                      <span class="bb-checkbox__title"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div><!-- end market-product-item -->
+            <!-- begin control -->
+            <!-- <div class="control">
+        <ul class="control__list">
+            <li class="control__item">
+                
+<div class="info-block info-block--more info-block--rotate bb-dropdown bb-dropdown--small bb-dropdown--transform bb-dropdown--hover js-bb-dropdown" data-dropdown-position="right">
+	<div class="bb-dropdown__list">
+		<ul class="info-block__list">
+			<li class="info-block__item sm-only">
+				<label class="info-block__link">
+					Добавить фото
+					<input type="file">
+				</label>
+			</li>
+			<li class="info-block__item" onclick="console.log('Редактировать')">
+				<a class="info-block__link" href="#">
+					<i class="fal fa-edit info-block__icon"></i>
+					Редактировать
+				</a>
+			</li>
+			<li class="info-block__item">
+				<a class="info-block__link" href="crm-studio-network.html">
+					<i class="fal fa-eye-slash info-block__icon"></i>
+					Скрыть
+				</a>
+			</li>
+			<li class="info-block__item">
+				<a class="info-block__link text-color--red" data-toggle="modal" href="#dell">
+					<i class="fal fa-trash-alt info-block__icon"></i>
+					Удалить
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
+
+            </li>
+        </ul>
+    </div> -->
+            <!-- end control -->
+          </li>
+          <li class="cabinet-product__item">
+            <div class="cabinet-product__sort js-sort-elem">
+              <svg class="icon icon-hamburger " role="img">
+                <use xlink:href="files/sprite.svg#hamburger"></use>
+              </svg>
+            </div>
+            <!-- begin market-product-item -->
+            <div class="market-product-item market-product-item--horizon">
+              <!-- begin market-product-item__img -->
+              <div class="market-product-item__img">
+                <img class="market-product-item__image" src="files/examples/market/product/250x250/7.jpg" alt="Ресницы черные">
+              </div><!-- end market-product-item__img -->
+              <div class="market-product-item__desc">
+                <div class="market-product-item__box">
+                  <h5 class="market-product-item__title">Ресницы черные</h5>
+                </div>
+                <div class="market-product-item__box">
+                  <span class="market-product-item__articul xs-only">Артикул: </span>
+                  <span class="market-product-item__articul">0020002200</span>
+                </div>
+                <div class="market-product-item__options">
+                  <div class="market-product-item__box">
+                    <span class="market-product-item__cost"> 2000 руб/шт </span>
+                  </div>
+                  <div class="market-product-item__box">
+                    <label class="bb-checkbox bb-checkbox--slide js-bb-checkbox js-no-all-check">
+                      <input type="checkbox">
+                      <span class="bb-checkbox__box"></span>
+                      <span class="bb-checkbox__title"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div><!-- end market-product-item -->
+            <!-- begin control -->
+            <!-- <div class="control">
+        <ul class="control__list">
+            <li class="control__item">
+                
+<div class="info-block info-block--more info-block--rotate bb-dropdown bb-dropdown--small bb-dropdown--transform bb-dropdown--hover js-bb-dropdown" data-dropdown-position="right">
+	<div class="bb-dropdown__list">
+		<ul class="info-block__list">
+			<li class="info-block__item sm-only">
+				<label class="info-block__link">
+					Добавить фото
+					<input type="file">
+				</label>
+			</li>
+			<li class="info-block__item" onclick="console.log('Редактировать')">
+				<a class="info-block__link" href="#">
+					<i class="fal fa-edit info-block__icon"></i>
+					Редактировать
+				</a>
+			</li>
+			<li class="info-block__item">
+				<a class="info-block__link" href="crm-studio-network.html">
+					<i class="fal fa-eye-slash info-block__icon"></i>
+					Скрыть
+				</a>
+			</li>
+			<li class="info-block__item">
+				<a class="info-block__link text-color--red" data-toggle="modal" href="#dell">
+					<i class="fal fa-trash-alt info-block__icon"></i>
+					Удалить
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
+
+            </li>
+        </ul>
+    </div> -->
+            <!-- end control -->
+          </li>
+          <li class="cabinet-product__item">
+            <div class="cabinet-product__sort js-sort-elem">
+              <svg class="icon icon-hamburger " role="img">
+                <use xlink:href="files/sprite.svg#hamburger"></use>
+              </svg>
+            </div>
+            <!-- begin market-product-item -->
+            <div class="market-product-item market-product-item--horizon">
+              <!-- begin market-product-item__img -->
+              <div class="market-product-item__img">
+                <img class="market-product-item__image" src="files/examples/market/product/250x250/7.jpg" alt="Ресницы черные">
+              </div><!-- end market-product-item__img -->
+              <div class="market-product-item__desc">
+                <div class="market-product-item__box">
+                  <h5 class="market-product-item__title">Ресницы черные</h5>
+                </div>
+                <div class="market-product-item__box">
+                  <span class="market-product-item__articul xs-only">Артикул: </span>
+                  <span class="market-product-item__articul">0020002200</span>
+                </div>
+                <div class="market-product-item__options">
+                  <div class="market-product-item__box">
+                    <span class="market-product-item__cost"> 2000 руб/шт </span>
+                  </div>
+                  <div class="market-product-item__box">
+                    <label class="bb-checkbox bb-checkbox--slide js-bb-checkbox js-no-all-check">
+                      <input type="checkbox">
+                      <span class="bb-checkbox__box"></span>
+                      <span class="bb-checkbox__title"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div><!-- end market-product-item -->
+            <!-- begin control -->
+            <!-- <div class="control">
+        <ul class="control__list">
+            <li class="control__item">
+                
+<div class="info-block info-block--more info-block--rotate bb-dropdown bb-dropdown--small bb-dropdown--transform bb-dropdown--hover js-bb-dropdown" data-dropdown-position="right">
+	<div class="bb-dropdown__list">
+		<ul class="info-block__list">
+			<li class="info-block__item sm-only">
+				<label class="info-block__link">
+					Добавить фото
+					<input type="file">
+				</label>
+			</li>
+			<li class="info-block__item" onclick="console.log('Редактировать')">
+				<a class="info-block__link" href="#">
+					<i class="fal fa-edit info-block__icon"></i>
+					Редактировать
+				</a>
+			</li>
+			<li class="info-block__item">
+				<a class="info-block__link" href="crm-studio-network.html">
+					<i class="fal fa-eye-slash info-block__icon"></i>
+					Скрыть
+				</a>
+			</li>
+			<li class="info-block__item">
+				<a class="info-block__link text-color--red" data-toggle="modal" href="#dell">
+					<i class="fal fa-trash-alt info-block__icon"></i>
+					Удалить
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
+
+            </li>
+        </ul>
+    </div> -->
+            <!-- end control -->
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="order-item no-offset" data-container>
+    <div class="order-item__header" onclick="BB.Utils.slideToggle.call(this)">
+      <label class="bb-checkbox js-bb-checkbox order-item__check">
+        <input name="" type="checkbox" class="bb-checkbox__input">
+        <span class="bb-checkbox__box"></span>
+        <span class="bb-checkbox__title">&nbsp;</span>
+      </label>
+      <div class="order-item__header-box">
+        <div class="order-item__title">Ресницы черные</div>
+      </div>
+      <div class="order-item__header-box">
+        <div class="order-item__category"> Категория: не выбрана </div>
+        <!-- <div class="order-item__status">
+<span class="status">
+	<i class="status__color status__color--yellow"></i>
+	<span class="status__text">В обработке</span>
+</span>
+</div>
+				<div class="order-item__status">
+<span class="status">
+	<i class="status__color status__color--red"></i>
+	<span class="status__text">Откланен</span>
+</span>
+</div> -->
+      </div>
+      <div class="order-item__header-box">
+        <div class="button-box">
+          <button class="btn-link btn-link btn-link--invite  "> Редактировать </button>
+          <button class="btn-link btn-link btn-link--invite  "> Добавить товар </button>
+        </div>
+      </div>
+    </div>
+    <div class="order-item__content" data-content style="display:none">
+      <div class="cabinet-product">
+        <ul class="cabinet-product__list js-sort-list">
+          <li class="cabinet-product__item cabinet-product__item--header xs-hide">
+            <span class="table-name">Название</span>
+            <span class="table-name md-hide">Артикул</span>
+            <span class="table-name">Цена</span>
+            <span class="table-name">Статус</span>
+          </li>
+          <li class="cabinet-product__item">
+            <div class="cabinet-product__sort js-sort-elem">
+              <svg class="icon icon-hamburger " role="img">
+                <use xlink:href="files/sprite.svg#hamburger"></use>
+              </svg>
+            </div>
+            <!-- begin market-product-item -->
+            <div class="market-product-item market-product-item--horizon">
+              <!-- begin market-product-item__img -->
+              <div class="market-product-item__img">
+                <img class="market-product-item__image" src="files/examples/market/product/250x250/7.jpg" alt="Ресницы черные">
+              </div><!-- end market-product-item__img -->
+              <div class="market-product-item__desc">
+                <div class="market-product-item__box">
+                  <h5 class="market-product-item__title">Ресницы черные</h5>
+                </div>
+                <div class="market-product-item__box">
+                  <span class="market-product-item__articul xs-only">Артикул: </span>
+                  <span class="market-product-item__articul">0020002200</span>
+                </div>
+                <div class="market-product-item__options">
+                  <div class="market-product-item__box">
+                    <span class="market-product-item__cost"> 2000 руб/шт </span>
+                  </div>
+                  <div class="market-product-item__box">
+                    <label class="bb-checkbox bb-checkbox--slide js-bb-checkbox js-no-all-check">
+                      <input type="checkbox">
+                      <span class="bb-checkbox__box"></span>
+                      <span class="bb-checkbox__title"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div><!-- end market-product-item -->
+            <!-- begin control -->
+            <!-- <div class="control">
+        <ul class="control__list">
+            <li class="control__item">
+                
+<div class="info-block info-block--more info-block--rotate bb-dropdown bb-dropdown--small bb-dropdown--transform bb-dropdown--hover js-bb-dropdown" data-dropdown-position="right">
+	<div class="bb-dropdown__list">
+		<ul class="info-block__list">
+			<li class="info-block__item sm-only">
+				<label class="info-block__link">
+					Добавить фото
+					<input type="file">
+				</label>
+			</li>
+			<li class="info-block__item" onclick="console.log('Редактировать')">
+				<a class="info-block__link" href="#">
+					<i class="fal fa-edit info-block__icon"></i>
+					Редактировать
+				</a>
+			</li>
+			<li class="info-block__item">
+				<a class="info-block__link" href="crm-studio-network.html">
+					<i class="fal fa-eye-slash info-block__icon"></i>
+					Скрыть
+				</a>
+			</li>
+			<li class="info-block__item">
+				<a class="info-block__link text-color--red" data-toggle="modal" href="#dell">
+					<i class="fal fa-trash-alt info-block__icon"></i>
+					Удалить
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
+
+            </li>
+        </ul>
+    </div> -->
+            <!-- end control -->
+          </li>
+          <li class="cabinet-product__item">
+            <div class="cabinet-product__sort js-sort-elem">
+              <svg class="icon icon-hamburger " role="img">
+                <use xlink:href="files/sprite.svg#hamburger"></use>
+              </svg>
+            </div>
+            <!-- begin market-product-item -->
+            <div class="market-product-item market-product-item--horizon">
+              <!-- begin market-product-item__img -->
+              <div class="market-product-item__img">
+                <img class="market-product-item__image" src="files/examples/market/product/250x250/7.jpg" alt="Ресницы черные">
+              </div><!-- end market-product-item__img -->
+              <div class="market-product-item__desc">
+                <div class="market-product-item__box">
+                  <h5 class="market-product-item__title">Ресницы черные</h5>
+                </div>
+                <div class="market-product-item__box">
+                  <span class="market-product-item__articul xs-only">Артикул: </span>
+                  <span class="market-product-item__articul">0020002200</span>
+                </div>
+                <div class="market-product-item__options">
+                  <div class="market-product-item__box">
+                    <span class="market-product-item__cost"> 2000 руб/шт </span>
+                  </div>
+                  <div class="market-product-item__box">
+                    <label class="bb-checkbox bb-checkbox--slide js-bb-checkbox js-no-all-check">
+                      <input type="checkbox">
+                      <span class="bb-checkbox__box"></span>
+                      <span class="bb-checkbox__title"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div><!-- end market-product-item -->
+            <!-- begin control -->
+            <!-- <div class="control">
+        <ul class="control__list">
+            <li class="control__item">
+                
+<div class="info-block info-block--more info-block--rotate bb-dropdown bb-dropdown--small bb-dropdown--transform bb-dropdown--hover js-bb-dropdown" data-dropdown-position="right">
+	<div class="bb-dropdown__list">
+		<ul class="info-block__list">
+			<li class="info-block__item sm-only">
+				<label class="info-block__link">
+					Добавить фото
+					<input type="file">
+				</label>
+			</li>
+			<li class="info-block__item" onclick="console.log('Редактировать')">
+				<a class="info-block__link" href="#">
+					<i class="fal fa-edit info-block__icon"></i>
+					Редактировать
+				</a>
+			</li>
+			<li class="info-block__item">
+				<a class="info-block__link" href="crm-studio-network.html">
+					<i class="fal fa-eye-slash info-block__icon"></i>
+					Скрыть
+				</a>
+			</li>
+			<li class="info-block__item">
+				<a class="info-block__link text-color--red" data-toggle="modal" href="#dell">
+					<i class="fal fa-trash-alt info-block__icon"></i>
+					Удалить
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
+
+            </li>
+        </ul>
+    </div> -->
+            <!-- end control -->
+          </li>
+          <li class="cabinet-product__item">
+            <div class="cabinet-product__sort js-sort-elem">
+              <svg class="icon icon-hamburger " role="img">
+                <use xlink:href="files/sprite.svg#hamburger"></use>
+              </svg>
+            </div>
+            <!-- begin market-product-item -->
+            <div class="market-product-item market-product-item--horizon">
+              <!-- begin market-product-item__img -->
+              <div class="market-product-item__img">
+                <img class="market-product-item__image" src="files/examples/market/product/250x250/7.jpg" alt="Ресницы черные">
+              </div><!-- end market-product-item__img -->
+              <div class="market-product-item__desc">
+                <div class="market-product-item__box">
+                  <h5 class="market-product-item__title">Ресницы черные</h5>
+                </div>
+                <div class="market-product-item__box">
+                  <span class="market-product-item__articul xs-only">Артикул: </span>
+                  <span class="market-product-item__articul">0020002200</span>
+                </div>
+                <div class="market-product-item__options">
+                  <div class="market-product-item__box">
+                    <span class="market-product-item__cost"> 2000 руб/шт </span>
+                  </div>
+                  <div class="market-product-item__box">
+                    <label class="bb-checkbox bb-checkbox--slide js-bb-checkbox js-no-all-check">
+                      <input type="checkbox">
+                      <span class="bb-checkbox__box"></span>
+                      <span class="bb-checkbox__title"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div><!-- end market-product-item -->
+            <!-- begin control -->
+            <!-- <div class="control">
+        <ul class="control__list">
+            <li class="control__item">
+                
+<div class="info-block info-block--more info-block--rotate bb-dropdown bb-dropdown--small bb-dropdown--transform bb-dropdown--hover js-bb-dropdown" data-dropdown-position="right">
+	<div class="bb-dropdown__list">
+		<ul class="info-block__list">
+			<li class="info-block__item sm-only">
+				<label class="info-block__link">
+					Добавить фото
+					<input type="file">
+				</label>
+			</li>
+			<li class="info-block__item" onclick="console.log('Редактировать')">
+				<a class="info-block__link" href="#">
+					<i class="fal fa-edit info-block__icon"></i>
+					Редактировать
+				</a>
+			</li>
+			<li class="info-block__item">
+				<a class="info-block__link" href="crm-studio-network.html">
+					<i class="fal fa-eye-slash info-block__icon"></i>
+					Скрыть
+				</a>
+			</li>
+			<li class="info-block__item">
+				<a class="info-block__link text-color--red" data-toggle="modal" href="#dell">
+					<i class="fal fa-trash-alt info-block__icon"></i>
+					Удалить
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
+
+            </li>
+        </ul>
+    </div> -->
+            <!-- end control -->
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="order-item no-offset" data-container>
+    <div class="order-item__header" onclick="BB.Utils.slideToggle.call(this)">
+      <label class="bb-checkbox js-bb-checkbox order-item__check">
+        <input name="" type="checkbox" class="bb-checkbox__input">
+        <span class="bb-checkbox__box"></span>
+        <span class="bb-checkbox__title">&nbsp;</span>
+      </label>
+      <div class="order-item__header-box">
+        <div class="order-item__title">Ресницы черные</div>
+      </div>
+      <div class="order-item__header-box">
+        <div class="order-item__category"> Категория: не выбрана </div>
+        <!-- <div class="order-item__status">
+<span class="status">
+	<i class="status__color status__color--yellow"></i>
+	<span class="status__text">В обработке</span>
+</span>
+</div>
+				<div class="order-item__status">
+<span class="status">
+	<i class="status__color status__color--red"></i>
+	<span class="status__text">Откланен</span>
+</span>
+</div> -->
+      </div>
+      <div class="order-item__header-box">
+        <div class="button-box">
+          <button class="btn-link btn-link btn-link--invite  "> Редактировать </button>
+          <button class="btn-link btn-link btn-link--invite  "> Добавить товар </button>
+        </div>
+      </div>
+    </div>
+    <div class="order-item__content" data-content style="display:none">
+      <div class="cabinet-product">
+        <ul class="cabinet-product__list js-sort-list">
+          <li class="cabinet-product__item cabinet-product__item--header xs-hide">
+            <span class="table-name">Название</span>
+            <span class="table-name md-hide">Артикул</span>
+            <span class="table-name">Цена</span>
+            <span class="table-name">Статус</span>
+          </li>
+          <li class="cabinet-product__item">
+            <div class="cabinet-product__sort js-sort-elem">
+              <svg class="icon icon-hamburger " role="img">
+                <use xlink:href="files/sprite.svg#hamburger"></use>
+              </svg>
+            </div>
+            <!-- begin market-product-item -->
+            <div class="market-product-item market-product-item--horizon">
+              <!-- begin market-product-item__img -->
+              <div class="market-product-item__img">
+                <img class="market-product-item__image" src="files/examples/market/product/250x250/7.jpg" alt="Ресницы черные">
+              </div><!-- end market-product-item__img -->
+              <div class="market-product-item__desc">
+                <div class="market-product-item__box">
+                  <h5 class="market-product-item__title">Ресницы черные</h5>
+                </div>
+                <div class="market-product-item__box">
+                  <span class="market-product-item__articul xs-only">Артикул: </span>
+                  <span class="market-product-item__articul">0020002200</span>
+                </div>
+                <div class="market-product-item__options">
+                  <div class="market-product-item__box">
+                    <span class="market-product-item__cost"> 2000 руб/шт </span>
+                  </div>
+                  <div class="market-product-item__box">
+                    <label class="bb-checkbox bb-checkbox--slide js-bb-checkbox js-no-all-check">
+                      <input type="checkbox">
+                      <span class="bb-checkbox__box"></span>
+                      <span class="bb-checkbox__title"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div><!-- end market-product-item -->
+            <!-- begin control -->
+            <!-- <div class="control">
+        <ul class="control__list">
+            <li class="control__item">
+                
+<div class="info-block info-block--more info-block--rotate bb-dropdown bb-dropdown--small bb-dropdown--transform bb-dropdown--hover js-bb-dropdown" data-dropdown-position="right">
+	<div class="bb-dropdown__list">
+		<ul class="info-block__list">
+			<li class="info-block__item sm-only">
+				<label class="info-block__link">
+					Добавить фото
+					<input type="file">
+				</label>
+			</li>
+			<li class="info-block__item" onclick="console.log('Редактировать')">
+				<a class="info-block__link" href="#">
+					<i class="fal fa-edit info-block__icon"></i>
+					Редактировать
+				</a>
+			</li>
+			<li class="info-block__item">
+				<a class="info-block__link" href="crm-studio-network.html">
+					<i class="fal fa-eye-slash info-block__icon"></i>
+					Скрыть
+				</a>
+			</li>
+			<li class="info-block__item">
+				<a class="info-block__link text-color--red" data-toggle="modal" href="#dell">
+					<i class="fal fa-trash-alt info-block__icon"></i>
+					Удалить
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
+
+            </li>
+        </ul>
+    </div> -->
+            <!-- end control -->
+          </li>
+          <li class="cabinet-product__item">
+            <div class="cabinet-product__sort js-sort-elem">
+              <svg class="icon icon-hamburger " role="img">
+                <use xlink:href="files/sprite.svg#hamburger"></use>
+              </svg>
+            </div>
+            <!-- begin market-product-item -->
+            <div class="market-product-item market-product-item--horizon">
+              <!-- begin market-product-item__img -->
+              <div class="market-product-item__img">
+                <img class="market-product-item__image" src="files/examples/market/product/250x250/7.jpg" alt="Ресницы черные">
+              </div><!-- end market-product-item__img -->
+              <div class="market-product-item__desc">
+                <div class="market-product-item__box">
+                  <h5 class="market-product-item__title">Ресницы черные</h5>
+                </div>
+                <div class="market-product-item__box">
+                  <span class="market-product-item__articul xs-only">Артикул: </span>
+                  <span class="market-product-item__articul">0020002200</span>
+                </div>
+                <div class="market-product-item__options">
+                  <div class="market-product-item__box">
+                    <span class="market-product-item__cost"> 2000 руб/шт </span>
+                  </div>
+                  <div class="market-product-item__box">
+                    <label class="bb-checkbox bb-checkbox--slide js-bb-checkbox js-no-all-check">
+                      <input type="checkbox">
+                      <span class="bb-checkbox__box"></span>
+                      <span class="bb-checkbox__title"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div><!-- end market-product-item -->
+            <!-- begin control -->
+            <!-- <div class="control">
+        <ul class="control__list">
+            <li class="control__item">
+                
+<div class="info-block info-block--more info-block--rotate bb-dropdown bb-dropdown--small bb-dropdown--transform bb-dropdown--hover js-bb-dropdown" data-dropdown-position="right">
+	<div class="bb-dropdown__list">
+		<ul class="info-block__list">
+			<li class="info-block__item sm-only">
+				<label class="info-block__link">
+					Добавить фото
+					<input type="file">
+				</label>
+			</li>
+			<li class="info-block__item" onclick="console.log('Редактировать')">
+				<a class="info-block__link" href="#">
+					<i class="fal fa-edit info-block__icon"></i>
+					Редактировать
+				</a>
+			</li>
+			<li class="info-block__item">
+				<a class="info-block__link" href="crm-studio-network.html">
+					<i class="fal fa-eye-slash info-block__icon"></i>
+					Скрыть
+				</a>
+			</li>
+			<li class="info-block__item">
+				<a class="info-block__link text-color--red" data-toggle="modal" href="#dell">
+					<i class="fal fa-trash-alt info-block__icon"></i>
+					Удалить
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
+
+            </li>
+        </ul>
+    </div> -->
+            <!-- end control -->
+          </li>
+          <li class="cabinet-product__item">
+            <div class="cabinet-product__sort js-sort-elem">
+              <svg class="icon icon-hamburger " role="img">
+                <use xlink:href="files/sprite.svg#hamburger"></use>
+              </svg>
+            </div>
+            <!-- begin market-product-item -->
+            <div class="market-product-item market-product-item--horizon">
+              <!-- begin market-product-item__img -->
+              <div class="market-product-item__img">
+                <img class="market-product-item__image" src="files/examples/market/product/250x250/7.jpg" alt="Ресницы черные">
+              </div><!-- end market-product-item__img -->
+              <div class="market-product-item__desc">
+                <div class="market-product-item__box">
+                  <h5 class="market-product-item__title">Ресницы черные</h5>
+                </div>
+                <div class="market-product-item__box">
+                  <span class="market-product-item__articul xs-only">Артикул: </span>
+                  <span class="market-product-item__articul">0020002200</span>
+                </div>
+                <div class="market-product-item__options">
+                  <div class="market-product-item__box">
+                    <span class="market-product-item__cost"> 2000 руб/шт </span>
+                  </div>
+                  <div class="market-product-item__box">
+                    <label class="bb-checkbox bb-checkbox--slide js-bb-checkbox js-no-all-check">
+                      <input type="checkbox">
+                      <span class="bb-checkbox__box"></span>
+                      <span class="bb-checkbox__title"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div><!-- end market-product-item -->
+            <!-- begin control -->
+            <!-- <div class="control">
+        <ul class="control__list">
+            <li class="control__item">
+                
+<div class="info-block info-block--more info-block--rotate bb-dropdown bb-dropdown--small bb-dropdown--transform bb-dropdown--hover js-bb-dropdown" data-dropdown-position="right">
+	<div class="bb-dropdown__list">
+		<ul class="info-block__list">
+			<li class="info-block__item sm-only">
+				<label class="info-block__link">
+					Добавить фото
+					<input type="file">
+				</label>
+			</li>
+			<li class="info-block__item" onclick="console.log('Редактировать')">
+				<a class="info-block__link" href="#">
+					<i class="fal fa-edit info-block__icon"></i>
+					Редактировать
+				</a>
+			</li>
+			<li class="info-block__item">
+				<a class="info-block__link" href="crm-studio-network.html">
+					<i class="fal fa-eye-slash info-block__icon"></i>
+					Скрыть
+				</a>
+			</li>
+			<li class="info-block__item">
+				<a class="info-block__link text-color--red" data-toggle="modal" href="#dell">
+					<i class="fal fa-trash-alt info-block__icon"></i>
+					Удалить
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
+
+            </li>
+        </ul>
+    </div> -->
+            <!-- end control -->
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="empty empty--centre" style="display: none;">
+    <svg class="icon icon-search--bold empty__icon  mb-10">
+      <use xlink:href="files/sprite.svg#search--bold"></use>
+    </svg>
+    <span class="empty__title">Нет вариантов</span>
+    <p class="empty__text ">Ни один вариант из результатов поиска не соответствует заданным фильтрам</p>
+    <a href="#" class="empty__btn btn btn-outline-gray mt-15"> Сбросить все фильтры </a>
+  </div>
+</div>
