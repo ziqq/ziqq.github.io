@@ -1,4 +1,4 @@
-importScripts("/crm/precache-manifest.ad1f9d11b37af4474199a85da166f8a2.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
+importScripts("/precache-manifest.925959261fa5effb3a3f314c8a335848.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 self.addEventListener('install', e => {
     e.waitUntil(
