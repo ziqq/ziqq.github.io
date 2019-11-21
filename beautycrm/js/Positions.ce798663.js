@@ -1,0 +1,1 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["Positions"],{"0dd7":function(n,t,e){"use strict";e.r(t);var s=function(){var n=this,t=n.$createElement,e=n._self._c||t;return e("div",[n._v("Должности")])},i=[],o={name:"staff-positions"},a=o,l=e("2877"),u=Object(l["a"])(a,s,i,!1,null,null,null);t["default"]=u.exports}}]);

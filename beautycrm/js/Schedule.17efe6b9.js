@@ -1,0 +1,1 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["Schedule"],{"1ade":function(e,n,t){"use strict";t.r(n);var l=function(){var e=this,n=e.$createElement,t=e._self._c||n;return t("div",[e._v(" График работы ")])},u=[],a={name:"staff-schedule"},c=a,s=t("2877"),r=Object(s["a"])(c,l,u,!1,null,null,null);n["default"]=r.exports}}]);

@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[28],{vKyG:function(n,e,t){"use strict";t.r(e);var l={name:"bids"},s=t("KHd+"),u=Object(s.a)(l,function(){var n=this,e=n.$createElement;return(n._self._c||e)("div",[n._v("\n    Заявки\n")])},[],!1,null,null,null);e.default=u.exports}}]);
