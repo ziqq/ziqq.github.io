@@ -1,4 +1,4 @@
-importScripts("/beautycrm/precache-manifest.655e94730484f598a275ad905e1f1ba0.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
+importScripts("/crm/precache-manifest.ad1f9d11b37af4474199a85da166f8a2.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 self.addEventListener('install', e => {
     e.waitUntil(
