@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[30],{U1O9:function(n,e,t){"use strict";t.r(e);var c={name:"clients-categories"},l=t("KHd+"),s=Object(l.a)(c,function(){var n=this,e=n.$createElement;return(n._self._c||e)("div",[n._v("\n    Категории\n")])},[],!1,null,null,null);e.default=s.exports}}]);

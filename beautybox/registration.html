@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Регистрация</title>
+    <meta name="keywords" content>
+    <meta name="description" content>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="application-name" content>
+    <meta name="msapplication-TileImage" content="img/favicon/mstile-144x144.png">
+    <meta name="msapplication-TileColor" content="#FFCC01">
+    <meta name="msapplication-config" content="/browserconfig.xml" />
+    <link rel="manifest" href="/manifest.json">
+    <link type="image/png" href="files/favicon/favicon-32x32.png" rel="shortcut icon" sizes="32x32">
+    <link type="image/png" href="files/favicon/favicon-96x96.png" rel="shortcut icon" sizes="96x96">
+    <link type="image/x-icon" href="files/favicon/favicon.ico" rel="shortcut icon" sizes="16x16">
+    <link href="files/favicon/apple-touch-icon-57x57.png" rel="apple-touch-icon" sizes="57x57">
+    <link href="files/favicon/apple-touch-icon-60x60.png" rel="apple-touch-icon" sizes="60x60">
+    <link href="files/favicon/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+    <link href="files/favicon/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76">
+    <link href="files/favicon/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+    <link href="files/favicon/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120">
+    <link href="files/favicon/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144">
+    <link href="files/favicon/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152">
+    <link rel="stylesheet" media="all" href="css/crm.css">
+  </head>
+  <body class="loading">
+    <!-- BEGIN wrapper -->
+    <div class="wrapper">
+      <!-- BEGIN wrapper__inner -->
+      <div class="wrapper__inner">
+        <!-- BEGIN registration -->
+        <main class="main registration" style="background-image: url('files/img/bg/firstscreen-home.jpg');">
+          <div class="container container--xs">
+            <div id="ajax-container">
+              <!-- begin l-registration -->
+              <div class="l-registration">
+                <!-- begin l-registration__header -->
+                <div class="l-registration__header">
+                  <span class="l-registration__title">Выберите роль на сайте</span>
+                  <a class="l-registration__save btn btn-link" href="javascript:void(0);" onclick="BB.Fronted.Utils.pageLoad('#ajax-container', 'ajax/registration/step-2.html');"> Далее </a>
+                </div><!-- end l-registration__header -->
+                <!-- begin l-registration__body -->
+                <div class="l-registration__body">
+                  <!-- begin l-registration__form -->
+                  <div class="l-registration__form">
+                    <label class="bb-checkbox bb-checkbox--radio bb-checkbox--icon bb-checkbox--border js-bb-radio">
+                      <input name="role" type="radio">
+                      <span class="bb-checkbox__title">Мастер</span>
+                      <div class="bb-checkbox__subtitle">Вы мастер, выполняющий услуги в сфере красоты</div>
+                      <svg class="icon icon-master bb-checkbox__icon" role="img">
+                        <use xlink:href="files/sprite.svg#master"></use>
+                      </svg>
+                    </label>
+                    <label class="bb-checkbox bb-checkbox--radio bb-checkbox--icon bb-checkbox--border js-bb-radio">
+                      <input name="role" type="radio">
+                      <span class="bb-checkbox__title">Салон</span>
+                      <div class="bb-checkbox__subtitle">Вы владелец или администратор салона</div>
+                      <svg class="icon icon-chair bb-checkbox__icon" role="img">
+                        <use xlink:href="files/sprite.svg#chair"></use>
+                      </svg>
+                    </label>
+                    <label class="bb-checkbox bb-checkbox--radio bb-checkbox--icon bb-checkbox--border js-bb-radio">
+                      <input name="role" type="radio">
+                      <span class="bb-checkbox__title">Клиент</span>
+                      <div class="bb-checkbox__subtitle">Вы в поисках своего мастера или салона красоты</div>
+                      <svg class="icon icon-user bb-checkbox__icon" role="img">
+                        <use xlink:href="files/sprite.svg#user"></use>
+                      </svg>
+                    </label>
+                  </div><!-- end l-registration__form -->
+                </div><!-- end l-registration__body -->
+              </div><!-- end l-registration -->
+            </div>
+          </div>
+        </main>
+      </div><!-- END wrapper__inner -->
+    </div><!-- END wrapper -->
+    <!-- begin preloader -->
+    <div class="preloader">
+      <svg class="preloader__icon" x="0px" y="0px" viewBox="0 0 1000 1000">
+        <g>
+          <path d="M840,0H381.9v297.3c0,0,36.8-37.9,64.3-49.7c27.5-11.8,58.4-17.6,92.3-17.6c43.8,0,83.2,10.2,118.2,30.7
+				c34.9,20.5,62.7,52.2,83.2,95.3c20.5,43,30.8,97,30.8,161.8c0,50.2-6.4,94.6-19.3,132.9c-74.2-35.7-172.6,46.5-115.8,141.1
+				c-49.5,27-112.5,40.4-188.8,40.4c-37.9,0.3-75.6-2.3-113-7.5c-37.5-5.2-72.3-13-104.6-23.7V0H160C71.9,0,0,72.1,0,160v680
+				c0,88.1,72.1,160,160,160h680c88,0,159.9-72.1,160-160V160C1000,71.9,927.9,0,840,0z M712.1,809.8c-39.8,0-72.1-32.3-72.1-72.1
+				s32.3-72.1,72.1-72.1s72.1,32.3,72.1,72.1C784.2,777.5,752,809.8,712.1,809.8z"></path>
+          <path d="M573.1,660.8c23.1-27.7,34.6-71.4,34.6-131.2c0-58.2-10-99.9-30-124.8c-19.9-25-48.2-37.5-84.5-37.5
+					c-19,0-37.2,3.7-54.3,11c-17.2,7.3-32.2,18.5-44.6,33.1v280.4c21.8,7.1,46.4,10.6,73.8,10.6C515,702.3,550,688.5,573.1,660.8z"></path>
+        </g>
+      </svg>
+    </div>
+    <!-- end preloader -->
+    <div class="overlay js-overlay"></div>
+    <!-- BEGIN scripts -->
+    <script>
+      (async () =>
+      {
+        if ('loading' in HTMLImageElement.prototype)
+        {
+          const images = document.querySelectorAll("img.lazyload");
+          images.forEach(img =>
+          {
+            img.src = img.dataset.src;
+          });
+          console.log('--- 1');
+        }
+        else
+        {
+          // Динамически импортируем библиотеку LazySizes
+          const lazySizesLib = await import('/js/_lib/lazysizes.min.js');
+          // Инициализируем LazySizes (читаем data-src & class=lazyload)
+          lazySizes.init(); // lazySizes применяется при обработке изображений, находящихся на странице.
+          console.log('--- 2');
+        }
+      })();
+
+    </script>
+    <script type="text/javascript" src="js/vendors.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script type="text/javascript" src="js/crm.js"></script>
+    <script type="text/javascript" src="js/_frontend.js"></script>
+    <!-- END scripts -->
+  </body>
+</html>

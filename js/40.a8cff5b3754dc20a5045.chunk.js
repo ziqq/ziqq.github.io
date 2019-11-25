@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[40],{KsLB:function(e,t,r){"use strict";r.r(t);var n=r("KHd+"),u=Object(n.a)({},function(){var e=this,t=e.$createElement,r=e._self._c||t;return r("keep-alive",{attrs:{exclude:/worker-[a-z]+/}},[r("router-view",{key:e.$route.path})],1)},[],!1,null,null,null);t.default=u.exports}}]);

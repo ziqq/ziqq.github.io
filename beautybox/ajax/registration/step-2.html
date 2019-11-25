@@ -1,0 +1,201 @@
+<!-- begin l-registration -->
+<div class="l-registration">
+  <!-- begin l-registration__header -->
+  <div class="l-registration__header">
+    <a class="l-registration__back btn btn-link" href="javascript:void(0);" onclick="BB.Fronted.Utils.pageLoad('#ajax-container', 'ajax/registration/step-1.html');">
+      <svg class="icon icon-arrow-long--left " role="img">
+        <use xlink:href="files/sprite.svg#arrow-long--left"></use>
+      </svg>
+    </a>
+    <span class="l-registration__title">Подробнее о вас</span>
+    <a class="l-registration__save btn btn-link" href="javascript:void(0);" onclick="BB.Fronted.Utils.pageLoad('#ajax-container', 'ajax/registration/step-3.html');"> Далее </a>
+  </div><!-- end l-registration__header -->
+  <!-- begin l-registration__body -->
+  <div class="l-registration__body">
+    <!-- begin l-registration__form -->
+    <div class="l-registration__form">
+      <div class="l-registration__user">
+        <div class="user">
+          <div class="user__avatar">
+            <div class="user__img">
+              <img src="files/examples/user/noavatar.jpg" alt="noavatar">
+            </div>
+          </div>
+          <div class="user__name">@marabidis</div>
+        </div>
+      </div>
+      <div class="bb-input   bb-input--title">
+        <span class="bb-input__title">Ваше имя</span>
+        <input class="bb-input__input " type="text">
+        <div class="bb-input-tip js-bb-input-tip">
+          <i class="bb-input-tip__arrow-up"></i>
+          <p class="bb-input-tip__text">*Сообщение с подсказкой</p>
+          <svg class="icon icon-close--bold" role="img">
+            <use xlink:href="files/sprite.svg#close--bold"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="bb-input   bb-input--title">
+        <span class="bb-input__title">Телефон</span>
+        <input class="bb-input__input " type="tel">
+        <div class="bb-input-tip js-bb-input-tip">
+          <i class="bb-input-tip__arrow-up"></i>
+          <p class="bb-input-tip__text">*Сообщение с подсказкой</p>
+          <svg class="icon icon-close--bold" role="img">
+            <use xlink:href="files/sprite.svg#close--bold"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="bb-input bb-input--title bb-input--born">
+        <span class="bb-input__title">Дата рождения</span>
+        <div class="bb-input-born">
+          <div class="bb-input-born__select">
+            <select class="js-select-born js-select-born--clear" data-placeholder="День">
+              <option></option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16">16</option>
+              <option value="17">17</option>
+              <option value="18">18</option>
+              <option value="19">19</option>
+              <option value="20">20</option>
+              <option value="21">21</option>
+              <option value="22">22</option>
+              <option value="23">23</option>
+              <option value="24">24</option>
+              <option value="25">25</option>
+              <option value="26">26</option>
+              <option value="27">27</option>
+              <option value="28">28</option>
+              <option value="29">29</option>
+              <option value="30">30</option>
+            </select>
+          </div>
+          <div class="bb-input-born__select bb-input-born__select--month">
+            <select class="js-select-born js-select-born--clear" data-placeholder="Месяц">
+              <option></option>
+              <option value="Январь">Январь</option>
+              <option value="Февраль">Февраль</option>
+              <option value="Март">Март</option>
+              <option value="Апрель">Апрель</option>
+              <option value="Май">Май</option>
+              <option value="Июнь">Июнь</option>
+              <option value="Июль">Июль</option>
+              <option value="Август">Август</option>
+              <option value="Сентябрь">Сентябрь</option>
+              <option value="Октябрь">Октябрь</option>
+              <option value="Ноябрь">Ноябрь</option>
+              <option value="Декабрь">Декабрь</option>
+            </select>
+          </div>
+          <div class="bb-input-born__select bb-input-born__select--year">
+            <select class="js-select-born js-select-born--clear" data-placeholder="Год" data-born="year">
+              <option></option>
+              <option value="1988">1988</option>
+              <option value="1989">1989</option>
+              <option value="1990">1990</option>
+              <option value="1991">1991</option>
+              <option value="1992">1992</option>
+              <option value="1993">1993</option>
+              <option value="1194">1194</option>
+              <option value="1995">1995</option>
+              <option value="1996">1996</option>
+              <option value="1997">1997</option>
+              <option value="1998">1998</option>
+              <option value="1999">1999</option>
+              <option value="2000">2000</option>
+              <option value="2001">2001</option>
+              <option value="2002">2002</option>
+              <option value="2003">2003</option>
+            </select>
+          </div>
+          <button class="btn btn-link btn-link-secondary bb-input-born__btn js-set-year">Выбрать год</button>
+          <span class="bb-input__error">*Какая-то ошибочка</span>
+        </div>
+      </div>
+      <div class="bb-input bb-input--title">
+        <span class="bb-input__title">Пол</span>
+        <div class="bb-checkbox__wrap">
+          <label class="bb-checkbox bb-checkbox--radio ">
+            <input name="gender" type="radio">
+            <span class="bb-checkbox__box"></span>
+            <span class="bb-checkbox__title">Женский</span>
+          </label>
+          <label class="bb-checkbox bb-checkbox--radio ">
+            <input name="gender" type="radio">
+            <span class="bb-checkbox__box"></span>
+            <span class="bb-checkbox__title">Мужской</span>
+          </label>
+        </div>
+      </div>
+      <div class="form-confirm">
+        <!-- BEGIN form-confirm -->
+        <div class="form-success form-success--confirm">
+          <div class="form-success__inner form-success__inner--center">
+            <div class="form-success__header">
+              <div class="form-success__title">Введите код из SMS</div>
+              <div class="form-success__subtitle"> Код отправлен на <strong>+7 (927) 107-11-39</strong>
+                <button class="btn-icon btn-icon--arrow-long--left btn-icon--big form-success__back" onclick="BB.Utils.toggleSuccess.call(this, '.form', 'is-confirm', 0);">
+                  <svg class="icon icon-arrow-long--left " role="img">
+                    <use xlink:href="files/sprite.svg#arrow-long--left"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="form-success__body">
+              <form onsubmit="BB.Utils.toggleSuccess.call(this, '.form', 'is-success');">
+                <div class="c-input-code js-c-input-code mb-30">
+                  <div class="c-input-code__box">
+                    <input type="tel" class="c-input-code__field js-input-focus" autocomplete="off" maxlength="1">
+                  </div>
+                  <div class="c-input-code__box">
+                    <input type="tel" class="c-input-code__field js-input-focus" autocomplete="off" maxlength="1">
+                  </div>
+                  <div class="c-input-code__box">
+                    <input type="tel" class="c-input-code__field js-input-focus" autocomplete="off" maxlength="1">
+                  </div>
+                  <div class="c-input-code__box">
+                    <input type="tel" class="c-input-code__field js-input-focus" autocomplete="off" maxlength="1">
+                  </div>
+                </div>
+                <div class="form-success__subtitle">
+                  <div> Введен неправильный код. </br> Осталось попыток: <span>3</span>
+                  </div>
+                </div>
+                <div class="form-success__subtitle js-timer">
+                  <div class="js-timer-text"> Получить новый код можно <br> через <span data-timer-time="15"></span>&nbsp;сек. </div>
+                  <a class="js-timer-bnt--repeat" href="#" style="display: none;">Получить новый код</a>
+                </div>
+                <div class="form-success__subtitle" style="display: none">
+                  <div>Вы исчерпали допустимое <br> количество попыток </div>
+                </div>
+                <div class="form-success__subtitle" style="display: none">
+                  <div>Для восстановления доступа в <br> личный кабинет <a href="#">свяжитесь с менеджером</a></div>
+                </div>
+              </form>
+            </div>
+            <div class="form-success__footer">
+              <button class="btn btn-animate is-ready btn-gray form__btn" onclick="BB.Utils.toggleSuccess.call(this, '.form', 'is-success');">
+                <span class="btn__title">Подтвердить</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- END form-confirm -->
+      </div>
+    </div><!-- end l-registration__form -->
+  </div><!-- begin l-registration__body -->
+</div><!-- end l-registration -->

@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[36],{tB8M:function(n,e,t){"use strict";t.r(e);var s={name:"settings"},l=t("KHd+"),u=Object(l.a)(s,function(){var n=this,e=n.$createElement;return(n._self._c||e)("div",[n._v("\n    Настройки\n")])},[],!1,null,null,null);e.default=u.exports}}]);

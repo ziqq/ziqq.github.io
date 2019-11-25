@@ -1,0 +1,38 @@
+<!-- begin l-registration -->
+<div class="l-registration">
+  <!-- begin l-registration__header -->
+  <div class="l-registration__header">
+    <span class="l-registration__title">Выберите роль на сайте</span>
+    <a class="l-registration__save btn btn-link" href="javascript:void(0);" onclick="BB.Fronted.Utils.pageLoad('#ajax-container', 'ajax/registration/step-2.html');"> Далее </a>
+  </div><!-- end l-registration__header -->
+  <!-- begin l-registration__body -->
+  <div class="l-registration__body">
+    <!-- begin l-registration__form -->
+    <div class="l-registration__form">
+      <label class="bb-checkbox bb-checkbox--radio bb-checkbox--icon bb-checkbox--border js-bb-radio">
+        <input name="role" type="radio">
+        <span class="bb-checkbox__title">Мастер</span>
+        <div class="bb-checkbox__subtitle">Вы мастер, выполняющий услуги в сфере красоты</div>
+        <svg class="icon icon-master bb-checkbox__icon" role="img">
+          <use xlink:href="files/sprite.svg#master"></use>
+        </svg>
+      </label>
+      <label class="bb-checkbox bb-checkbox--radio bb-checkbox--icon bb-checkbox--border js-bb-radio">
+        <input name="role" type="radio">
+        <span class="bb-checkbox__title">Салон</span>
+        <div class="bb-checkbox__subtitle">Вы владелец или администратор салона</div>
+        <svg class="icon icon-chair bb-checkbox__icon" role="img">
+          <use xlink:href="files/sprite.svg#chair"></use>
+        </svg>
+      </label>
+      <label class="bb-checkbox bb-checkbox--radio bb-checkbox--icon bb-checkbox--border js-bb-radio">
+        <input name="role" type="radio">
+        <span class="bb-checkbox__title">Клиент</span>
+        <div class="bb-checkbox__subtitle">Вы в поисках своего мастера или салона красоты</div>
+        <svg class="icon icon-user bb-checkbox__icon" role="img">
+          <use xlink:href="files/sprite.svg#user"></use>
+        </svg>
+      </label>
+    </div><!-- end l-registration__form -->
+  </div><!-- end l-registration__body -->
+</div><!-- end l-registration -->

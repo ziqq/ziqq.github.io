@@ -1,0 +1,440 @@
+<!-- ajax/crm/studio/studio-clients.html -->
+<!-- BEGIN btn-select -->
+<div class="btn-select l-slide-block__btn-select js-btn-select xs-only js-move-block--show" data-move-block-target="worker-add">
+  <div class="btn-select__header">
+    <svg class="icon icon-plus--filled btn-select__icon" role="img">
+      <use xlink:href="files/sprite.svg#plus--filled"></use>
+    </svg>
+    <span class="btn-select__title">Добавить клиента</span>
+  </div>
+</div>
+<!-- END btn-select -->
+<!-- BEGIN worker -->
+<div class="worker">
+  <!-- BEGIN top-line -->
+  <div class="top-line top-line--offset">
+    <div class="top-line__sorting">
+      <!-- BEGIN top-line__search -->
+      <div class="top-line__search _loading">
+        <!-- BEGIN search -->
+        <div class="bb-input js-input-box js-search ">
+          <input class="search__input js-input" type="text" placeholder="Имя или телефон клиента" autocomplete="off">
+          <svg class="icon icon-search bb-input__icon bb-input__icon-search">
+            <use xlink:href="files/sprite.svg#search"></use>
+          </svg>
+          <button class="search__clear js-input--clear" type="button" style="display: none;">
+            <span>
+              <svg class="icon icon-close--bold bb-input__icon">
+                <use xlink:href="files/sprite.svg#close--bold"></use>
+              </svg>
+            </span>
+          </button>
+        </div>
+        <!-- END search -->
+        <button class="btn-icon btn-icon--controls _loading xs-only--flex ml-10 js-slide-block--open " data-slide-block-target="filter">
+          <svg class="icon icon-controls">
+            <use xlink:href="files/sprite.svg#controls"></use>
+          </svg>
+        </button>
+      </div>
+      <!-- END top-line__search -->
+    </div>
+    <div class="button-box top-line__button-box xs-hide">
+      <button class="btn btn-outline-muted btn-icon--reverse btn-icon--small _loading js-slide-block--open " data-slide-block-target="filter">
+        <svg class="icon icon-controls">
+          <use xlink:href="files/sprite.svg#controls"></use>
+        </svg> Фильтр </button>
+      <button class="btn btn-gray btn-icon--reverse btn-icon--small _loading  js-move-block--show" data-move-block-target="worker-add">
+        <svg class="icon icon-add-client--filled">
+          <use xlink:href="files/sprite.svg#add-client--filled"></use>
+        </svg> Добавить </button>
+    </div>
+  </div>
+  <!-- BEGIN top-line -->
+  <div class="worker__inner">
+    <div class="worker__items">
+      <div class="worker__item worker__item--header">
+        <div class="row">
+          <div class="col-lg-4 col-sm-6"><span class="text">Имя клиента</span></div>
+          <div class="col-lg-2 col-sm-6"><span class="text">Телефон</span></div>
+          <div class="col-lg-6 sm-hide"><span class="text">Статус</span></div>
+        </div>
+      </div>
+      <div class="worker__item item-worker js-move-block--show" data-move-block-target="client-info">
+        <div class="row">
+          <div class="col-lg-4 col-sm-6 col-xs-12">
+            <div class="user user--small worker__user">
+              <div class="user__inner">
+                <div class="user__img _loading">
+                  <img src="files/examples/user/cara-avatar.jpg" alt="Ольга Оченьдлиннаяфамилия">
+                </div>
+                <div class="user__text _loading">
+                  <span class="user__name">Ольга Оченьдлиннаяфамилия</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-4 col-xs-12">
+            <a class="phone _loading" href="tel:+79271071139">+7 (927) 107-11-39</a>
+          </div>
+          <div class="col-lg-6 col-sm-2 col-xs-12">
+            <span class="item-worker__status _loading">vip-клиент</span>
+          </div>
+          <!-- <div class="worker__controls">
+                        <div class="control">
+                            <ul class="control__list">
+                                <li class="control__item sm-hide">
+                                    <a
+                                        class="control__link"
+                                        data-toggle="modal"
+                                        href="#add-master"
+                                        tooltip="редактировать"
+                                    >
+                                        <i class="fas fa-pencil control__icon"></i>
+                                    </a>
+                                </li>
+                                <li class="control__item">
+                                    
+<div class="info-block info-block--more info-block--rotate bb-dropdown bb-dropdown--small bb-dropdown--transform bb-dropdown--hover js-bb-dropdown" data-dropdown-position="right">
+	<div class="bb-dropdown__list">
+		<ul class="info-block__list">
+			<li class="info-block__item sm-only">
+				<label class="info-block__link">
+					Добавить фото
+					<input type="file">
+				</label>
+			</li>
+			<li class="info-block__item" onclick="console.log('Редактировать')">
+				<a class="info-block__link" href="#">
+					<i class="fal fa-edit info-block__icon"></i>
+					Редактировать
+				</a>
+			</li>
+			<li class="info-block__item">
+				<a class="info-block__link" href="crm-studio-network.html">
+					<i class="fal fa-eye-slash info-block__icon"></i>
+					Скрыть
+				</a>
+			</li>
+			<li class="info-block__item">
+				<a class="info-block__link text-color--red" data-toggle="modal" href="#dell">
+					<i class="fal fa-trash-alt info-block__icon"></i>
+					Удалить
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div> -->
+        </div>
+      </div>
+      <div class="worker__item item-worker js-move-block--show" data-move-block-target="client-info">
+        <div class="row">
+          <div class="col-lg-4 col-sm-6 col-xs-12">
+            <div class="user user--small worker__user">
+              <div class="user__inner">
+                <div class="user__img _loading">
+                  <img src="files/examples/user/lima-avatar.jpg" alt="Наташа Шилова">
+                </div>
+                <div class="user__text _loading">
+                  <span class="user__name">Наташа Шилова</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-4 col-xs-12">
+            <a class="phone _loading" href="tel:+79271071139">+7 (927) 107-11-39</a>
+          </div>
+          <div class="col-lg-6 col-sm-2 col-xs-12">
+            <span class="item-worker__status _loading">vip-клиент</span>
+          </div>
+          <!-- <div class="worker__controls">
+                        <div class="control">
+                            <ul class="control__list">
+                                <li class="control__item sm-hide">
+                                    <a
+                                        class="control__link"
+                                        data-toggle="modal"
+                                        href="#add-master"
+                                        tooltip="редактировать"
+                                    >
+                                        <i class="fas fa-pencil control__icon"></i>
+                                    </a>
+                                </li>
+                                <li class="control__item">
+                                    
+<div class="info-block info-block--more info-block--rotate bb-dropdown bb-dropdown--small bb-dropdown--transform bb-dropdown--hover js-bb-dropdown" data-dropdown-position="right">
+	<div class="bb-dropdown__list">
+		<ul class="info-block__list">
+			<li class="info-block__item sm-only">
+				<label class="info-block__link">
+					Добавить фото
+					<input type="file">
+				</label>
+			</li>
+			<li class="info-block__item" onclick="console.log('Редактировать')">
+				<a class="info-block__link" href="#">
+					<i class="fal fa-edit info-block__icon"></i>
+					Редактировать
+				</a>
+			</li>
+			<li class="info-block__item">
+				<a class="info-block__link" href="crm-studio-network.html">
+					<i class="fal fa-eye-slash info-block__icon"></i>
+					Скрыть
+				</a>
+			</li>
+			<li class="info-block__item">
+				<a class="info-block__link text-color--red" data-toggle="modal" href="#dell">
+					<i class="fal fa-trash-alt info-block__icon"></i>
+					Удалить
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div> -->
+        </div>
+      </div>
+      <div class="worker__item item-worker js-move-block--show" data-move-block-target="client-info">
+        <div class="row">
+          <div class="col-lg-4 col-sm-6 col-xs-12">
+            <div class="user user--small worker__user">
+              <div class="user__inner">
+                <div class="user__img _loading">
+                  <img src="files/examples/user/daniela-avatar.jpg" alt="Ангелина Левинникова">
+                </div>
+                <div class="user__text _loading">
+                  <span class="user__name">Ангелина Левинникова</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-4 col-xs-12">
+            <a class="phone _loading" href="tel:+79271071139">+7 (927) 107-11-39</a>
+          </div>
+          <div class="col-lg-6 col-sm-2 col-xs-12">
+            <span class="item-worker__status _loading">vip-клиент</span>
+          </div>
+          <!-- <div class="worker__controls">
+                        <div class="control">
+                            <ul class="control__list">
+                                <li class="control__item sm-hide">
+                                    <a
+                                        class="control__link"
+                                        data-toggle="modal"
+                                        href="#add-master"
+                                        tooltip="редактировать"
+                                    >
+                                        <i class="fas fa-pencil control__icon"></i>
+                                    </a>
+                                </li>
+                                <li class="control__item">
+                                    
+<div class="info-block info-block--more info-block--rotate bb-dropdown bb-dropdown--small bb-dropdown--transform bb-dropdown--hover js-bb-dropdown" data-dropdown-position="right">
+	<div class="bb-dropdown__list">
+		<ul class="info-block__list">
+			<li class="info-block__item sm-only">
+				<label class="info-block__link">
+					Добавить фото
+					<input type="file">
+				</label>
+			</li>
+			<li class="info-block__item" onclick="console.log('Редактировать')">
+				<a class="info-block__link" href="#">
+					<i class="fal fa-edit info-block__icon"></i>
+					Редактировать
+				</a>
+			</li>
+			<li class="info-block__item">
+				<a class="info-block__link" href="crm-studio-network.html">
+					<i class="fal fa-eye-slash info-block__icon"></i>
+					Скрыть
+				</a>
+			</li>
+			<li class="info-block__item">
+				<a class="info-block__link text-color--red" data-toggle="modal" href="#dell">
+					<i class="fal fa-trash-alt info-block__icon"></i>
+					Удалить
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div> -->
+        </div>
+      </div>
+      <div class="worker__item item-worker js-move-block--show" data-move-block-target="client-info">
+        <div class="row">
+          <div class="col-lg-4 col-sm-6 col-xs-12">
+            <div class="user user--small worker__user">
+              <div class="user__inner">
+                <div class="user__img _loading">
+                  <img src="files/examples/user/noavatar.jpg" alt="Карина Мелина">
+                </div>
+                <div class="user__text _loading">
+                  <span class="user__name">Карина Мелина</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-4 col-xs-12">
+            <a class="phone _loading" href="tel:+79271071139">+7 (927) 107-11-39</a>
+          </div>
+          <div class="col-lg-6 col-sm-2 col-xs-12">
+            <span class="item-worker__status _loading">vip-клиент</span>
+          </div>
+          <!-- <div class="worker__controls">
+                        <div class="control">
+                            <ul class="control__list">
+                                <li class="control__item sm-hide">
+                                    <a
+                                        class="control__link"
+                                        data-toggle="modal"
+                                        href="#add-master"
+                                        tooltip="редактировать"
+                                    >
+                                        <i class="fas fa-pencil control__icon"></i>
+                                    </a>
+                                </li>
+                                <li class="control__item">
+                                    
+<div class="info-block info-block--more info-block--rotate bb-dropdown bb-dropdown--small bb-dropdown--transform bb-dropdown--hover js-bb-dropdown" data-dropdown-position="right">
+	<div class="bb-dropdown__list">
+		<ul class="info-block__list">
+			<li class="info-block__item sm-only">
+				<label class="info-block__link">
+					Добавить фото
+					<input type="file">
+				</label>
+			</li>
+			<li class="info-block__item" onclick="console.log('Редактировать')">
+				<a class="info-block__link" href="#">
+					<i class="fal fa-edit info-block__icon"></i>
+					Редактировать
+				</a>
+			</li>
+			<li class="info-block__item">
+				<a class="info-block__link" href="crm-studio-network.html">
+					<i class="fal fa-eye-slash info-block__icon"></i>
+					Скрыть
+				</a>
+			</li>
+			<li class="info-block__item">
+				<a class="info-block__link text-color--red" data-toggle="modal" href="#dell">
+					<i class="fal fa-trash-alt info-block__icon"></i>
+					Удалить
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div> -->
+        </div>
+      </div>
+      <div class="worker__item item-worker js-move-block--show" data-move-block-target="client-info">
+        <div class="row">
+          <div class="col-lg-4 col-sm-6 col-xs-12">
+            <div class="user user--small worker__user">
+              <div class="user__inner">
+                <div class="user__img _loading">
+                  <img src="files/examples/user/avatar.jpg" alt="Дядя Вася">
+                </div>
+                <div class="user__text _loading">
+                  <span class="user__name">Дядя Вася</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-4 col-xs-12">
+            <a class="phone _loading" href="tel:+79271071139">+7 (927) 107-11-39</a>
+          </div>
+          <div class="col-lg-6 col-sm-2 col-xs-12">
+            <span class="item-worker__status _loading">vip-клиент</span>
+          </div>
+          <!-- <div class="worker__controls">
+                        <div class="control">
+                            <ul class="control__list">
+                                <li class="control__item sm-hide">
+                                    <a
+                                        class="control__link"
+                                        data-toggle="modal"
+                                        href="#add-master"
+                                        tooltip="редактировать"
+                                    >
+                                        <i class="fas fa-pencil control__icon"></i>
+                                    </a>
+                                </li>
+                                <li class="control__item">
+                                    
+<div class="info-block info-block--more info-block--rotate bb-dropdown bb-dropdown--small bb-dropdown--transform bb-dropdown--hover js-bb-dropdown" data-dropdown-position="right">
+	<div class="bb-dropdown__list">
+		<ul class="info-block__list">
+			<li class="info-block__item sm-only">
+				<label class="info-block__link">
+					Добавить фото
+					<input type="file">
+				</label>
+			</li>
+			<li class="info-block__item" onclick="console.log('Редактировать')">
+				<a class="info-block__link" href="#">
+					<i class="fal fa-edit info-block__icon"></i>
+					Редактировать
+				</a>
+			</li>
+			<li class="info-block__item">
+				<a class="info-block__link" href="crm-studio-network.html">
+					<i class="fal fa-eye-slash info-block__icon"></i>
+					Скрыть
+				</a>
+			</li>
+			<li class="info-block__item">
+				<a class="info-block__link text-color--red" data-toggle="modal" href="#dell">
+					<i class="fal fa-trash-alt info-block__icon"></i>
+					Удалить
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div> -->
+        </div>
+      </div>
+    </div>
+    <div class="empty worker__empty" style="display: none;">
+      <svg class="icon icon-add-clients empty__icon  mb-10">
+        <use xlink:href="files/sprite.svg#add-clients"></use>
+      </svg>
+      <span class="empty__title">У вас пока нет клиентов</span>
+      <p class="empty__text ">Воспользуйтесь кнопкой добавить клиента и начните создавать клиентскую базу</p>
+    </div>
+    <div class="empty worker__empty" style="display: none;">
+      <svg class="icon icon-search--info empty__icon  mb-10">
+        <use xlink:href="files/sprite.svg#search--info"></use>
+      </svg>
+      <span class="empty__title">Клиентов не найдено</span>
+      <p class="empty__text ">Пожалуйста, измените параметры поиска</p>
+      <a href="#" class="empty__btn btn btn-outline-gray mt-15"> Сбросить все фильтры </a>
+    </div>
+  </div>
+</div><!-- END worker -->

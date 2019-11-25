@@ -1,0 +1,2393 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Наращивание ресниц</title>
+    <meta name="keywords" content>
+    <meta name="description" content>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="application-name" content>
+    <meta name="msapplication-TileImage" content="img/favicon/mstile-144x144.png">
+    <meta name="msapplication-TileColor" content="#FFCC01">
+    <meta name="msapplication-config" content="/browserconfig.xml" />
+    <link rel="manifest" href="/manifest.json">
+    <link type="image/png" href="files/favicon/favicon-32x32.png" rel="shortcut icon" sizes="32x32">
+    <link type="image/png" href="files/favicon/favicon-96x96.png" rel="shortcut icon" sizes="96x96">
+    <link type="image/x-icon" href="files/favicon/favicon.ico" rel="shortcut icon" sizes="16x16">
+    <link href="files/favicon/apple-touch-icon-57x57.png" rel="apple-touch-icon" sizes="57x57">
+    <link href="files/favicon/apple-touch-icon-60x60.png" rel="apple-touch-icon" sizes="60x60">
+    <link href="files/favicon/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+    <link href="files/favicon/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76">
+    <link href="files/favicon/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+    <link href="files/favicon/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120">
+    <link href="files/favicon/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144">
+    <link href="files/favicon/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152">
+    <link rel="stylesheet" media="all" href="css/market.css">
+  </head>
+  <body class="loading" itemscope="itemscope" itemtype="http://schema.org/WebPage">
+    <div id="beauty-market">
+      <div class="wrapper page-market">
+        <!-- begin mobile-nav -->
+        <div class="mobile-nav js-mobile-nav sm-only">
+          <div class="mobile-nav__header is-authorized">
+            <div class="header-user">
+              <a class="header-user__link" href="#">
+                <div class="header-user__img">
+                  <img src="files/examples/user/lima-avatar-1.jpg" alt="avatar">
+                </div>
+                <div class="header-user__inner">
+                  <div class="header-user__name">Adriana</div>
+                  <div class="header-user__desc">Victoria Sicrect's studio</div>
+                </div>
+              </a>
+              <a class="mobile-nav__link mobile-nav__link--enter button-link" data-fancybox-no-touch href="#auth-form"> Вход / Регистрация <svg class="icon icon-user--round mobile-nav__icon" role="img">
+                  <use xlink:href="files/sprite.svg#user--round"></use>
+                </svg>
+              </a>
+            </div>
+            <!-- begin user -->
+            <div class="user">
+              <div class="user__avatar">
+                <div class="user__img">
+                  <img src="files/examples/user/noavatar.jpg" alt="noavatar">
+                </div>
+              </div>
+              <button class="btn btn-outline-gray btn--flet user__login-btn" data-toggle="modal" data-target="#auth-form"> Вход </button>
+            </div><!-- end user -->
+            <button class="btn-icon js-mobile-nav--close">
+              <svg class="icon icon-arrow-long--left " role="img">
+                <use xlink:href="files/sprite.svg#arrow-long--left"></use>
+              </svg>
+            </button>
+          </div>
+          <nav>
+            <ul class="mobile-nav__list">
+              <li class="mobile-nav__item ">
+                <a class="mobile-nav__link" href="crm-dashboard.html">
+                  <svg class="icon icon-user--round mobile-nav__icon">
+                    <use xlink:href="files/sprite.svg#user--round"></use>
+                  </svg>
+                  <span class="mobile-nav__text">Личный кабинет</span>
+                </a>
+              </li>
+              <li class="mobile-nav__item ">
+                <a class="mobile-nav__link" href="crm-favorites.html">
+                  <svg class="icon icon-heart mobile-nav__icon">
+                    <use xlink:href="files/sprite.svg#heart"></use>
+                  </svg>
+                  <span class="mobile-nav__text">Избранное</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="mobile-nav__title">Категории услуг</div>
+          <div class="mobile-nav__category category-services">
+            <ul class="category-services__list js-viewer" data-view-block="6">
+              <li class="category-services__item">
+                <a class="category-services__link">Маникюр</a>
+              </li>
+              <li class="category-services__item">
+                <a class="category-services__link">Педикюр</a>
+              </li>
+              <li class="category-services__item">
+                <a class="category-services__link">Макияж</a>
+              </li>
+              <li class="category-services__item">
+                <a class="category-services__link">Коррекция</a>
+              </li>
+              <li class="category-services__item">
+                <a class="category-services__link">Ресницы</a>
+              </li>
+              <li class="category-services__item">
+                <a class="category-services__link">Прически</a>
+              </li>
+              <li class="category-services__item">
+                <a class="category-services__link">Эпиляция</a>
+              </li>
+              <li class="category-services__item">
+                <a class="category-services__link">Продукция</a>
+              </li>
+              <li class="category-services__item  js-viewer-btn">
+                <button class="category-services__btn-view">Посмотреть все</button>
+              </li>
+            </ul>
+          </div>
+          <a class="mobile-nav__link mobile-nav__link--last" href="javascript:void(0);">
+            <svg class="icon icon-logout mobile-nav__icon" role="img">
+              <use xlink:href="files/sprite.svg#logout"></use>
+            </svg>
+            <span>Выйти</span>
+          </a>
+        </div>
+        <!-- end mobile-nav -->
+        <!-- BEGIN mobile-search -->
+        <div class="mobile-search js-mobile-search">
+          <form class="search js-search">
+            <div class="search__group js-input-box">
+              <div class="mobile-search__header">
+                <div class="mobile-search__input">
+                  <input class="search__input js-input js-search-input" type="text" placeholder="Поиск по сайту" autocomplete="off">
+                  <svg class="icon icon-search bb-input__icon" role="img">
+                    <use xlink:href="files/sprite.svg#search"></use>
+                  </svg>
+                  <svg class="icon icon-close--bold bb-input__icon js-input--clear" role="img">
+                    <use xlink:href="files/sprite.svg#close--bold"></use>
+                  </svg>
+                </div>
+                <button class="mobile-search__close button-link js-mobile-search-btn">Закрыть</button>
+              </div>
+              <div class="search__hint" style="display: none;">
+                <div class="search-hint">
+                  <ul class="search-hint__list">
+                    <li class="search-hint__item">
+                      <a href="#" class="search-hint__link">
+                        <span class="search-hint__bade search-hint__bade--category">категория</span>
+                        <span class="search-hint__text"><strong>Маникюр</strong></span>
+                      </a>
+                    </li>
+                    <li class="search-hint__item">
+                      <a href="#" class="search-hint__link">
+                        <span class="search-hint__bade search-hint__bade--service">услуга</span>
+                        <span class="search-hint__text">Классический <strong>маникюр</strong></span>
+                      </a>
+                    </li>
+                    <li class="search-hint__item">
+                      <a href="#" class="search-hint__link">
+                        <span class="search-hint__bade search-hint__bade--salon">салон</span>
+                        <span class="search-hint__text">Салон <strong>маникюра</strong></span>
+                      </a>
+                    </li>
+                    <li class="search-hint__item">
+                      <a href="#" class="search-hint__link">
+                        <span class="search-hint__bade search-hint__bade--master">мастер</span>
+                        <span class="search-hint__text">Эвелина Николаевна</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- END mobile-search -->
+        <div class="wrapper__inner">
+          <!-- BEGIN header -->
+          <header class="header  " itemscope itemtype="http://schema.org/WPHeader">
+            <!-- BEGIN header__top -->
+            <div class="header__top">
+              <div class="container">
+                <!-- BEGIN header__inner -->
+                <div class="header__inner">
+                  <!-- BEGIN toggle-menu -->
+                  <!-- partials/_toggle-menu.html -->
+                  <div class="js-main-nav-btn toggle-menu">
+                    <div class="toggle-menu__inner">
+                      <span class="toggle-menu__icon"></span>
+                      <span class="toggle-menu__icon"></span>
+                      <span class="toggle-menu__icon"></span>
+                      <span class="toggle-menu__icon"></span>
+                    </div>
+                  </div>
+                  <!-- END toggle-menu -->
+                  <!-- BEGIN logo -->
+                  <div class="logo market__logo" itemscope itemtype="http://schema.org/Organization">
+                    <a itemprop="url" href="market-home.html" class="logo__link">
+                      <img class="logo__img" itemprop="logo" src="files/assets/logo-bmarket.svg" alt="beauty box" />
+                    </a>
+                  </div>
+                  <!-- END logo -->
+                  <!-- BEGIN header__change-city -->
+                  <div class="header__city-select">
+                    <!-- BEGIN city-select -->
+                    <div class="city-select js-city-select bb-dropdown bb-dropdown--another js-bb-dropdown">
+                      <div class="city-select__title">
+                        <svg class="icon icon-navigation city-select__icon" role="img">
+                          <use xlink:href="files/sprite.svg#navigation"></use>
+                        </svg>
+                        <span>Саратов</span>
+                      </div>
+                      <ul class="city-select__list bb-dropdown__list">
+                        <div class="city-select__search">
+                          <input type="search" placeholder="Введите название города" autocomplete="off">
+                        </div>
+                        <li class="city-select__item">Москва</li>
+                        <li class="city-select__item">Санкт-Петербург</li>
+                        <li class="city-select__item">Саратов</li>
+                        <li class="city-select__item">Балаково</li>
+                        <li class="city-select__item">Самара</li>
+                      </ul>
+                    </div>
+                    <!-- END city-select -->
+                  </div>
+                  <!-- END header__change-city -->
+                  <!-- BEGIN header__search -->
+                  <div class="header__search">
+                    <!-- BEGIN search -->
+                    <div class="search search--sm js-search js-input-box">
+                      <input type="text" class="search__input js-search-input" placeholder="Я хочу купить..." autocomplete="off">
+                      <svg class="icon icon-search--bold search__ico">
+                        <use xlink:href="files/sprite.svg#search--bold"></use>
+                      </svg>
+                      <div class="search__hint search-hint" style="display: none;">
+                        <ul class="search-hint__list">
+                          <li class="search-hint__item">
+                            <a href="#" class="search-hint__link">
+                              <span class="search-hint__bade search-hint__bade--category">категория</span>
+                              <span class="search-hint__text"><strong>Маникюр</strong></span>
+                            </a>
+                          </li>
+                          <li class="search-hint__item">
+                            <a href="#" class="search-hint__link">
+                              <span class="search-hint__bade search-hint__bade--service">услуга</span>
+                              <span class="search-hint__text">Классический <strong>маникюр</strong></span>
+                            </a>
+                          </li>
+                          <li class="search-hint__item">
+                            <a href="#" class="search-hint__link">
+                              <span class="search-hint__bade search-hint__bade--salon">салон</span>
+                              <span class="search-hint__text">Салон <strong>маникюра</strong></span>
+                            </a>
+                          </li>
+                          <li class="search-hint__item">
+                            <a href="#" class="search-hint__link">
+                              <span class="search-hint__bade search-hint__bade--master">мастер</span>
+                              <span class="search-hint__text">Эвелина Николаевна</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- END search -->
+                  </div>
+                  <!-- END header__search -->
+                  <div class="header-action">
+                    <div class="header-action__search sm-only--flex">
+                      <button class="btn-icon js-mobile-search-btn" title="Поиск">
+                        <svg class="icon icon-search " role="img">
+                          <use xlink:href="files/sprite.svg#search"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <a class="header-action__link" href="market-profile.html" title="Избранное">
+                      <svg class="icon icon-ifavorite header__icon" role="img">
+                        <use xlink:href="files/sprite.svg#ifavorite"></use>
+                      </svg>
+                    </a>
+                    <a class="header-action__link" href="market-cart.html" title="Корзина">
+                      <svg class="icon icon-cart header__icon" role="img">
+                        <use xlink:href="files/sprite.svg#cart"></use>
+                      </svg>
+                      <span class="badge">23</span>
+                    </a>
+                    <a class="header-action__link" data-toggle="modal" href="#auth-form" title="Вход / Регистрация" style="display: none;">
+                      <svg class="icon icon-user--round " role="img">
+                        <use xlink:href="files/sprite.svg#user--round"></use>
+                      </svg>
+                    </a>
+                    <!-- begin header-user -->
+                    <div class="header-user header-user--expanded bb-dropdown js-bb-dropdown bb-dropdown--another" data-dropdown-transform data-dropdown-position="right">
+                      <!-- <span class="header-user__name">Березка</span> -->
+                      <div class="header-user__img">
+                        <img src="files/examples/studio/logo.jpeg" alt="avatar" />
+                      </div>
+                      <div class="header-user__dropdown bb-dropdown__list">
+                        <div class="user user--small xs-hide">
+                          <div class="user__avatar">
+                            <div class="user__img">
+                              <img src="files/examples/user/noavatar.jpg" alt="noavatar">
+                            </div>
+                          </div>
+                          <div class="user__info-block">
+                            <span class="user__name">Александр Марабидис</span>
+                            <a href="#" class="btn-link user__link">Перейти на сайт</a>
+                          </div>
+                        </div>
+                        <ul>
+                          <li class="xs-only"><a href="#">Перейти на сайт</a></li>
+                          <li>
+                            <a href="#">
+                              <svg class="icon icon-user--round xs-hide" role="img">
+                                <use xlink:href="files/sprite.svg#user--round"></use>
+                              </svg>
+                              <span>Личный кабинет</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <svg class="icon icon-heart xs-hide" role="img">
+                                <use xlink:href="files/sprite.svg#heart"></use>
+                              </svg>
+                              <span>Избранное</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <svg class="icon icon-cog xs-hide" role="img">
+                                <use xlink:href="files/sprite.svg#cog"></use>
+                              </svg>
+                              <span>Настройки</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <svg class="icon icon-logout xs-hide" role="img">
+                                <use xlink:href="files/sprite.svg#logout"></use>
+                              </svg>
+                              <span>Выйти</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- end header-user -->
+                    <a class="phone header-action__link header-action__link--phone sm-hide" href="tel:88005516998"> 8 800 551-69-98 <span class="phone__text">звонок по России бесплатный</span>
+                    </a>
+                  </div>
+                </div>
+                <!-- END header__inner -->
+              </div>
+            </div>
+            <!-- END header__top -->
+            <!-- BEGIN header__bottom -->
+            <div class="header__bottom">
+              <div class="container">
+                <!-- begin nav -->
+                <nav class="nav js-main-nav">
+                  <ul class="nav__list">
+                    <li class="nav__item">
+                      <a href="#" class="nav__link">Наращивание ресниц</a>
+                      <div class="nav-dropdown nav-dropdown--left">
+                        <ul class="nav-dropdown__list">
+                          <li class="nav-dropdown__item"><a href="#" class="nav-dropdown__link">Some text</a></li>
+                          <li class="nav-dropdown__item"><a href="#" class="nav-dropdown__link">Some text</a></li>
+                          <li class="nav-dropdown__item"><a href="#" class="nav-dropdown__link">Some text</a></li>
+                          <li class="nav-dropdown__item"><a href="#" class="nav-dropdown__link">Some text</a></li>
+                          <li class="nav-dropdown__item"><a href="#" class="nav-dropdown__link">Some text</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="nav__item">
+                      <a href="#" class="nav__link">Оформление бровей</a>
+                      <div class="nav-dropdown nav-dropdown--left">
+                        <ul class="nav-dropdown__list">
+                          <li class="nav-dropdown__item"><a href="#" class="nav-dropdown__link">Some text</a></li>
+                          <li class="nav-dropdown__item"><a href="#" class="nav-dropdown__link">Some text</a></li>
+                          <li class="nav-dropdown__item"><a href="#" class="nav-dropdown__link">Some text</a></li>
+                          <li class="nav-dropdown__item"><a href="#" class="nav-dropdown__link">Some text</a></li>
+                          <li class="nav-dropdown__item"><a href="#" class="nav-dropdown__link">Some text</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="nav__item">
+                      <a href="#" class="nav__link">Распродажа</a>
+                      <div class="nav-dropdown nav-dropdown--right">
+                        <ul class="nav-dropdown__list">
+                          <li class="nav-dropdown__item"><a href="#" class="nav-dropdown__link">Some text</a></li>
+                          <li class="nav-dropdown__item"><a href="#" class="nav-dropdown__link">Some text</a></li>
+                          <li class="nav-dropdown__item"><a href="#" class="nav-dropdown__link">Some text</a></li>
+                          <li class="nav-dropdown__item"><a href="#" class="nav-dropdown__link">Some text</a></li>
+                          <li class="nav-dropdown__item"><a href="#" class="nav-dropdown__link">Some text</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="nav__item">
+                      <a href="#" class="nav__link">Новинки</a>
+                      <div class="nav-dropdown nav-dropdown--right">
+                        <ul class="nav-dropdown__list">
+                          <li class="nav-dropdown__item"><a href="#" class="nav-dropdown__link">Some text</a></li>
+                          <li class="nav-dropdown__item"><a href="#" class="nav-dropdown__link">Some text</a></li>
+                          <li class="nav-dropdown__item"><a href="#" class="nav-dropdown__link">Some text</a></li>
+                          <li class="nav-dropdown__item"><a href="#" class="nav-dropdown__link">Some text</a></li>
+                          <li class="nav-dropdown__item"><a href="#" class="nav-dropdown__link">Some text</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </nav>
+                <!-- end nav -->
+              </div>
+            </div>
+            <!-- END header__bottom -->
+          </header>
+          <!-- END header -->
+          <!-- BEGIN market -->
+          <main class="main market">
+            <section class="o-section o-section--no-offset-top">
+              <div class="container _nopadding--xs">
+                <div class="swiper-container swiper-container--hero js-swiper-slider" data-slider-offset="0" data-slider-ratio="2" data-slider-slides="1" data-slider-speed="600" data-slider-loop="true">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <picture>
+                        <source media="(max-width: 480px)" srcset="files/img/market/slider/home-hero/1-xs.png">
+                        <img src="files/img/market/slider/home-hero/1.png" alt="alt">
+                      </picture>
+                    </div>
+                    <div class="swiper-slide">
+                      <picture>
+                        <source media="(max-width: 480px)" srcset="files/img/market/slider/home-hero/2-xs.png">
+                        <img src="files/img/market/slider/home-hero/2.png" alt="alt">
+                      </picture>
+                    </div>
+                    <div class="swiper-slide">
+                      <picture>
+                        <source media="(max-width: 480px)" srcset="files/img/market/slider/home-hero/3-xs.png">
+                        <img src="files/img/market/slider/home-hero/3.png" alt="alt">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination swiper-pagination--round"></div>
+                  <button class="swiper-button-prev xs-hide" title="Назад">
+                    <svg class="icon icon-angle--bold " role="img">
+                      <use xlink:href="files/sprite.svg#angle--bold"></use>
+                    </svg>
+                  </button>
+                  <button class="swiper-button-next xs-hide" title="Вперед">
+                    <svg class="icon icon-angle--bold " role="img">
+                      <use xlink:href="files/sprite.svg#angle--bold"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </section>
+            <!-- Новинки -->
+            <section class="o-section">
+              <div class="container">
+                <h3 class="o-section__title title-decorator">Новинки</h3>
+                <div class="c-slider js-swiper-slider" data-slider-center="true" data-slider-offset="16" data-slider-ratio="5.23" data-slider-slides="6">
+                  <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <!-- BEGIN market-product-item -->
+                        <a itemscope itemtype="http://schema.org/Product" class="market-product-item market-product-item--show" data-move-block-target="product-info" href="market-card.html">
+                          <!-- BEGIN market-product-item__img -->
+                          <div class="market-product-item__img">
+                            <img itemprop="image" data-src="files/img/market/products/1/11231@sm.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" class="market-product-item__image lazyload" alt="Щеточка силиконовая">
+                            <button class="btn-icon btn-icon--fav catalog-item__fav js-btn-fav" title="Добавить в збранное">
+                              <svg class="icon icon-favorite" role="img">
+                                <use xlink:href="files/sprite.svg#favorite"></use>
+                              </svg>
+                              <svg class="icon icon-favorite--filled" role="img">
+                                <use xlink:href="files/sprite.svg#favorite--filled"></use>
+                              </svg>
+                            </button>
+                            <div class="badge-box">
+                              <span class="badge-box__item badge-box__item--sale">sale</span>
+                              <span class="badge-box__item badge-box__item--new">new</span>
+                            </div>
+                          </div>
+                          <!-- END market-product-item__img -->
+                          <!-- BEGIN market-product-item__desc -->
+                          <div class="market-product-item__desc _nopadding">
+                            <div class="market-product-item__price">
+                              <div class="c-pirce" itemscope itemtype="http://schema.org/Offer">
+                                <div class="c-pirce__item c-pirce__item--sale" itemprop="price">
+                                  <meta itemprop="price" content="500.00">
+                                  <meta itemprop="priceCurrency" content="RUB"> 500 <span class="currency ">₽</span>
+                                </div>
+                                <div class="c-pirce__item c-pirce__item--old">800 <span class="currency ">₽</span>
+                                </div>
+                              </div>
+                            </div>
+                            <h5 class="market-product-item__title" itemprop="name">Щеточка силиконовая (шт.)</h5>
+                          </div>
+                          <!-- END market-product-item__desc -->
+                        </a>
+                        <!-- END market-product-item -->
+                      </div>
+                      <div class="swiper-slide">
+                        <!-- BEGIN market-product-item -->
+                        <a itemscope itemtype="http://schema.org/Product" class="market-product-item market-product-item--show" data-move-block-target="product-info" href="market-card.html">
+                          <!-- BEGIN market-product-item__img -->
+                          <div class="market-product-item__img">
+                            <img itemprop="image" data-src="files/img/market/products/1/11231@sm.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" class="market-product-item__image lazyload" alt="Щеточка силиконовая">
+                            <button class="btn-icon btn-icon--fav catalog-item__fav js-btn-fav" title="Добавить в збранное">
+                              <svg class="icon icon-favorite" role="img">
+                                <use xlink:href="files/sprite.svg#favorite"></use>
+                              </svg>
+                              <svg class="icon icon-favorite--filled" role="img">
+                                <use xlink:href="files/sprite.svg#favorite--filled"></use>
+                              </svg>
+                            </button>
+                            <div class="badge-box">
+                              <span class="badge-box__item badge-box__item--sale">sale</span>
+                              <span class="badge-box__item badge-box__item--new">new</span>
+                            </div>
+                          </div>
+                          <!-- END market-product-item__img -->
+                          <!-- BEGIN market-product-item__desc -->
+                          <div class="market-product-item__desc _nopadding">
+                            <div class="market-product-item__price">
+                              <div class="c-pirce" itemscope itemtype="http://schema.org/Offer">
+                                <div class="c-pirce__item c-pirce__item--sale" itemprop="price">
+                                  <meta itemprop="price" content="500.00">
+                                  <meta itemprop="priceCurrency" content="RUB"> 500 <span class="currency ">₽</span>
+                                </div>
+                                <div class="c-pirce__item c-pirce__item--old">800 <span class="currency ">₽</span>
+                                </div>
+                              </div>
+                            </div>
+                            <h5 class="market-product-item__title" itemprop="name">Щеточка силиконовая (шт.)</h5>
+                          </div>
+                          <!-- END market-product-item__desc -->
+                        </a>
+                        <!-- END market-product-item -->
+                      </div>
+                      <div class="swiper-slide">
+                        <!-- BEGIN market-product-item -->
+                        <a itemscope itemtype="http://schema.org/Product" class="market-product-item market-product-item--show" data-move-block-target="product-info" href="market-card.html">
+                          <!-- BEGIN market-product-item__img -->
+                          <div class="market-product-item__img">
+                            <img itemprop="image" data-src="files/img/market/products/1/11231@sm.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" class="market-product-item__image lazyload" alt="Щеточка силиконовая">
+                            <button class="btn-icon btn-icon--fav catalog-item__fav js-btn-fav" title="Добавить в збранное">
+                              <svg class="icon icon-favorite" role="img">
+                                <use xlink:href="files/sprite.svg#favorite"></use>
+                              </svg>
+                              <svg class="icon icon-favorite--filled" role="img">
+                                <use xlink:href="files/sprite.svg#favorite--filled"></use>
+                              </svg>
+                            </button>
+                            <div class="badge-box">
+                              <span class="badge-box__item badge-box__item--sale">sale</span>
+                              <span class="badge-box__item badge-box__item--new">new</span>
+                            </div>
+                          </div>
+                          <!-- END market-product-item__img -->
+                          <!-- BEGIN market-product-item__desc -->
+                          <div class="market-product-item__desc _nopadding">
+                            <div class="market-product-item__price">
+                              <div class="c-pirce" itemscope itemtype="http://schema.org/Offer">
+                                <div class="c-pirce__item c-pirce__item--sale" itemprop="price">
+                                  <meta itemprop="price" content="500.00">
+                                  <meta itemprop="priceCurrency" content="RUB"> 500 <span class="currency ">₽</span>
+                                </div>
+                                <div class="c-pirce__item c-pirce__item--old">800 <span class="currency ">₽</span>
+                                </div>
+                              </div>
+                            </div>
+                            <h5 class="market-product-item__title" itemprop="name">Щеточка силиконовая (шт.)</h5>
+                          </div>
+                          <!-- END market-product-item__desc -->
+                        </a>
+                        <!-- END market-product-item -->
+                      </div>
+                      <div class="swiper-slide">
+                        <!-- BEGIN market-product-item -->
+                        <a itemscope itemtype="http://schema.org/Product" class="market-product-item market-product-item--show" data-move-block-target="product-info" href="market-card.html">
+                          <!-- BEGIN market-product-item__img -->
+                          <div class="market-product-item__img">
+                            <img itemprop="image" data-src="files/img/market/products/1/11231@sm.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" class="market-product-item__image lazyload" alt="Щеточка силиконовая">
+                            <button class="btn-icon btn-icon--fav catalog-item__fav js-btn-fav" title="Добавить в збранное">
+                              <svg class="icon icon-favorite" role="img">
+                                <use xlink:href="files/sprite.svg#favorite"></use>
+                              </svg>
+                              <svg class="icon icon-favorite--filled" role="img">
+                                <use xlink:href="files/sprite.svg#favorite--filled"></use>
+                              </svg>
+                            </button>
+                            <div class="badge-box">
+                              <span class="badge-box__item badge-box__item--sale">sale</span>
+                              <span class="badge-box__item badge-box__item--new">new</span>
+                            </div>
+                          </div>
+                          <!-- END market-product-item__img -->
+                          <!-- BEGIN market-product-item__desc -->
+                          <div class="market-product-item__desc _nopadding">
+                            <div class="market-product-item__price">
+                              <div class="c-pirce" itemscope itemtype="http://schema.org/Offer">
+                                <div class="c-pirce__item c-pirce__item--sale" itemprop="price">
+                                  <meta itemprop="price" content="500.00">
+                                  <meta itemprop="priceCurrency" content="RUB"> 500 <span class="currency ">₽</span>
+                                </div>
+                                <div class="c-pirce__item c-pirce__item--old">800 <span class="currency ">₽</span>
+                                </div>
+                              </div>
+                            </div>
+                            <h5 class="market-product-item__title" itemprop="name">Щеточка силиконовая (шт.)</h5>
+                          </div>
+                          <!-- END market-product-item__desc -->
+                        </a>
+                        <!-- END market-product-item -->
+                      </div>
+                      <div class="swiper-slide">
+                        <!-- BEGIN market-product-item -->
+                        <a itemscope itemtype="http://schema.org/Product" class="market-product-item market-product-item--show" data-move-block-target="product-info" href="market-card.html">
+                          <!-- BEGIN market-product-item__img -->
+                          <div class="market-product-item__img">
+                            <img itemprop="image" data-src="files/img/market/products/1/11231@sm.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" class="market-product-item__image lazyload" alt="Щеточка силиконовая">
+                            <button class="btn-icon btn-icon--fav catalog-item__fav js-btn-fav" title="Добавить в збранное">
+                              <svg class="icon icon-favorite" role="img">
+                                <use xlink:href="files/sprite.svg#favorite"></use>
+                              </svg>
+                              <svg class="icon icon-favorite--filled" role="img">
+                                <use xlink:href="files/sprite.svg#favorite--filled"></use>
+                              </svg>
+                            </button>
+                            <div class="badge-box">
+                              <span class="badge-box__item badge-box__item--sale">sale</span>
+                              <span class="badge-box__item badge-box__item--new">new</span>
+                            </div>
+                          </div>
+                          <!-- END market-product-item__img -->
+                          <!-- BEGIN market-product-item__desc -->
+                          <div class="market-product-item__desc _nopadding">
+                            <div class="market-product-item__price">
+                              <div class="c-pirce" itemscope itemtype="http://schema.org/Offer">
+                                <div class="c-pirce__item c-pirce__item--sale" itemprop="price">
+                                  <meta itemprop="price" content="500.00">
+                                  <meta itemprop="priceCurrency" content="RUB"> 500 <span class="currency ">₽</span>
+                                </div>
+                                <div class="c-pirce__item c-pirce__item--old">800 <span class="currency ">₽</span>
+                                </div>
+                              </div>
+                            </div>
+                            <h5 class="market-product-item__title" itemprop="name">Щеточка силиконовая (шт.)</h5>
+                          </div>
+                          <!-- END market-product-item__desc -->
+                        </a>
+                        <!-- END market-product-item -->
+                      </div>
+                      <div class="swiper-slide">
+                        <!-- BEGIN market-product-item -->
+                        <a itemscope itemtype="http://schema.org/Product" class="market-product-item market-product-item--show" data-move-block-target="product-info" href="market-card.html">
+                          <!-- BEGIN market-product-item__img -->
+                          <div class="market-product-item__img">
+                            <img itemprop="image" data-src="files/img/market/products/1/11231@sm.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" class="market-product-item__image lazyload" alt="Щеточка силиконовая">
+                            <button class="btn-icon btn-icon--fav catalog-item__fav js-btn-fav" title="Добавить в збранное">
+                              <svg class="icon icon-favorite" role="img">
+                                <use xlink:href="files/sprite.svg#favorite"></use>
+                              </svg>
+                              <svg class="icon icon-favorite--filled" role="img">
+                                <use xlink:href="files/sprite.svg#favorite--filled"></use>
+                              </svg>
+                            </button>
+                            <div class="badge-box">
+                              <span class="badge-box__item badge-box__item--sale">sale</span>
+                              <span class="badge-box__item badge-box__item--new">new</span>
+                            </div>
+                          </div>
+                          <!-- END market-product-item__img -->
+                          <!-- BEGIN market-product-item__desc -->
+                          <div class="market-product-item__desc _nopadding">
+                            <div class="market-product-item__price">
+                              <div class="c-pirce" itemscope itemtype="http://schema.org/Offer">
+                                <div class="c-pirce__item c-pirce__item--sale" itemprop="price">
+                                  <meta itemprop="price" content="500.00">
+                                  <meta itemprop="priceCurrency" content="RUB"> 500 <span class="currency ">₽</span>
+                                </div>
+                                <div class="c-pirce__item c-pirce__item--old">800 <span class="currency ">₽</span>
+                                </div>
+                              </div>
+                            </div>
+                            <h5 class="market-product-item__title" itemprop="name">Щеточка силиконовая (шт.)</h5>
+                          </div>
+                          <!-- END market-product-item__desc -->
+                        </a>
+                        <!-- END market-product-item -->
+                      </div>
+                      <div class="swiper-slide">
+                        <!-- BEGIN market-product-item -->
+                        <a itemscope itemtype="http://schema.org/Product" class="market-product-item market-product-item--show" data-move-block-target="product-info" href="market-card.html">
+                          <!-- BEGIN market-product-item__img -->
+                          <div class="market-product-item__img">
+                            <img itemprop="image" data-src="files/img/market/products/1/11231@sm.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" class="market-product-item__image lazyload" alt="Щеточка силиконовая">
+                            <button class="btn-icon btn-icon--fav catalog-item__fav js-btn-fav" title="Добавить в збранное">
+                              <svg class="icon icon-favorite" role="img">
+                                <use xlink:href="files/sprite.svg#favorite"></use>
+                              </svg>
+                              <svg class="icon icon-favorite--filled" role="img">
+                                <use xlink:href="files/sprite.svg#favorite--filled"></use>
+                              </svg>
+                            </button>
+                            <div class="badge-box">
+                              <span class="badge-box__item badge-box__item--sale">sale</span>
+                              <span class="badge-box__item badge-box__item--new">new</span>
+                            </div>
+                          </div>
+                          <!-- END market-product-item__img -->
+                          <!-- BEGIN market-product-item__desc -->
+                          <div class="market-product-item__desc _nopadding">
+                            <div class="market-product-item__price">
+                              <div class="c-pirce" itemscope itemtype="http://schema.org/Offer">
+                                <div class="c-pirce__item c-pirce__item--sale" itemprop="price">
+                                  <meta itemprop="price" content="500.00">
+                                  <meta itemprop="priceCurrency" content="RUB"> 500 <span class="currency ">₽</span>
+                                </div>
+                                <div class="c-pirce__item c-pirce__item--old">800 <span class="currency ">₽</span>
+                                </div>
+                              </div>
+                            </div>
+                            <h5 class="market-product-item__title" itemprop="name">Щеточка силиконовая (шт.)</h5>
+                          </div>
+                          <!-- END market-product-item__desc -->
+                        </a>
+                        <!-- END market-product-item -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-button-prev xs-hide" title="Назад">
+                    <svg class="icon icon-arrow--right " role="img">
+                      <use xlink:href="files/sprite.svg#arrow--right"></use>
+                    </svg>
+                  </div>
+                  <div class="swiper-button-next xs-hide" title="Вперед">
+                    <svg class="icon icon-arrow--right " role="img">
+                      <use xlink:href="files/sprite.svg#arrow--right"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- <section class="section section--p-small">
+        <div class="container">
+            <div class="section__info bg--lighten _loading">
+                <p class="section__text xs-hide">
+                    Доставка почтой и курьерской службой. Заказ по России доставляется
+                    приблизительно от 2 до 6 дней после оформления заказа.
+				</p>
+
+				<p class="section__text xs-only">Информация о доставке</p>
+
+                
+<button class="btn btn-gray _loading">
+	Подробнее
+	
+</button>
+
+            </div>
+        </div>
+    </section> -->
+            <!-- <section class="section section--p-top-small pt-xs-0">
+        <div class="container">
+            <div class="market-category">
+                <div class="market-category__list">
+                    <a class="market-category__item" href="#">
+						<img
+							data-src="files/img/market/category/category-2.jpg"
+							src="data:image/gif;base64,R0lGODlhOwAZAIAAAP///wAAACH5BAEAAAEALAAAAAA7ABkAAAIljI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jedwAQA7"
+							loading="lazy"
+							alt="Наращивание ресниц"
+							class="lazyload">
+                    </a>
+                    <a class="market-category__item" href="#">
+						<img
+							data-src="files/img/market/category/category-1.jpg"
+							src="data:image/gif;base64,R0lGODlhOwAZAIAAAP///wAAACH5BAEAAAEALAAAAAA7ABkAAAIljI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jedwAQA7"
+							loading="lazy"
+							alt="оформление бровей"
+							class="lazyload">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section> -->
+            <section class="o-section">
+              <div class="container">
+                <h3 class="o-section__title title-decorator _loading">Наращивание ресниц</h3>
+                <div class="row row--center">
+                  <div class="col-lg-2 col-sm-4 col-xs-6">
+                    <a class="inform-block inform-block--link inform-block--transform " href="#">
+                      <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" data-src="files/img/market/category/eyelashes/1.png" class="inform-block__icon inform-block__icon--large inform-block__icon--round lazyload _loading" alt="Ресницы">
+                      <h4 class="inform-block__title inform-block__title--small _loading">Ресницы</h4>
+                    </a>
+                  </div>
+                  <div class="col-lg-2 col-sm-4 col-xs-6">
+                    <a class="inform-block inform-block--link inform-block--transform " href="#">
+                      <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" data-src="files/img/market/category/eyelashes/2.png" class="inform-block__icon inform-block__icon--large inform-block__icon--round lazyload _loading" alt="Препараты">
+                      <h4 class="inform-block__title inform-block__title--small _loading">Препараты</h4>
+                    </a>
+                  </div>
+                  <div class="col-lg-2 col-sm-4 col-xs-6">
+                    <a class="inform-block inform-block--link inform-block--transform " href="#">
+                      <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" data-src="files/img/market/category/eyelashes/3.png" class="inform-block__icon inform-block__icon--large inform-block__icon--round lazyload _loading" alt="Клей">
+                      <h4 class="inform-block__title inform-block__title--small _loading">Клей</h4>
+                    </a>
+                  </div>
+                  <div class="col-lg-2 col-sm-4 col-xs-6">
+                    <a class="inform-block inform-block--link inform-block--transform " href="#">
+                      <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" data-src="files/img/market/category/eyelashes/4.png" class="inform-block__icon inform-block__icon--large inform-block__icon--round lazyload _loading" alt="Ламинирование и биозавивка">
+                      <h4 class="inform-block__title inform-block__title--small _loading">Ламинирование и биозавивка</h4>
+                    </a>
+                  </div>
+                  <div class="col-lg-2 col-sm-4 col-xs-6">
+                    <a class="inform-block inform-block--link inform-block--transform " href="#">
+                      <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" data-src="files/img/market/category/eyelashes/5.png" class="inform-block__icon inform-block__icon--large inform-block__icon--round lazyload _loading" alt="Расходные материалы">
+                      <h4 class="inform-block__title inform-block__title--small _loading">Расходные материалы</h4>
+                    </a>
+                  </div>
+                  <div class="col-lg-2 col-sm-4 col-xs-6">
+                    <a class="inform-block inform-block--link inform-block--transform u-border-bottom--xs" href="#">
+                      <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" data-src="files/img/market/category/eyelashes/6.png" class="inform-block__icon inform-block__icon--large inform-block__icon--round lazyload _loading" alt="Инструменты и оборудование">
+                      <h4 class="inform-block__title inform-block__title--small _loading">Инструменты и оборудование</h4>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="o-section">
+              <div class="container">
+                <h3 class="o-section__title title-decorator _loading">Оформление бровей</h3>
+                <div class="row row--center">
+                  <div class="col-lg-2 col-sm-4 col-xs-6">
+                    <a class="inform-block inform-block--link inform-block--transform " href="#">
+                      <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" data-src="files/img/market/category/eyebrows/1.png" class="inform-block__icon inform-block__icon--large lazyload _loading" alt="Окрашивание бровей">
+                      <h4 class="inform-block__title inform-block__title--small _loading">Окрашивание бровей</h4>
+                    </a>
+                  </div>
+                  <div class="col-lg-2 col-sm-4 col-xs-6">
+                    <a class="inform-block inform-block--link inform-block--transform " href="#">
+                      <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" data-src="files/img/market/category/eyebrows/2.png" class="inform-block__icon inform-block__icon--large lazyload _loading" alt="Инструменты и кисти">
+                      <h4 class="inform-block__title inform-block__title--small _loading">Инструменты и кисти</h4>
+                    </a>
+                  </div>
+                  <div class="col-lg-2 col-sm-4 col-xs-6">
+                    <a class="inform-block inform-block--link inform-block--transform " href="#">
+                      <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" data-src="files/img/market/category/eyebrows/3.png" class="inform-block__icon inform-block__icon--large lazyload _loading" alt="Расходные материалы">
+                      <h4 class="inform-block__title inform-block__title--small _loading">Расходные материалы</h4>
+                    </a>
+                  </div>
+                  <div class="col-lg-2 col-sm-4 col-xs-6">
+                    <a class="inform-block inform-block--link inform-block--transform u-border-bottom--xs" href="#">
+                      <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" data-src="files/img/market/category/eyebrows/4.png" class="inform-block__icon inform-block__icon--large lazyload _loading" alt="Оборудование">
+                      <h4 class="inform-block__title inform-block__title--small _loading">Оборудование</h4>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="o-section">
+              <div class="container">
+                <h3 class="o-section__title title-decorator ">Товары со скидками</h3>
+                <div class="c-slider js-swiper-slider" data-slider-center="true" data-slider-offset="16" data-slider-ratio="5.23" data-slider-slides="6">
+                  <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <!-- BEGIN market-product-item -->
+                        <a itemscope itemtype="http://schema.org/Product" class="market-product-item market-product-item--show" data-move-block-target="product-info" href="market-card.html">
+                          <!-- BEGIN market-product-item__img -->
+                          <div class="market-product-item__img">
+                            <img itemprop="image" data-src="files/img/market/products/1/11231@sm.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" class="market-product-item__image lazyload" alt="Щеточка силиконовая">
+                            <button class="btn-icon btn-icon--fav catalog-item__fav js-btn-fav" title="Добавить в збранное">
+                              <svg class="icon icon-favorite" role="img">
+                                <use xlink:href="files/sprite.svg#favorite"></use>
+                              </svg>
+                              <svg class="icon icon-favorite--filled" role="img">
+                                <use xlink:href="files/sprite.svg#favorite--filled"></use>
+                              </svg>
+                            </button>
+                            <div class="badge-box">
+                              <span class="badge-box__item badge-box__item--sale">sale</span>
+                              <span class="badge-box__item badge-box__item--new">new</span>
+                            </div>
+                          </div>
+                          <!-- END market-product-item__img -->
+                          <!-- BEGIN market-product-item__desc -->
+                          <div class="market-product-item__desc _nopadding">
+                            <div class="market-product-item__price">
+                              <div class="c-pirce" itemscope itemtype="http://schema.org/Offer">
+                                <div class="c-pirce__item c-pirce__item--sale" itemprop="price">
+                                  <meta itemprop="price" content="500.00">
+                                  <meta itemprop="priceCurrency" content="RUB"> 500 <span class="currency ">₽</span>
+                                </div>
+                                <div class="c-pirce__item c-pirce__item--old">800 <span class="currency ">₽</span>
+                                </div>
+                              </div>
+                            </div>
+                            <h5 class="market-product-item__title" itemprop="name">Щеточка силиконовая (шт.)</h5>
+                          </div>
+                          <!-- END market-product-item__desc -->
+                        </a>
+                        <!-- END market-product-item -->
+                      </div>
+                      <div class="swiper-slide">
+                        <!-- BEGIN market-product-item -->
+                        <a itemscope itemtype="http://schema.org/Product" class="market-product-item market-product-item--show" data-move-block-target="product-info" href="market-card.html">
+                          <!-- BEGIN market-product-item__img -->
+                          <div class="market-product-item__img">
+                            <img itemprop="image" data-src="files/img/market/products/1/11231@sm.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" class="market-product-item__image lazyload" alt="Щеточка силиконовая">
+                            <button class="btn-icon btn-icon--fav catalog-item__fav js-btn-fav" title="Добавить в збранное">
+                              <svg class="icon icon-favorite" role="img">
+                                <use xlink:href="files/sprite.svg#favorite"></use>
+                              </svg>
+                              <svg class="icon icon-favorite--filled" role="img">
+                                <use xlink:href="files/sprite.svg#favorite--filled"></use>
+                              </svg>
+                            </button>
+                            <div class="badge-box">
+                              <span class="badge-box__item badge-box__item--sale">sale</span>
+                              <span class="badge-box__item badge-box__item--new">new</span>
+                            </div>
+                          </div>
+                          <!-- END market-product-item__img -->
+                          <!-- BEGIN market-product-item__desc -->
+                          <div class="market-product-item__desc _nopadding">
+                            <div class="market-product-item__price">
+                              <div class="c-pirce" itemscope itemtype="http://schema.org/Offer">
+                                <div class="c-pirce__item c-pirce__item--sale" itemprop="price">
+                                  <meta itemprop="price" content="500.00">
+                                  <meta itemprop="priceCurrency" content="RUB"> 500 <span class="currency ">₽</span>
+                                </div>
+                                <div class="c-pirce__item c-pirce__item--old">800 <span class="currency ">₽</span>
+                                </div>
+                              </div>
+                            </div>
+                            <h5 class="market-product-item__title" itemprop="name">Щеточка силиконовая (шт.)</h5>
+                          </div>
+                          <!-- END market-product-item__desc -->
+                        </a>
+                        <!-- END market-product-item -->
+                      </div>
+                      <div class="swiper-slide">
+                        <!-- BEGIN market-product-item -->
+                        <a itemscope itemtype="http://schema.org/Product" class="market-product-item market-product-item--show" data-move-block-target="product-info" href="market-card.html">
+                          <!-- BEGIN market-product-item__img -->
+                          <div class="market-product-item__img">
+                            <img itemprop="image" data-src="files/img/market/products/1/11231@sm.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" class="market-product-item__image lazyload" alt="Щеточка силиконовая">
+                            <button class="btn-icon btn-icon--fav catalog-item__fav js-btn-fav" title="Добавить в збранное">
+                              <svg class="icon icon-favorite" role="img">
+                                <use xlink:href="files/sprite.svg#favorite"></use>
+                              </svg>
+                              <svg class="icon icon-favorite--filled" role="img">
+                                <use xlink:href="files/sprite.svg#favorite--filled"></use>
+                              </svg>
+                            </button>
+                            <div class="badge-box">
+                              <span class="badge-box__item badge-box__item--sale">sale</span>
+                              <span class="badge-box__item badge-box__item--new">new</span>
+                            </div>
+                          </div>
+                          <!-- END market-product-item__img -->
+                          <!-- BEGIN market-product-item__desc -->
+                          <div class="market-product-item__desc _nopadding">
+                            <div class="market-product-item__price">
+                              <div class="c-pirce" itemscope itemtype="http://schema.org/Offer">
+                                <div class="c-pirce__item c-pirce__item--sale" itemprop="price">
+                                  <meta itemprop="price" content="500.00">
+                                  <meta itemprop="priceCurrency" content="RUB"> 500 <span class="currency ">₽</span>
+                                </div>
+                                <div class="c-pirce__item c-pirce__item--old">800 <span class="currency ">₽</span>
+                                </div>
+                              </div>
+                            </div>
+                            <h5 class="market-product-item__title" itemprop="name">Щеточка силиконовая (шт.)</h5>
+                          </div>
+                          <!-- END market-product-item__desc -->
+                        </a>
+                        <!-- END market-product-item -->
+                      </div>
+                      <div class="swiper-slide">
+                        <!-- BEGIN market-product-item -->
+                        <a itemscope itemtype="http://schema.org/Product" class="market-product-item market-product-item--show" data-move-block-target="product-info" href="market-card.html">
+                          <!-- BEGIN market-product-item__img -->
+                          <div class="market-product-item__img">
+                            <img itemprop="image" data-src="files/img/market/products/1/11231@sm.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" class="market-product-item__image lazyload" alt="Щеточка силиконовая">
+                            <button class="btn-icon btn-icon--fav catalog-item__fav js-btn-fav" title="Добавить в збранное">
+                              <svg class="icon icon-favorite" role="img">
+                                <use xlink:href="files/sprite.svg#favorite"></use>
+                              </svg>
+                              <svg class="icon icon-favorite--filled" role="img">
+                                <use xlink:href="files/sprite.svg#favorite--filled"></use>
+                              </svg>
+                            </button>
+                            <div class="badge-box">
+                              <span class="badge-box__item badge-box__item--sale">sale</span>
+                              <span class="badge-box__item badge-box__item--new">new</span>
+                            </div>
+                          </div>
+                          <!-- END market-product-item__img -->
+                          <!-- BEGIN market-product-item__desc -->
+                          <div class="market-product-item__desc _nopadding">
+                            <div class="market-product-item__price">
+                              <div class="c-pirce" itemscope itemtype="http://schema.org/Offer">
+                                <div class="c-pirce__item c-pirce__item--sale" itemprop="price">
+                                  <meta itemprop="price" content="500.00">
+                                  <meta itemprop="priceCurrency" content="RUB"> 500 <span class="currency ">₽</span>
+                                </div>
+                                <div class="c-pirce__item c-pirce__item--old">800 <span class="currency ">₽</span>
+                                </div>
+                              </div>
+                            </div>
+                            <h5 class="market-product-item__title" itemprop="name">Щеточка силиконовая (шт.)</h5>
+                          </div>
+                          <!-- END market-product-item__desc -->
+                        </a>
+                        <!-- END market-product-item -->
+                      </div>
+                      <div class="swiper-slide">
+                        <!-- BEGIN market-product-item -->
+                        <a itemscope itemtype="http://schema.org/Product" class="market-product-item market-product-item--show" data-move-block-target="product-info" href="market-card.html">
+                          <!-- BEGIN market-product-item__img -->
+                          <div class="market-product-item__img">
+                            <img itemprop="image" data-src="files/img/market/products/1/11231@sm.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" class="market-product-item__image lazyload" alt="Щеточка силиконовая">
+                            <button class="btn-icon btn-icon--fav catalog-item__fav js-btn-fav" title="Добавить в збранное">
+                              <svg class="icon icon-favorite" role="img">
+                                <use xlink:href="files/sprite.svg#favorite"></use>
+                              </svg>
+                              <svg class="icon icon-favorite--filled" role="img">
+                                <use xlink:href="files/sprite.svg#favorite--filled"></use>
+                              </svg>
+                            </button>
+                            <div class="badge-box">
+                              <span class="badge-box__item badge-box__item--sale">sale</span>
+                              <span class="badge-box__item badge-box__item--new">new</span>
+                            </div>
+                          </div>
+                          <!-- END market-product-item__img -->
+                          <!-- BEGIN market-product-item__desc -->
+                          <div class="market-product-item__desc _nopadding">
+                            <div class="market-product-item__price">
+                              <div class="c-pirce" itemscope itemtype="http://schema.org/Offer">
+                                <div class="c-pirce__item c-pirce__item--sale" itemprop="price">
+                                  <meta itemprop="price" content="500.00">
+                                  <meta itemprop="priceCurrency" content="RUB"> 500 <span class="currency ">₽</span>
+                                </div>
+                                <div class="c-pirce__item c-pirce__item--old">800 <span class="currency ">₽</span>
+                                </div>
+                              </div>
+                            </div>
+                            <h5 class="market-product-item__title" itemprop="name">Щеточка силиконовая (шт.)</h5>
+                          </div>
+                          <!-- END market-product-item__desc -->
+                        </a>
+                        <!-- END market-product-item -->
+                      </div>
+                      <div class="swiper-slide">
+                        <!-- BEGIN market-product-item -->
+                        <a itemscope itemtype="http://schema.org/Product" class="market-product-item market-product-item--show" data-move-block-target="product-info" href="market-card.html">
+                          <!-- BEGIN market-product-item__img -->
+                          <div class="market-product-item__img">
+                            <img itemprop="image" data-src="files/img/market/products/1/11231@sm.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" class="market-product-item__image lazyload" alt="Щеточка силиконовая">
+                            <button class="btn-icon btn-icon--fav catalog-item__fav js-btn-fav" title="Добавить в збранное">
+                              <svg class="icon icon-favorite" role="img">
+                                <use xlink:href="files/sprite.svg#favorite"></use>
+                              </svg>
+                              <svg class="icon icon-favorite--filled" role="img">
+                                <use xlink:href="files/sprite.svg#favorite--filled"></use>
+                              </svg>
+                            </button>
+                            <div class="badge-box">
+                              <span class="badge-box__item badge-box__item--sale">sale</span>
+                              <span class="badge-box__item badge-box__item--new">new</span>
+                            </div>
+                          </div>
+                          <!-- END market-product-item__img -->
+                          <!-- BEGIN market-product-item__desc -->
+                          <div class="market-product-item__desc _nopadding">
+                            <div class="market-product-item__price">
+                              <div class="c-pirce" itemscope itemtype="http://schema.org/Offer">
+                                <div class="c-pirce__item c-pirce__item--sale" itemprop="price">
+                                  <meta itemprop="price" content="500.00">
+                                  <meta itemprop="priceCurrency" content="RUB"> 500 <span class="currency ">₽</span>
+                                </div>
+                                <div class="c-pirce__item c-pirce__item--old">800 <span class="currency ">₽</span>
+                                </div>
+                              </div>
+                            </div>
+                            <h5 class="market-product-item__title" itemprop="name">Щеточка силиконовая (шт.)</h5>
+                          </div>
+                          <!-- END market-product-item__desc -->
+                        </a>
+                        <!-- END market-product-item -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-button-prev xs-hide " title="Назад">
+                    <svg class="icon icon-arrow--right " role="img">
+                      <use xlink:href="files/sprite.svg#arrow--right"></use>
+                    </svg>
+                  </div>
+                  <div class="swiper-button-next xs-hide " title="Вперед">
+                    <svg class="icon icon-arrow--right " role="img">
+                      <use xlink:href="files/sprite.svg#arrow--right"></use>
+                    </svg>
+                  </div>
+                </div>
+                <a class="btn btn-secondary btn--flat o-section__btn " href="#">Показать еще</a>
+              </div>
+            </section>
+            <section class="o-section">
+              <div class="container">
+                <h3 class="o-section__title title-decorator ">Хиты продаж</h3>
+                <div class="c-slider js-swiper-slider" data-slider-slides="6" data-slider-ratio="6" data-slider-offset="16" data-slider-center="true">
+                  <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <!-- BEGIN market-product-item -->
+                        <a itemscope itemtype="http://schema.org/Product" class="market-product-item market-product-item--show" data-move-block-target="product-info" href="market-card.html">
+                          <!-- BEGIN market-product-item__img -->
+                          <div class="market-product-item__img">
+                            <img itemprop="image" data-src="files/img/market/products/1/11231@sm.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" class="market-product-item__image lazyload" alt="Щеточка силиконовая">
+                            <button class="btn-icon btn-icon--fav catalog-item__fav js-btn-fav" title="Добавить в збранное">
+                              <svg class="icon icon-favorite" role="img">
+                                <use xlink:href="files/sprite.svg#favorite"></use>
+                              </svg>
+                              <svg class="icon icon-favorite--filled" role="img">
+                                <use xlink:href="files/sprite.svg#favorite--filled"></use>
+                              </svg>
+                            </button>
+                            <div class="badge-box">
+                              <span class="badge-box__item badge-box__item--sale">sale</span>
+                              <span class="badge-box__item badge-box__item--new">new</span>
+                            </div>
+                          </div>
+                          <!-- END market-product-item__img -->
+                          <!-- BEGIN market-product-item__desc -->
+                          <div class="market-product-item__desc _nopadding">
+                            <div class="market-product-item__price">
+                              <div class="c-pirce" itemscope itemtype="http://schema.org/Offer">
+                                <div class="c-pirce__item c-pirce__item--sale" itemprop="price">
+                                  <meta itemprop="price" content="500.00">
+                                  <meta itemprop="priceCurrency" content="RUB"> 500 <span class="currency ">₽</span>
+                                </div>
+                                <div class="c-pirce__item c-pirce__item--old">800 <span class="currency ">₽</span>
+                                </div>
+                              </div>
+                            </div>
+                            <h5 class="market-product-item__title" itemprop="name">Щеточка силиконовая (шт.)</h5>
+                          </div>
+                          <!-- END market-product-item__desc -->
+                        </a>
+                        <!-- END market-product-item -->
+                      </div>
+                      <div class="swiper-slide">
+                        <!-- BEGIN market-product-item -->
+                        <a itemscope itemtype="http://schema.org/Product" class="market-product-item market-product-item--show" data-move-block-target="product-info" href="market-card.html">
+                          <!-- BEGIN market-product-item__img -->
+                          <div class="market-product-item__img">
+                            <img itemprop="image" data-src="files/img/market/products/1/11231@sm.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" class="market-product-item__image lazyload" alt="Щеточка силиконовая">
+                            <button class="btn-icon btn-icon--fav catalog-item__fav js-btn-fav" title="Добавить в збранное">
+                              <svg class="icon icon-favorite" role="img">
+                                <use xlink:href="files/sprite.svg#favorite"></use>
+                              </svg>
+                              <svg class="icon icon-favorite--filled" role="img">
+                                <use xlink:href="files/sprite.svg#favorite--filled"></use>
+                              </svg>
+                            </button>
+                            <div class="badge-box">
+                              <span class="badge-box__item badge-box__item--sale">sale</span>
+                              <span class="badge-box__item badge-box__item--new">new</span>
+                            </div>
+                          </div>
+                          <!-- END market-product-item__img -->
+                          <!-- BEGIN market-product-item__desc -->
+                          <div class="market-product-item__desc _nopadding">
+                            <div class="market-product-item__price">
+                              <div class="c-pirce" itemscope itemtype="http://schema.org/Offer">
+                                <div class="c-pirce__item c-pirce__item--sale" itemprop="price">
+                                  <meta itemprop="price" content="500.00">
+                                  <meta itemprop="priceCurrency" content="RUB"> 500 <span class="currency ">₽</span>
+                                </div>
+                                <div class="c-pirce__item c-pirce__item--old">800 <span class="currency ">₽</span>
+                                </div>
+                              </div>
+                            </div>
+                            <h5 class="market-product-item__title" itemprop="name">Щеточка силиконовая (шт.)</h5>
+                          </div>
+                          <!-- END market-product-item__desc -->
+                        </a>
+                        <!-- END market-product-item -->
+                      </div>
+                      <div class="swiper-slide">
+                        <!-- BEGIN market-product-item -->
+                        <a itemscope itemtype="http://schema.org/Product" class="market-product-item market-product-item--show" data-move-block-target="product-info" href="market-card.html">
+                          <!-- BEGIN market-product-item__img -->
+                          <div class="market-product-item__img">
+                            <img itemprop="image" data-src="files/img/market/products/1/11231@sm.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" class="market-product-item__image lazyload" alt="Щеточка силиконовая">
+                            <button class="btn-icon btn-icon--fav catalog-item__fav js-btn-fav" title="Добавить в збранное">
+                              <svg class="icon icon-favorite" role="img">
+                                <use xlink:href="files/sprite.svg#favorite"></use>
+                              </svg>
+                              <svg class="icon icon-favorite--filled" role="img">
+                                <use xlink:href="files/sprite.svg#favorite--filled"></use>
+                              </svg>
+                            </button>
+                            <div class="badge-box">
+                              <span class="badge-box__item badge-box__item--sale">sale</span>
+                              <span class="badge-box__item badge-box__item--new">new</span>
+                            </div>
+                          </div>
+                          <!-- END market-product-item__img -->
+                          <!-- BEGIN market-product-item__desc -->
+                          <div class="market-product-item__desc _nopadding">
+                            <div class="market-product-item__price">
+                              <div class="c-pirce" itemscope itemtype="http://schema.org/Offer">
+                                <div class="c-pirce__item c-pirce__item--sale" itemprop="price">
+                                  <meta itemprop="price" content="500.00">
+                                  <meta itemprop="priceCurrency" content="RUB"> 500 <span class="currency ">₽</span>
+                                </div>
+                                <div class="c-pirce__item c-pirce__item--old">800 <span class="currency ">₽</span>
+                                </div>
+                              </div>
+                            </div>
+                            <h5 class="market-product-item__title" itemprop="name">Щеточка силиконовая (шт.)</h5>
+                          </div>
+                          <!-- END market-product-item__desc -->
+                        </a>
+                        <!-- END market-product-item -->
+                      </div>
+                      <div class="swiper-slide">
+                        <!-- BEGIN market-product-item -->
+                        <a itemscope itemtype="http://schema.org/Product" class="market-product-item market-product-item--show" data-move-block-target="product-info" href="market-card.html">
+                          <!-- BEGIN market-product-item__img -->
+                          <div class="market-product-item__img">
+                            <img itemprop="image" data-src="files/img/market/products/1/11231@sm.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" class="market-product-item__image lazyload" alt="Щеточка силиконовая">
+                            <button class="btn-icon btn-icon--fav catalog-item__fav js-btn-fav" title="Добавить в збранное">
+                              <svg class="icon icon-favorite" role="img">
+                                <use xlink:href="files/sprite.svg#favorite"></use>
+                              </svg>
+                              <svg class="icon icon-favorite--filled" role="img">
+                                <use xlink:href="files/sprite.svg#favorite--filled"></use>
+                              </svg>
+                            </button>
+                            <div class="badge-box">
+                              <span class="badge-box__item badge-box__item--sale">sale</span>
+                              <span class="badge-box__item badge-box__item--new">new</span>
+                            </div>
+                          </div>
+                          <!-- END market-product-item__img -->
+                          <!-- BEGIN market-product-item__desc -->
+                          <div class="market-product-item__desc _nopadding">
+                            <div class="market-product-item__price">
+                              <div class="c-pirce" itemscope itemtype="http://schema.org/Offer">
+                                <div class="c-pirce__item c-pirce__item--sale" itemprop="price">
+                                  <meta itemprop="price" content="500.00">
+                                  <meta itemprop="priceCurrency" content="RUB"> 500 <span class="currency ">₽</span>
+                                </div>
+                                <div class="c-pirce__item c-pirce__item--old">800 <span class="currency ">₽</span>
+                                </div>
+                              </div>
+                            </div>
+                            <h5 class="market-product-item__title" itemprop="name">Щеточка силиконовая (шт.)</h5>
+                          </div>
+                          <!-- END market-product-item__desc -->
+                        </a>
+                        <!-- END market-product-item -->
+                      </div>
+                      <div class="swiper-slide">
+                        <!-- BEGIN market-product-item -->
+                        <a itemscope itemtype="http://schema.org/Product" class="market-product-item market-product-item--show" data-move-block-target="product-info" href="market-card.html">
+                          <!-- BEGIN market-product-item__img -->
+                          <div class="market-product-item__img">
+                            <img itemprop="image" data-src="files/img/market/products/1/11231@sm.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" class="market-product-item__image lazyload" alt="Щеточка силиконовая">
+                            <button class="btn-icon btn-icon--fav catalog-item__fav js-btn-fav" title="Добавить в збранное">
+                              <svg class="icon icon-favorite" role="img">
+                                <use xlink:href="files/sprite.svg#favorite"></use>
+                              </svg>
+                              <svg class="icon icon-favorite--filled" role="img">
+                                <use xlink:href="files/sprite.svg#favorite--filled"></use>
+                              </svg>
+                            </button>
+                            <div class="badge-box">
+                              <span class="badge-box__item badge-box__item--sale">sale</span>
+                              <span class="badge-box__item badge-box__item--new">new</span>
+                            </div>
+                          </div>
+                          <!-- END market-product-item__img -->
+                          <!-- BEGIN market-product-item__desc -->
+                          <div class="market-product-item__desc _nopadding">
+                            <div class="market-product-item__price">
+                              <div class="c-pirce" itemscope itemtype="http://schema.org/Offer">
+                                <div class="c-pirce__item c-pirce__item--sale" itemprop="price">
+                                  <meta itemprop="price" content="500.00">
+                                  <meta itemprop="priceCurrency" content="RUB"> 500 <span class="currency ">₽</span>
+                                </div>
+                                <div class="c-pirce__item c-pirce__item--old">800 <span class="currency ">₽</span>
+                                </div>
+                              </div>
+                            </div>
+                            <h5 class="market-product-item__title" itemprop="name">Щеточка силиконовая (шт.)</h5>
+                          </div>
+                          <!-- END market-product-item__desc -->
+                        </a>
+                        <!-- END market-product-item -->
+                      </div>
+                      <div class="swiper-slide">
+                        <!-- BEGIN market-product-item -->
+                        <a itemscope itemtype="http://schema.org/Product" class="market-product-item market-product-item--show" data-move-block-target="product-info" href="market-card.html">
+                          <!-- BEGIN market-product-item__img -->
+                          <div class="market-product-item__img">
+                            <img itemprop="image" data-src="files/img/market/products/1/11231@sm.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" class="market-product-item__image lazyload" alt="Щеточка силиконовая">
+                            <button class="btn-icon btn-icon--fav catalog-item__fav js-btn-fav" title="Добавить в збранное">
+                              <svg class="icon icon-favorite" role="img">
+                                <use xlink:href="files/sprite.svg#favorite"></use>
+                              </svg>
+                              <svg class="icon icon-favorite--filled" role="img">
+                                <use xlink:href="files/sprite.svg#favorite--filled"></use>
+                              </svg>
+                            </button>
+                            <div class="badge-box">
+                              <span class="badge-box__item badge-box__item--sale">sale</span>
+                              <span class="badge-box__item badge-box__item--new">new</span>
+                            </div>
+                          </div>
+                          <!-- END market-product-item__img -->
+                          <!-- BEGIN market-product-item__desc -->
+                          <div class="market-product-item__desc _nopadding">
+                            <div class="market-product-item__price">
+                              <div class="c-pirce" itemscope itemtype="http://schema.org/Offer">
+                                <div class="c-pirce__item c-pirce__item--sale" itemprop="price">
+                                  <meta itemprop="price" content="500.00">
+                                  <meta itemprop="priceCurrency" content="RUB"> 500 <span class="currency ">₽</span>
+                                </div>
+                                <div class="c-pirce__item c-pirce__item--old">800 <span class="currency ">₽</span>
+                                </div>
+                              </div>
+                            </div>
+                            <h5 class="market-product-item__title" itemprop="name">Щеточка силиконовая (шт.)</h5>
+                          </div>
+                          <!-- END market-product-item__desc -->
+                        </a>
+                        <!-- END market-product-item -->
+                      </div>
+                      <div class="swiper-slide">
+                        <!-- BEGIN market-product-item -->
+                        <a itemscope itemtype="http://schema.org/Product" class="market-product-item market-product-item--show" data-move-block-target="product-info" href="market-card.html">
+                          <!-- BEGIN market-product-item__img -->
+                          <div class="market-product-item__img">
+                            <img itemprop="image" data-src="files/img/market/products/1/11231@sm.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" class="market-product-item__image lazyload" alt="Щеточка силиконовая">
+                            <button class="btn-icon btn-icon--fav catalog-item__fav js-btn-fav" title="Добавить в збранное">
+                              <svg class="icon icon-favorite" role="img">
+                                <use xlink:href="files/sprite.svg#favorite"></use>
+                              </svg>
+                              <svg class="icon icon-favorite--filled" role="img">
+                                <use xlink:href="files/sprite.svg#favorite--filled"></use>
+                              </svg>
+                            </button>
+                            <div class="badge-box">
+                              <span class="badge-box__item badge-box__item--sale">sale</span>
+                              <span class="badge-box__item badge-box__item--new">new</span>
+                            </div>
+                          </div>
+                          <!-- END market-product-item__img -->
+                          <!-- BEGIN market-product-item__desc -->
+                          <div class="market-product-item__desc _nopadding">
+                            <div class="market-product-item__price">
+                              <div class="c-pirce" itemscope itemtype="http://schema.org/Offer">
+                                <div class="c-pirce__item c-pirce__item--sale" itemprop="price">
+                                  <meta itemprop="price" content="500.00">
+                                  <meta itemprop="priceCurrency" content="RUB"> 500 <span class="currency ">₽</span>
+                                </div>
+                                <div class="c-pirce__item c-pirce__item--old">800 <span class="currency ">₽</span>
+                                </div>
+                              </div>
+                            </div>
+                            <h5 class="market-product-item__title" itemprop="name">Щеточка силиконовая (шт.)</h5>
+                          </div>
+                          <!-- END market-product-item__desc -->
+                        </a>
+                        <!-- END market-product-item -->
+                      </div>
+                      <div class="swiper-slide">
+                        <!-- BEGIN market-product-item -->
+                        <a itemscope itemtype="http://schema.org/Product" class="market-product-item market-product-item--show" data-move-block-target="product-info" href="market-card.html">
+                          <!-- BEGIN market-product-item__img -->
+                          <div class="market-product-item__img">
+                            <img itemprop="image" data-src="files/img/market/products/1/11231@sm.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" class="market-product-item__image lazyload" alt="Щеточка силиконовая">
+                            <button class="btn-icon btn-icon--fav catalog-item__fav js-btn-fav" title="Добавить в збранное">
+                              <svg class="icon icon-favorite" role="img">
+                                <use xlink:href="files/sprite.svg#favorite"></use>
+                              </svg>
+                              <svg class="icon icon-favorite--filled" role="img">
+                                <use xlink:href="files/sprite.svg#favorite--filled"></use>
+                              </svg>
+                            </button>
+                            <div class="badge-box">
+                              <span class="badge-box__item badge-box__item--sale">sale</span>
+                              <span class="badge-box__item badge-box__item--new">new</span>
+                            </div>
+                          </div>
+                          <!-- END market-product-item__img -->
+                          <!-- BEGIN market-product-item__desc -->
+                          <div class="market-product-item__desc _nopadding">
+                            <div class="market-product-item__price">
+                              <div class="c-pirce" itemscope itemtype="http://schema.org/Offer">
+                                <div class="c-pirce__item c-pirce__item--sale" itemprop="price">
+                                  <meta itemprop="price" content="500.00">
+                                  <meta itemprop="priceCurrency" content="RUB"> 500 <span class="currency ">₽</span>
+                                </div>
+                                <div class="c-pirce__item c-pirce__item--old">800 <span class="currency ">₽</span>
+                                </div>
+                              </div>
+                            </div>
+                            <h5 class="market-product-item__title" itemprop="name">Щеточка силиконовая (шт.)</h5>
+                          </div>
+                          <!-- END market-product-item__desc -->
+                        </a>
+                        <!-- END market-product-item -->
+                      </div>
+                      <div class="swiper-slide">
+                        <!-- BEGIN market-product-item -->
+                        <a itemscope itemtype="http://schema.org/Product" class="market-product-item market-product-item--show" data-move-block-target="product-info" href="market-card.html">
+                          <!-- BEGIN market-product-item__img -->
+                          <div class="market-product-item__img">
+                            <img itemprop="image" data-src="files/img/market/products/1/11231@sm.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" class="market-product-item__image lazyload" alt="Щеточка силиконовая">
+                            <button class="btn-icon btn-icon--fav catalog-item__fav js-btn-fav" title="Добавить в збранное">
+                              <svg class="icon icon-favorite" role="img">
+                                <use xlink:href="files/sprite.svg#favorite"></use>
+                              </svg>
+                              <svg class="icon icon-favorite--filled" role="img">
+                                <use xlink:href="files/sprite.svg#favorite--filled"></use>
+                              </svg>
+                            </button>
+                            <div class="badge-box">
+                              <span class="badge-box__item badge-box__item--sale">sale</span>
+                              <span class="badge-box__item badge-box__item--new">new</span>
+                            </div>
+                          </div>
+                          <!-- END market-product-item__img -->
+                          <!-- BEGIN market-product-item__desc -->
+                          <div class="market-product-item__desc _nopadding">
+                            <div class="market-product-item__price">
+                              <div class="c-pirce" itemscope itemtype="http://schema.org/Offer">
+                                <div class="c-pirce__item c-pirce__item--sale" itemprop="price">
+                                  <meta itemprop="price" content="500.00">
+                                  <meta itemprop="priceCurrency" content="RUB"> 500 <span class="currency ">₽</span>
+                                </div>
+                                <div class="c-pirce__item c-pirce__item--old">800 <span class="currency ">₽</span>
+                                </div>
+                              </div>
+                            </div>
+                            <h5 class="market-product-item__title" itemprop="name">Щеточка силиконовая (шт.)</h5>
+                          </div>
+                          <!-- END market-product-item__desc -->
+                        </a>
+                        <!-- END market-product-item -->
+                      </div>
+                      <div class="swiper-slide">
+                        <!-- BEGIN market-product-item -->
+                        <a itemscope itemtype="http://schema.org/Product" class="market-product-item market-product-item--show" data-move-block-target="product-info" href="market-card.html">
+                          <!-- BEGIN market-product-item__img -->
+                          <div class="market-product-item__img">
+                            <img itemprop="image" data-src="files/img/market/products/1/11231@sm.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" class="market-product-item__image lazyload" alt="Щеточка силиконовая">
+                            <button class="btn-icon btn-icon--fav catalog-item__fav js-btn-fav" title="Добавить в збранное">
+                              <svg class="icon icon-favorite" role="img">
+                                <use xlink:href="files/sprite.svg#favorite"></use>
+                              </svg>
+                              <svg class="icon icon-favorite--filled" role="img">
+                                <use xlink:href="files/sprite.svg#favorite--filled"></use>
+                              </svg>
+                            </button>
+                            <div class="badge-box">
+                              <span class="badge-box__item badge-box__item--sale">sale</span>
+                              <span class="badge-box__item badge-box__item--new">new</span>
+                            </div>
+                          </div>
+                          <!-- END market-product-item__img -->
+                          <!-- BEGIN market-product-item__desc -->
+                          <div class="market-product-item__desc _nopadding">
+                            <div class="market-product-item__price">
+                              <div class="c-pirce" itemscope itemtype="http://schema.org/Offer">
+                                <div class="c-pirce__item c-pirce__item--sale" itemprop="price">
+                                  <meta itemprop="price" content="500.00">
+                                  <meta itemprop="priceCurrency" content="RUB"> 500 <span class="currency ">₽</span>
+                                </div>
+                                <div class="c-pirce__item c-pirce__item--old">800 <span class="currency ">₽</span>
+                                </div>
+                              </div>
+                            </div>
+                            <h5 class="market-product-item__title" itemprop="name">Щеточка силиконовая (шт.)</h5>
+                          </div>
+                          <!-- END market-product-item__desc -->
+                        </a>
+                        <!-- END market-product-item -->
+                      </div>
+                      <div class="swiper-slide">
+                        <!-- BEGIN market-product-item -->
+                        <a itemscope itemtype="http://schema.org/Product" class="market-product-item market-product-item--show" data-move-block-target="product-info" href="market-card.html">
+                          <!-- BEGIN market-product-item__img -->
+                          <div class="market-product-item__img">
+                            <img itemprop="image" data-src="files/img/market/products/1/11231@sm.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" class="market-product-item__image lazyload" alt="Щеточка силиконовая">
+                            <button class="btn-icon btn-icon--fav catalog-item__fav js-btn-fav" title="Добавить в збранное">
+                              <svg class="icon icon-favorite" role="img">
+                                <use xlink:href="files/sprite.svg#favorite"></use>
+                              </svg>
+                              <svg class="icon icon-favorite--filled" role="img">
+                                <use xlink:href="files/sprite.svg#favorite--filled"></use>
+                              </svg>
+                            </button>
+                            <div class="badge-box">
+                              <span class="badge-box__item badge-box__item--sale">sale</span>
+                              <span class="badge-box__item badge-box__item--new">new</span>
+                            </div>
+                          </div>
+                          <!-- END market-product-item__img -->
+                          <!-- BEGIN market-product-item__desc -->
+                          <div class="market-product-item__desc _nopadding">
+                            <div class="market-product-item__price">
+                              <div class="c-pirce" itemscope itemtype="http://schema.org/Offer">
+                                <div class="c-pirce__item c-pirce__item--sale" itemprop="price">
+                                  <meta itemprop="price" content="500.00">
+                                  <meta itemprop="priceCurrency" content="RUB"> 500 <span class="currency ">₽</span>
+                                </div>
+                                <div class="c-pirce__item c-pirce__item--old">800 <span class="currency ">₽</span>
+                                </div>
+                              </div>
+                            </div>
+                            <h5 class="market-product-item__title" itemprop="name">Щеточка силиконовая (шт.)</h5>
+                          </div>
+                          <!-- END market-product-item__desc -->
+                        </a>
+                        <!-- END market-product-item -->
+                      </div>
+                      <div class="swiper-slide">
+                        <!-- BEGIN market-product-item -->
+                        <a itemscope itemtype="http://schema.org/Product" class="market-product-item market-product-item--show" data-move-block-target="product-info" href="market-card.html">
+                          <!-- BEGIN market-product-item__img -->
+                          <div class="market-product-item__img">
+                            <img itemprop="image" data-src="files/img/market/products/1/11231@sm.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" class="market-product-item__image lazyload" alt="Щеточка силиконовая">
+                            <button class="btn-icon btn-icon--fav catalog-item__fav js-btn-fav" title="Добавить в збранное">
+                              <svg class="icon icon-favorite" role="img">
+                                <use xlink:href="files/sprite.svg#favorite"></use>
+                              </svg>
+                              <svg class="icon icon-favorite--filled" role="img">
+                                <use xlink:href="files/sprite.svg#favorite--filled"></use>
+                              </svg>
+                            </button>
+                            <div class="badge-box">
+                              <span class="badge-box__item badge-box__item--sale">sale</span>
+                              <span class="badge-box__item badge-box__item--new">new</span>
+                            </div>
+                          </div>
+                          <!-- END market-product-item__img -->
+                          <!-- BEGIN market-product-item__desc -->
+                          <div class="market-product-item__desc _nopadding">
+                            <div class="market-product-item__price">
+                              <div class="c-pirce" itemscope itemtype="http://schema.org/Offer">
+                                <div class="c-pirce__item c-pirce__item--sale" itemprop="price">
+                                  <meta itemprop="price" content="500.00">
+                                  <meta itemprop="priceCurrency" content="RUB"> 500 <span class="currency ">₽</span>
+                                </div>
+                                <div class="c-pirce__item c-pirce__item--old">800 <span class="currency ">₽</span>
+                                </div>
+                              </div>
+                            </div>
+                            <h5 class="market-product-item__title" itemprop="name">Щеточка силиконовая (шт.)</h5>
+                          </div>
+                          <!-- END market-product-item__desc -->
+                        </a>
+                        <!-- END market-product-item -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-button-prev xs-hide " title="Назад">
+                    <svg class="icon icon-arrow--right " role="img">
+                      <use xlink:href="files/sprite.svg#arrow--right"></use>
+                    </svg>
+                  </div>
+                  <div class="swiper-button-next xs-hide " title="Вперед">
+                    <svg class="icon icon-arrow--right " role="img">
+                      <use xlink:href="files/sprite.svg#arrow--right"></use>
+                    </svg>
+                  </div>
+                </div>
+                <a class="btn btn-secondary btn--flat o-section__btn o-section__btn--small " href="#">Показать еще</a>
+              </div>
+            </section>
+            <section class="section">
+              <div class="container">
+                <h3 class="section__title title-decorator">Популярные бренды</h3>
+                <div class="c-slider js-swiper-slider" data-slider-slides="6" data-slider-ratio="6" data-slider-offset="10" data-slider-center="true" data-slider-loop="true">
+                  <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img data-src="files/img/market/brands/1.png" src="data:image/gif;base64,R0lGODlhBQAEAIAAAP///wAAACH5BAEAAAEALAAAAAAFAAQAAAIEjI+ZBQA7" alt="alt" class="swiper-lazy">
+                      </div>
+                      <div class="swiper-slide">
+                        <img data-src="files/img/market/brands/2.png" src="data:image/gif;base64,R0lGODlhBQAEAIAAAP///wAAACH5BAEAAAEALAAAAAAFAAQAAAIEjI+ZBQA7" alt="alt" class="swiper-lazy">
+                      </div>
+                      <div class="swiper-slide">
+                        <img data-src="files/img/market/brands/3.png" src="data:image/gif;base64,R0lGODlhBQAEAIAAAP///wAAACH5BAEAAAEALAAAAAAFAAQAAAIEjI+ZBQA7" alt="alt" class="swiper-lazy">
+                      </div>
+                      <div class="swiper-slide">
+                        <img data-src="files/img/market/brands/4.png" src="data:image/gif;base64,R0lGODlhBQAEAIAAAP///wAAACH5BAEAAAEALAAAAAAFAAQAAAIEjI+ZBQA7" alt="alt" class="swiper-lazy">
+                      </div>
+                      <div class="swiper-slide">
+                        <img data-src="files/img/market/brands/5.png" src="data:image/gif;base64,R0lGODlhBQAEAIAAAP///wAAACH5BAEAAAEALAAAAAAFAAQAAAIEjI+ZBQA7" alt="alt" class="swiper-lazy">
+                      </div>
+                      <div class="swiper-slide">
+                        <img data-src="files/img/market/brands/6.png" src="data:image/gif;base64,R0lGODlhBQAEAIAAAP///wAAACH5BAEAAAEALAAAAAAFAAQAAAIEjI+ZBQA7" alt="alt" class="swiper-lazy">
+                      </div>
+                      <div class="swiper-slide">
+                        <img data-src="files/img/market/brands/7.png" src="data:image/gif;base64,R0lGODlhBQAEAIAAAP///wAAACH5BAEAAAEALAAAAAAFAAQAAAIEjI+ZBQA7" alt="alt" class="swiper-lazy">
+                      </div>
+                      <div class="swiper-slide">
+                        <img data-src="files/img/market/brands/8.png" src="data:image/gif;base64,R0lGODlhBQAEAIAAAP///wAAACH5BAEAAAEALAAAAAAFAAQAAAIEjI+ZBQA7" alt="alt" class="swiper-lazy">
+                      </div>
+                    </div>
+                  </div>
+                  <button class="swiper-button-prev xs-hide" title="Назад">
+                    <svg class="icon icon-arrow--right " role="img">
+                      <use xlink:href="files/sprite.svg#arrow--right"></use>
+                    </svg>
+                  </button>
+                  <button class="swiper-button-next xs-hide" title="Вперед">
+                    <svg class="icon icon-arrow--right " role="img">
+                      <use xlink:href="files/sprite.svg#arrow--right"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </section>
+          </main>
+          <!-- END market -->
+          <footer class="footer js-footer" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
+            <div class="footer__top">
+              <div class="container">
+                <div class="footer__in" data-accordeon data-accordeon-class="bb-accordeon--custom">
+                  <div class="footer-item" data-accordeon-item>
+                    <h4 class="h4 footer-item__title" data-accordeon-title>Категории товаров</h4>
+                    <div class="footer-item__content" data-accordeon-content>
+                      <ul class="footer-item__list">
+                        <li class="footer-item__el">
+                          <a href="#" class="footer-item__link">Наращивание ресниц</a>
+                        </li>
+                        <li class="footer-item__el">
+                          <a href="#" class="footer-item__link">Оформление бровей</a>
+                        </li>
+                        <li class="footer-item__el">
+                          <a href="#" class="footer-item__link">Маникюр и педикюр</a>
+                        </li>
+                        <li class="footer-item__el">
+                          <a href="#" class="footer-item__link">Перманентный макияж</a>
+                        </li>
+                        <li class="footer-item__el">
+                          <a href="#" class="footer-item__link">Перманентный макияж</a>
+                        </li>
+                        <li class="footer-item__el">
+                          <a href="#" class="footer-item__link">Волосы</a>
+                        </li>
+                        <li class="footer-item__el">
+                          <a href="#" class="footer-item__link">Новинки</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="footer-item" data-accordeon-item="open">
+                    <h4 class="h4 footer-item__title" data-accordeon-title>Сервис</h4>
+                    <div class="footer-item__content" data-accordeon-content>
+                      <ul class="footer-item__list">
+                        <li class="footer-item__el">
+                          <a href="market-contacts.html" class="footer-item__link">Контакты</a>
+                        </li>
+                        <li class="footer-item__el">
+                          <a href="#" class="footer-item__link">Оплата и доставка</a>
+                        </li>
+                        <li class="footer-item__el">
+                          <a href="#" class="footer-item__link">Возврат и гарантия</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="footer-item" data-accordeon-item>
+                    <h4 class="h4 footer-item__title" data-accordeon-title>Юридическая информация</h4>
+                    <div class="footer-item__content" data-accordeon-content>
+                      <ul class="footer-item__list">
+                        <li class="footer-item__el">
+                          <a href="#" class="footer-item__link">Пользовательское соглашение</a>
+                        </li>
+                        <li class="footer-item__el">
+                          <a href="#" class="footer-item__link">Политика конфиденциальности</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="footer-item" data-accordeon-item="open">
+                    <h4 class="h4 footer-item__title" data-accordeon-title>Контакты</h4>
+                    <div class="footer-item__content" data-accordeon-content>
+                      <ul class="footer-item__list">
+                        <li class="footer-item__el">
+                          <a href="tel:88001232113" class="footer-item__link">8 (800) 551-69-98</a>
+                        </li>
+                        <li class="footer-item__el">
+                          <a class="footer-item__link">info@beautybox.ru</a>
+                        </li>
+                        <li class="footer-item__el">
+                          <div class="footer__social">
+                            <ul class="icon-list icon-list--white">
+                              <a href="#" class="icon-list__link" title="Мы в VK">
+                                <svg class="icon icon-vk--outline footer__social-icon" role="img">
+                                  <use xlink:href="files/sprite.svg#vk--outline"></use>
+                                </svg>
+                              </a>
+                              <a href="#" class="icon-list__link" title="Напишите нам в whatsapp">
+                                <svg class="icon icon-insta--outline footer__social-icon" role="img">
+                                  <use xlink:href="files/sprite.svg#insta--outline"></use>
+                                </svg>
+                              </a>
+                              <a href="#" class="icon-list__link" title="Мы в Instagram">
+                                <svg class="icon icon-whatsapp--outline footer__social-icon" role="img">
+                                  <use xlink:href="files/sprite.svg#whatsapp--outline"></use>
+                                </svg>
+                              </a>
+                            </ul>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer__bottom">
+              <div class="container">
+                <div class="footer__inner">
+                  <p class="footer__info">Beautymarket, 2019 г.</p>
+                </div>
+              </div>
+            </div>
+          </footer><!-- end footer -->
+        </div>
+      </div>
+      <div class="overlay js-overlay"></div>
+      <!-- BEGIN popups -->
+      <div class="popups">
+        <!-- begin dell -->
+        <div class="modal modal--xs modal--mobile modal--center modal--mobile zoom fade" id="dell">
+          <div class="modal-dialog modal-dialog--sm modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-body">
+                <div class="modal-title">Удалить выбранный елемент из списка?</div>
+                <p class="modal-text">Вы уверены, что хотит удалить или отключить выбранный вами елемент?</p>
+              </div>
+              <div class="modal-footer">
+                <button data-dismiss="modal"> Отменить </button>
+                <button class="text-color--red" data-dismiss="modal" data-push data-push-message-success="Товар удален из корзины"> Удалить </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end dell -->
+        <!-- partials/popups/_add-avatar.html -->
+        <!-- begin add-avatar-->
+        <div class="modal modal--xs modal--fluid fade add-avatar has-photo" id="add-avatar">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header modal-header--center">
+                <h5 class="modal-title">Загрузка новой фотографии</h5>
+                <button class="modal-close" data-dismiss="modal" aria-label="Close">
+                  <svg class="icon icon-close " role="img">
+                    <use xlink:href="files/sprite.svg#close"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="empty">
+                  <label class="add-avatar__btn mb-10">
+                    <svg class="icon icon-camera empty__icon empty__icon--medium" role="img">
+                      <use xlink:href="files/sprite.svg#camera"></use>
+                    </svg>
+                    <input name="file" type="file" />
+                  </label>
+                  <p class="empty__text mb-20">Загрузите фотографию в формате JPG/JPEG, или PNG.</p>
+                  <label class="btn-link add-avatar__btn"> Выбрать файл <input name="file" type="file" />
+                  </label>
+                </div>
+                <div class="add-avatar__inner">
+                  <div class="add-avatar__img">
+                    <img class="js-cropper" src="files/examples/user/avatar-crop.jpg" alt="crop-avatar" />
+                  </div>
+                  <div class="add-avatar__img-rotate">
+                    <button class="add-avatar__btn-rotate" title="Повернуть влево">
+                      <svg class="icon icon-rotate-to-left " role="img">
+                        <use xlink:href="files/sprite.svg#rotate-to-left"></use>
+                      </svg>
+                    </button>
+                    <button class="add-avatar__btn-rotate" title="Повернуть вправо">
+                      <svg class="icon icon-rotate-to-right " role="img">
+                        <use xlink:href="files/sprite.svg#rotate-to-right"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer add-avatar__footer">
+                <button class="btn btn-outline-muted  "> Отмена </button>
+                <button class="btn btn-gray  "> Сохранить </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end add-avatar-->
+        <!-- partials\popups\_auth-form.html -->
+        <!-- BEGIN auth-form -->
+        <div class="modal modal--xs modal--fluid fade" id="auth-form">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body modal-body--flex no-padding">
+                <div class="form modal__form">
+                  <button class="modal-close" data-dismiss="modal" aria-label="Close">
+                    <svg class="icon icon-close " role="img">
+                      <use xlink:href="files/sprite.svg#close"></use>
+                    </svg>
+                  </button>
+                  <div class="form__header">
+                    <div class="form__title js-form-title is-active" data-title="Войти">Вход</div>
+                    <div class="form__title js-form-title" data-title="Зарегистрироваться">Регистрация</div>
+                    <div class="form__subtitle is-hidden">Войдите в личный кабинет, чтобы записаться на услугу</div>
+                  </div>
+                  <div class="form__inner">
+                    <form class="auth-form">
+                      <div class="bb-input   ">
+                        <input class="bb-input__input js-phone-mask" type="tel" placeholder="Ваш телефон">
+                        <div class="bb-input-tip js-bb-input-tip">
+                          <i class="bb-input-tip__arrow-up"></i>
+                          <p class="bb-input-tip__text">*Сообщение с подсказкой</p>
+                          <svg class="icon icon-close--bold" role="img">
+                            <use xlink:href="files/sprite.svg#close--bold"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="bb-input    bb-input--icon">
+                        <input class="bb-input__input " type="password" placeholder="Ваш пароль">
+                        <span class="bb-input__icon js-bb-input-password--show">
+                          <svg class="icon icon-eye" role="img">
+                            <use xlink:href="files/sprite.svg#eye"></use>
+                          </svg>
+                        </span>
+                        <span class="bb-input__icon fal js-bb-input-password--hide" style="display: none;">
+                          <svg class="icon icon-eye--blocked" role="img">
+                            <use xlink:href="files/sprite.svg#eye--blocked"></use>
+                          </svg>
+                        </span>
+                        <div class="bb-input-tip js-bb-input-tip">
+                          <i class="bb-input-tip__arrow-up"></i>
+                          <p class="bb-input-tip__text">*Сообщение с подсказкой</p>
+                          <svg class="icon icon-close--bold" role="img">
+                            <use xlink:href="files/sprite.svg#close--bold"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="form__box">
+                        <label class="bb-checkbox  auth-form__rememberme">
+                          <input type="checkbox">
+                          <span class="bb-checkbox__box"></span>
+                          <span class="bb-checkbox__title">Запомнить меня</span>
+                        </label>
+                        <a class="form__link form__link--recover" href="recover-password.html">Забыли пароль?</a>
+                      </div>
+                      <div class="form__buttons">
+                        <button class="btn btn-animate is-ready btn-gray form__btn" onclick="BB.Utils.toggleSuccess.call(this, '.form', 'is-confirm');">
+                          <span class="btn__title">Войти</span>
+                        </button>
+                      </div>
+                      <div class="bb-title bb-title--devider form__devider">или войдите через</div>
+                      <div class="form__social">
+                        <a class="btn btn-social btn-social--vk btn-social--outline" href="#"></a>
+                        <a class="btn btn-social btn-social--instagram btn-social--outline" href="#"></a>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="form-success form-success--master">
+                    <div class="form-success__inner">
+                      <div class="form-success__header">
+                        <h3 class="form-success__title">Спасибо что присоединились к <span class="color-primary">beautybox</span>.</h3>
+                        <div class="form-success__subtitle">Теперь вы можете развивать бизнес, с помощью нашего сервиса а именно:</div>
+                      </div>
+                      <ul class="form-success__list">
+                        <li>Пополнять собственное портфолио;</li>
+                        <li>Добавлять и редактировать информацию о услугах и ценах;</li>
+                        <li>Получать заявки в режимы онлайн;</li>
+                        <li>Вести статистику;</li>
+                        <li>Создавать свои акции и предложения.</li>
+                      </ul>
+                      <a class="button-animate js-btn-animate form-success__btn" href="#"> Перейти в профиль <span class="button-animate__hover"></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="form-success form-success--role">
+                    <div class="form-success__header">
+                      <h3 class="form-success__title">Выберите аккаунт</h3>
+                      <button class="form-success__close js-success-close">
+                        <svg class="icon icon-close--bold form-success__icon-close" role="img">
+                          <use xlink:href="files/sprite.svg#close--bold"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="form-success__body no-padding">
+                      <label class="bb-checkbox bb-checkbox--radio bb-checkbox--master">
+                        <div class="user user--small">
+                          <div class="user__inner">
+                            <div class="user__avatar">
+                              <div class="user__img">
+                                <img src="files/examples/user/cara-avatar.jpg" alt="Ольга Оченьдлиннаяфамилия">
+                              </div>
+                            </div>
+                            <div class="user__info">
+                              <span class="user__name">Ольга Оченьдлиннаяфамилия</span>
+                              <span class="user__status">Студия красоты "Березка"</span>
+                            </div>
+                          </div>
+                        </div>
+                        <input name="master" type="radio">
+                        <span class="bb-checkbox__box"></span>
+                      </label>
+                      <label class="bb-checkbox bb-checkbox--radio bb-checkbox--master">
+                        <div class="user user--small">
+                          <div class="user__inner">
+                            <div class="user__avatar">
+                              <div class="user__img">
+                                <img src="files/examples/user/lima-avatar.jpg" alt="Наташа Шилова">
+                              </div>
+                            </div>
+                            <div class="user__info">
+                              <span class="user__name">Наташа Шилова</span>
+                              <span class="user__status">Студия красоты "Березка"</span>
+                            </div>
+                          </div>
+                        </div>
+                        <input name="master" type="radio">
+                        <span class="bb-checkbox__box"></span>
+                      </label>
+                      <label class="bb-checkbox bb-checkbox--radio bb-checkbox--master">
+                        <div class="user user--small">
+                          <div class="user__inner">
+                            <div class="user__avatar">
+                              <div class="user__img">
+                                <img src="files/examples/user/daniela-avatar.jpg" alt="Ангелина Левинникова">
+                              </div>
+                            </div>
+                            <div class="user__info">
+                              <span class="user__name">Ангелина Левинникова</span>
+                              <span class="user__status">Студия красоты "Березка"</span>
+                            </div>
+                          </div>
+                        </div>
+                        <input name="master" type="radio">
+                        <span class="bb-checkbox__box"></span>
+                      </label>
+                      <label class="bb-checkbox bb-checkbox--radio bb-checkbox--master">
+                        <div class="user user--small">
+                          <div class="user__inner">
+                            <div class="user__avatar">
+                              <div class="user__img">
+                                <img src="files/examples/user/noavatar.jpg" alt="Карина Мелина">
+                              </div>
+                            </div>
+                            <div class="user__info">
+                              <span class="user__name">Карина Мелина</span>
+                              <span class="user__status">Студия красоты "Березка"</span>
+                            </div>
+                          </div>
+                        </div>
+                        <input name="master" type="radio">
+                        <span class="bb-checkbox__box"></span>
+                      </label>
+                      <label class="bb-checkbox bb-checkbox--radio bb-checkbox--master">
+                        <div class="user user--small">
+                          <div class="user__inner">
+                            <div class="user__avatar">
+                              <div class="user__img">
+                                <img src="files/examples/user/avatar.jpg" alt="Дядя Вася">
+                              </div>
+                            </div>
+                            <div class="user__info">
+                              <span class="user__name">Дядя Вася</span>
+                              <span class="user__status">Студия красоты "Березка"</span>
+                            </div>
+                          </div>
+                        </div>
+                        <input name="master" type="radio">
+                        <span class="bb-checkbox__box"></span>
+                      </label>
+                    </div>
+                    <div class="form-success__footer">
+                      <button class="btn btn-animate is-ready btn-gray form__btn" onclick="BB.Utils.toggleSuccess.call(this, '.form', 'is-success');">
+                        <span class="btn__title">Продолжить</span>
+                      </button>
+                    </div>
+                    <div class="form-success__verify">
+                      <button class="form-success__error-close js-error-close">
+                        <svg class="icon icon-close--bold form-success__icon-close" role="img">
+                          <use xlink:href="files/sprite.svg#close--bold"></use>
+                        </svg>
+                      </button>
+                      <div class="form-success__error">Введен неверный пароль для этой роли</div>
+                      <div class="bb-input    bb-input--icon">
+                        <input class="bb-input__input " type="password" placeholder="Введите пароль">
+                        <span class="bb-input__icon js-bb-input-password--show">
+                          <svg class="icon icon-eye" role="img">
+                            <use xlink:href="files/sprite.svg#eye"></use>
+                          </svg>
+                        </span>
+                        <span class="bb-input__icon fal js-bb-input-password--hide" style="display: none;">
+                          <svg class="icon icon-eye--blocked" role="img">
+                            <use xlink:href="files/sprite.svg#eye--blocked"></use>
+                          </svg>
+                        </span>
+                        <div class="bb-input-tip js-bb-input-tip">
+                          <i class="bb-input-tip__arrow-up"></i>
+                          <p class="bb-input-tip__text">*Сообщение с подсказкой</p>
+                          <svg class="icon icon-close--bold" role="img">
+                            <use xlink:href="files/sprite.svg#close--bold"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <button class="btn form__btn btn-default  "> Продолжить </button>
+                      <a href="user-password-recovery.html" class="form__link form__link--recover form__link--verify">Забыли пароль?</a>
+                    </div>
+                  </div>
+                  <!-- BEGIN form-confirm -->
+                  <div class="form-success form-success--confirm">
+                    <div class="form-success__inner form-success__inner--center">
+                      <div class="form-success__header">
+                        <div class="form-success__title">Введите код из SMS</div>
+                        <div class="form-success__subtitle"> Код отправлен на <strong>+7 (927) 107-11-39</strong>
+                          <button class="btn-icon btn-icon--arrow-long--left btn-icon--big form-success__back" onclick="BB.Utils.toggleSuccess.call(this, '.form', 'is-confirm', 0);">
+                            <svg class="icon icon-arrow-long--left " role="img">
+                              <use xlink:href="files/sprite.svg#arrow-long--left"></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="form-success__body">
+                        <form onsubmit="BB.Utils.toggleSuccess.call(this, '.form', 'is-success');">
+                          <div class="c-input-code js-c-input-code mb-30">
+                            <div class="c-input-code__box">
+                              <input type="tel" class="c-input-code__field js-input-focus" autocomplete="off" maxlength="1">
+                            </div>
+                            <div class="c-input-code__box">
+                              <input type="tel" class="c-input-code__field js-input-focus" autocomplete="off" maxlength="1">
+                            </div>
+                            <div class="c-input-code__box">
+                              <input type="tel" class="c-input-code__field js-input-focus" autocomplete="off" maxlength="1">
+                            </div>
+                            <div class="c-input-code__box">
+                              <input type="tel" class="c-input-code__field js-input-focus" autocomplete="off" maxlength="1">
+                            </div>
+                          </div>
+                          <div class="form-success__subtitle">
+                            <div> Введен неправильный код. </br> Осталось попыток: <span>3</span>
+                            </div>
+                          </div>
+                          <div class="form-success__subtitle js-timer">
+                            <div class="js-timer-text"> Получить новый код можно <br> через <span data-timer-time="15"></span>&nbsp;сек. </div>
+                            <a class="js-timer-bnt--repeat" href="#" style="display: none;">Получить новый код</a>
+                          </div>
+                          <div class="form-success__subtitle" style="display: none">
+                            <div>Вы исчерпали допустимое <br> количество попыток </div>
+                          </div>
+                          <div class="form-success__subtitle" style="display: none">
+                            <div>Для восстановления доступа в <br> личный кабинет <a href="#">свяжитесь с менеджером</a></div>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="form-success__footer">
+                        <button class="btn btn-animate is-ready btn-gray form__btn" onclick="BB.Utils.toggleSuccess.call(this, '.form', 'is-success');">
+                          <span class="btn__title">Подтвердить</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- END form-confirm -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END auth-form -->
+      </div><!-- END popups -->
+      <!-- market/blocks/moveBlock/_product-info.html -->
+      <div class="move-block js-move-block" data-move-block="product-info">
+        <div class="move-block__header">
+          <span class="move-block__header_title">Информация о товаре</span>
+          <button class="btn-icon move-block__close  js-move-block--close">
+            <svg class="icon icon-close " role="img">
+              <use xlink:href="files/sprite.svg#close"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="move-block__body bg--white">
+          <div class="move-block__in">
+            <div class="product-card-item">
+              <div class="product-card-item__inner">
+                <div class="product-card-item__img">
+                  <!-- BEGIN product-card-item__image--alone -->
+                  <!-- <div class="product-card-item__image">
+	<img
+		class="lazyload"
+		src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
+		data-src="files/img/market/products/1/1@md.jpg"
+		alt="Краска для бровей и ресниц">
+</div> -->
+                  <!-- END product-card-item__image--alone -->
+                  <!-- BEGIN product-card-item__image -->
+                  <div class="product-card-item__image bb-slider bb-slider--card js-slider--preview" data-arrow="true">
+                    <div class="bb-slider__slides _loading">
+                      <div class="bb-slider__slide">
+                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" data-lazy="files/img/market/products/1/1@md.jpg" alt="Краска для бровей и ресниц">
+                      </div>
+                      <div class="bb-slider__slide">
+                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" data-lazy="files/img/market/products/1/1@md.jpg" alt="Краска для бровей и ресниц">
+                      </div>
+                    </div>
+                    <div class="bb-slider__preview _loading">
+                      <div>
+                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" data-lazy="files/img/market/products/1/1@xs.jpg" alt="Краска для бровей и ресниц">
+                      </div>
+                      <div>
+                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" data-lazy="files/img/market/products/1/1@xs.jpg" alt="Краска для бровей и ресниц">
+                      </div>
+                    </div>
+                  </div><!-- END product-card-item__image -->
+                  <button class="btn-icon btn-icon--fav product-card-item__fav js-btn-fav" title="Добавить в збранное"></button>
+                </div>
+                <div class="product-card-item__prop">
+                  <div class="product-card-item">
+                    <div class="product-card-item__header _loading">
+                      <div class="product-card-item__name">Краска для бровей и ресниц</div>
+                      <ul class="list list--inline product-card-item__badge-box">
+                        <li class="list__item">
+                          <span class="badge badge--medium">sale</span>
+                        </li>
+                        <li class="list__item">
+                          <span class="badge badge--medium bg--info">new</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div>
+                      <span class="product-card-item__cost _loading">50 руб/шт.</span>
+                      <div class="product-card-item__quantity">
+                        <!-- BEGIN changer -->
+                        <div class="changer product-card-item__changer _loading">
+                          <span class="changer__title">Изгиб</span>
+                          <div class="bb-checkbox__row">
+                            <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                              <input type="radio" name="bend">
+                              <span class="bb-checkbox__box"></span>
+                              <span class="bb-checkbox__title">CC</span>
+                            </label>
+                            <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                              <input type="radio" name="bend">
+                              <span class="bb-checkbox__box"></span>
+                              <span class="bb-checkbox__title">CC</span>
+                            </label>
+                            <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                              <input type="radio" name="bend">
+                              <span class="bb-checkbox__box"></span>
+                              <span class="bb-checkbox__title">CC</span>
+                            </label>
+                            <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                              <input type="radio" name="bend">
+                              <span class="bb-checkbox__box"></span>
+                              <span class="bb-checkbox__title">CC</span>
+                            </label>
+                            <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                              <input type="radio" name="bend">
+                              <span class="bb-checkbox__box"></span>
+                              <span class="bb-checkbox__title">CC</span>
+                            </label>
+                            <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                              <input type="radio" name="bend">
+                              <span class="bb-checkbox__box"></span>
+                              <span class="bb-checkbox__title">CC</span>
+                            </label>
+                            <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                              <input type="radio" name="bend">
+                              <span class="bb-checkbox__box"></span>
+                              <span class="bb-checkbox__title">CC</span>
+                            </label>
+                          </div>
+                        </div>
+                        <!-- END changer -->
+                        <!-- BEGIN changer -->
+                        <div class="changer product-card-item__changer _loading">
+                          <span class="changer__title">Толщина</span>
+                          <ul class="bb-checkbox__row">
+                            <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                              <input type="radio" name="thickness">
+                              <span class="bb-checkbox__box"></span>
+                              <span class="bb-checkbox__title">0,10</span>
+                            </label>
+                            <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                              <input type="radio" name="thickness">
+                              <span class="bb-checkbox__box"></span>
+                              <span class="bb-checkbox__title">0,10</span>
+                            </label>
+                            <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                              <input type="radio" name="thickness">
+                              <span class="bb-checkbox__box"></span>
+                              <span class="bb-checkbox__title">0,10</span>
+                            </label>
+                            <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                              <input type="radio" name="thickness">
+                              <span class="bb-checkbox__box"></span>
+                              <span class="bb-checkbox__title">0,10</span>
+                            </label>
+                            <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                              <input type="radio" name="thickness">
+                              <span class="bb-checkbox__box"></span>
+                              <span class="bb-checkbox__title">0,10</span>
+                            </label>
+                            <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                              <input type="radio" name="thickness">
+                              <span class="bb-checkbox__box"></span>
+                              <span class="bb-checkbox__title">0,10</span>
+                            </label>
+                            <label class="bb-checkbox  bb-checkbox--btn js-bb-radio">
+                              <input type="radio" name="thickness">
+                              <span class="bb-checkbox__box"></span>
+                              <span class="bb-checkbox__title">0,10</span>
+                            </label>
+                          </ul>
+                        </div>
+                        <!-- END changer -->
+                        <div class="product-card-item__box select-box">
+                          <div class="select-box__item _loading">
+                            <span class="bb-input__title">Цвет</span>
+                            <div class="bb-input-custom js-bb-input-custom">
+                              <div class="bb-input-custom__value">
+                                <span class="bb-input-custom__color" data-color-input="#005C2B"></span>
+                                <span class="bb-input-custom__title">Черный</span>
+                                <span class="bb-input-custom__arrow">
+                                  <svg class="icon icon-angle arrow-select" role="img">
+                                    <use xlink:href="files/sprite.svg#angle"></use>
+                                  </svg>
+                                </span>
+                              </div>
+                              <ul class="bb-input-custom__list">
+                                <li class="bb-input-custom__item in-available">
+                                  <span class="bb-input-custom__color" data-color-input="#005C2B" style="background-color:#005C2B"></span>
+                                  <div class="bb-input-custom__item-inner">
+                                    <span class="bb-input-custom__title">Темно-зеленый</span>
+                                    <span class="bb-input-custom__stock">Есть в наличии</span>
+                                  </div>
+                                </li>
+                                <li class="bb-input-custom__item not-available">
+                                  <span class="bb-input-custom__color" data-color-input="#FFEE3A" style="background-color:#FFEE3A"></span>
+                                  <div class="bb-input-custom__item-inner">
+                                    <span class="bb-input-custom__title">Лайм</span>
+                                    <span class="bb-input-custom__stock">Нет в наличии</span>
+                                  </div>
+                                </li>
+                                <li class="bb-input-custom__item is-ending">
+                                  <span class="bb-input-custom__color" data-color-input="#C3ACFF" style="background-color:#C3ACFF"></span>
+                                  <div class="bb-input-custom__item-inner">
+                                    <span class="bb-input-custom__title">Фиолетовый</span>
+                                    <span class="bb-input-custom__stock">Заканчивается</span>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="select-box__item _loading">
+                            <span class="bb-input__title">Колличество</span>
+                            <div class="bb-input-custom js-bb-input-custom _loading">
+                              <div class="bb-input-custom__value bb-input-custom__value--input">
+                                <button class="bb-input-custom__btn-control bb-input-custom__minus">
+                                  <svg class="icon icon-minus btn-control" role="img">
+                                    <use xlink:href="files/sprite.svg#minus"></use>
+                                  </svg>
+                                </button>
+                                <input type="text" name="quantity" class="bb-input-custom__input" placeholder="выбрать">
+                                <button class="bb-input-custom__btn-control bb-input-custom__plus">
+                                  <svg class="icon icon-plus--bold btn-control" role="img">
+                                    <use xlink:href="files/sprite.svg#plus--bold"></use>
+                                  </svg>
+                                </button>
+                              </div>
+                              <ul class="bb-input-custom__list">
+                                <li class="bb-input-custom__item">
+                                  <span class="bb-input-custom__from">От</span>
+                                  <span class="bb-input-custom__offer">200</span>
+                                  <span class="bb-input-custom__currency">шт</span>
+                                  <sup class="bb-input-custom__discount">-25%</sup>
+                                  <span class="bb-input-custom__cost">425</span>
+                                  <span class="bb-input-custom__curs">руб/шт</span>
+                                </li>
+                                <li class="bb-input-custom__item">
+                                  <span class="bb-input-custom__from">От</span>
+                                  <span class="bb-input-custom__offer">200</span>
+                                  <span class="bb-input-custom__currency">шт</span>
+                                  <sup class="bb-input-custom__discount">-25%</sup>
+                                  <span class="bb-input-custom__cost">425</span>
+                                  <span class="bb-input-custom__curs">руб/шт</span>
+                                </li>
+                                <li class="bb-input-custom__item">
+                                  <span class="bb-input-custom__from">От</span>
+                                  <span class="bb-input-custom__offer">200</span>
+                                  <span class="bb-input-custom__currency">шт</span>
+                                  <sup class="bb-input-custom__discount">-25%</sup>
+                                  <span class="bb-input-custom__cost">425</span>
+                                  <span class="bb-input-custom__curs">руб/шт</span>
+                                </li>
+                                <li class="bb-input-custom__item">
+                                  <span class="bb-input-custom__from">От</span>
+                                  <span class="bb-input-custom__offer">200</span>
+                                  <span class="bb-input-custom__currency">шт</span>
+                                  <sup class="bb-input-custom__discount">-25%</sup>
+                                  <span class="bb-input-custom__cost">425</span>
+                                  <span class="bb-input-custom__curs">руб/шт</span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <span class="devider mb-30"></span>
+                      </div>
+                    </div>
+                    <a class="btn btn-secondary btn--flat btn--icon btn--lg" href="market-card.html"> Подробнее <svg class="icon icon-eye " role="img">
+                        <use xlink:href="files/sprite.svg#eye"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="move-block__footer">
+            <span class="product-card-item__info">Добавлено <span>5</span><span>шт</span> на сумму 2000 руб.</span>
+            <button class="btn btn-default product-card-item__btn"> Добавить в корзину <span class="product-card-item__btn-icon" title="Удалить из корзины">
+                <svg class="icon icon-cart in-cart" role="img">
+                  <use xlink:href="files/sprite.svg#cart"></use>
+                </svg>
+                <svg class="icon icon-trash delete-from-cart" role="img">
+                  <use xlink:href="files/sprite.svg#trash"></use>
+                </svg>
+              </span>
+            </button>
+            <div class="button-box button-box--column">
+              <span class="button-box__title button-box__title--center"> Нет в наличии </span>
+              <button data-toggle="modal" href="#product_subscription" class="btn btn-success btn--icon btn--flat product-card-item__btn  ">
+                <svg class="icon icon-bell " role="img">
+                  <use xlink:href="files/sprite.svg#bell"></use>
+                </svg> Узнать о поступлении </button>
+              <button class="btn btn-outline-success btn--icon btn--flat product-card-item__btn  ">
+                <svg class="icon icon-bell " role="img">
+                  <use xlink:href="files/sprite.svg#bell"></use>
+                </svg> Мы сообщим о поступлении </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- begin scripts -->
+      <script>
+        (async () =>
+        {
+          if ('loading' in HTMLImageElement.prototype)
+          {
+            const images = document.querySelectorAll("img.lazyload");
+            images.forEach(img =>
+            {
+              img.src = img.dataset.src;
+            });
+            console.log('--- 1');
+          }
+          else
+          {
+            // Динамически импортируем библиотеку LazySizes
+            const lazySizesLib = await import('/js/_lib/lazysizes.min.js');
+            // Инициализируем LazySizes (читаем data-src & class=lazyload)
+            lazySizes.init(); // lazySizes применяется при обработке изображений, находящихся на странице.
+            console.log('--- 2');
+          }
+        })();
+
+      </script>
+      <script type="text/javascript" src="js/vendors.js"></script>
+      <script type="text/javascript" src="js/common.js"></script>
+      <script type="text/javascript" src="js/market.js"></script>
+      <script type="text/javascript" src="js/_frontend.js"></script>
+      <!-- end scripts -->
+  </body>
+</html>

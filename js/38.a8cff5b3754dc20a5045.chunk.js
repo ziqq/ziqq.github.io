@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[38],{DddP:function(n,e,t){"use strict";t.r(e);var s={name:"staff-positions"},a=t("KHd+"),i=Object(a.a)(s,function(){var n=this,e=n.$createElement;return(n._self._c||e)("div",[n._v("Должности")])},[],!1,null,null,null);e.default=i.exports}}]);

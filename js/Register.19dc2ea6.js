@@ -1,1 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["Register"],{"56b4":function(e,n,t){"use strict";t.r(n);var l=function(){var e=this,n=e.$createElement,t=e._self._c||n;return t("div",[e._v("Регистрация")])},r=[],s=t("2877"),u={},c=Object(s["a"])(u,l,r,!1,null,null,null);n["default"]=c.exports}}]);
